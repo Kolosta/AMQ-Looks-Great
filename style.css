@@ -1,0 +1,2591 @@
+/* ==UserStyle==
+@name         KOKOLOSTA V1.2
+@version      2022.01.07
+@namespace    userstyles.world/user/kolosta
+@description  A script to improve the rendering of the Anime Music Quiz web site
+@author       Kolosta (based on melodyelodie's work)
+==/UserStyle== */
+
+/*@-moz-document domain(animemusicquiz.com)*/
+
+/* Original script by melodyelodie here ;
+https://userstyles.world/style/1435/elodie-s-amq-script-v8-4-4 */
+
+ :root {
+    /* Change the URL in quotes to whatever you want the bg to be. */
+/*     --bg: url(https://static.tumblr.com/6ed50bddfea34fd928ace05d42b51582/kr9wz9j/DoCnxitsy/tumblr_static_2w68fwtzcqec8ww4s0k00ws4c_2048_v2.png); */
+/*      Some backgrounds :*/
+     --bg: url(https://i.redd.it/2cioa12l3zv71.png);
+/*      --bg: url(https://i.pinimg.com/originals/8f/b7/06/8fb706c006b8777e8738f901ebefcc10.jpg); */
+/*      --bg: url(https://wallpapercave.com/wp/wp1906477.png); */
+/*      --bg: url(https://i.imgur.com/uIOaQbf.png); */
+/*      --bg: url(https://i.imgur.com/CEW3dUK.jpeg); */
+/*      --bg: url(https://images.hdqwalls.com/download/oneshot-2o-1920x1080.jpg); */
+/*      x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+    /* Optional: if you want a different background for chat. Phone wallpapers tend to work best. */
+    --chatbg: rgba(0, 0, 0, 0.5);
+}
+
+/* ______________________________________________________________________________________________________________________________________________________ */
+/* ______________________________________________________________________________________________________________________________________________________ */
+/* ______________________________________________________________________________________________________________________________________________________ */
+
+#mainContainer {
+    color: #fff;
+}
+
+
+
+#mainContainer{
+/*     @import url('https://fonts.googleapis.com/css2?family=Pushster&family=Roboto+Mono:ital,wght@0,300;1,300&family=Yellowtail&display=swap'); */
+/*     font-family: 'Bahnschrift'; */
+    font-family: 'Posterama Text';
+/*     font-size: 100%; */
+/*     font-family: 'Qanelas Soft'; */
+/*     color: #05b327 !important; */
+}
+
+
+/* AVATAR ET FOND */
+.qpAvatarImageContainer.Standard > .particleEmiter {
+/*     background-image: url("https://cdn.animemusicquiz.com/v1/backgrounds/200px/Marine_Standard_BLUE_vert.webp"); */
+    background-size: contain;
+    opacity: 1;
+}
+
+.qpAvatarImageContainer.Standard{
+    background-image: url("https://cdn.animemusicquiz.com/v1/backgrounds/200px/Marine_Standard_BLUE_vert.webp");
+    background-size: contain;
+    opacity: 1;
+}
+
+.qpAvatarImageContainer{
+    border-radius: 10px;
+/*     color: #19930b; */
+}
+
+.qpAvatarImageContainer.Standard {
+    background: none !important;
+    background: #29202000 !important;
+    opacity: 1;
+}
+
+.floatingContainer {
+    background-color: rgba(66, 66, 66, .75);
+}
+
+
+
+
+
+
+#mpKomugiPromo,  #mpSpringSkinPromo, #mpPatreonContainer, #mpHalloweenSkinPromo{
+    border-radius: 10px;
+}
+
+#mpKomugiPromo, #mpPatreonContainer{
+    background-color: rgba(27, 27, 27, 0.6);
+}
+
+.mpSpringPromoContainer{
+    background-color: rgba(27, 27, 27, 0);
+}
+
+
+
+#mpRankedButton{
+    border-radius: 20px;
+}
+
+#mpPatreonContainerInner h3{
+    font-size: 1.5em;
+}
+
+#startPageSocailContainer{
+    opacity: 0.6;
+}
+
+#infoFooter{
+    opacity: 0.6;
+}
+
+
+#mpNewsMerchTab .leftRightButtonTop{
+    opacity: 0.4;
+}
+
+#mpNewsMerchTab .leftRightButtonTop h3{
+    opacity: 1;
+}
+
+.mpNewsBottomTab{
+    border-color: rgba(0, 0, 0, 0); 
+}
+
+
+#mpNewsMerchTab{
+    border-bottom-left-radius: 12px 20px;
+}
+
+#mpAvatarDriveHeaderShadowHider {
+    top: -33px;
+    padding: 0px 0px 0px 0px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#mpDriveStatsContainer{
+    opacity: 0.8;
+}
+
+#mpRankedDescriptionButton{
+    opacity: 0.4;
+}
+
+#mpPlayButton h1 {
+    color: rgba(255, 255, 255, 1);
+}
+
+
+
+/* Daily Quests */
+#qcStickOut{
+    opacity: 0.8;
+    right: -60px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 7px;
+}
+
+#questContainer{
+    background-color: rgba(66, 66, 66, .6);
+    transition: transform ease-in-out 0.4s, box-shadow ease-in-out 2s;
+    bottom: max(calc(0% - 0px), 100px);
+}
+
+#questContainer.open {
+    transform: translateX(0%);
+    box-shadow: 0 0 20px 0px rgb(0, 0, 0);
+    transition: transform ease-in-out 0.5s;
+}
+
+#mainMenuSocailButton{
+    opacity: 0.6;
+}
+
+#footerMenuBarBackground{
+    opacity: 0.4;
+}
+
+#xpOuterContainer {
+    height: 100%;
+    opacity: 1;
+}
+
+#xpBarInner{
+    background: rgba(255, 221, 0, 0.6) !important;
+}
+
+#xpBarOuter {
+    background-color: rgba(4, 35, 43, .6) !important;
+}
+
+#xpBarOuter, #xpBarInner{
+    border-radius: 10px 10px 10px 10px;
+}
+
+#xpBarInnerOverflow{
+    border-radius: 10px 10px 10px 10px;
+}
+
+#menuBarOptionContainer{
+    opacity: 1;
+    bottom: 3px;
+}
+
+#rightMenuBarPartContainer::before{
+    opacity: 0;
+} 
+
+#mpRankedTimer{
+    opacity: 0.4;
+}
+
+
+#roomBrowserPage{
+    opacity: 1;
+}
+
+#rbBackButton{
+    opacity: 1;
+}
+
+.modal-content{
+    opacity: 1;
+    border-radius: 20px;
+}
+
+.modal-header{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.mhAdvancedContainerTitle {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.mhCustomSliderContainer{
+    border-radius: 10px;
+}
+
+#mhQuickSelectContainer{
+    opacity: 1;
+}
+
+#rbMajorFilters, #rbFilterContainer{
+    border-radius: 0 0 0 10px;
+}
+
+#lbStartButton, #lnSettingsButton{
+     opacity: 0.6;
+}
+
+#gameChatContainer, #lobbyCountContainer{
+    background: rgba(0, 0, 0, 0.6) !important;
+}
+
+
+#lobbyRoomNameContainer {
+    color: rgba(0, 0, 0, .5);
+    mix-blend-mode: difference;
+}
+
+
+#popoutMessageContainer{
+    opacity: 0.6;
+    border-radius: 0 10px 10px 0;
+}
+
+
+.lobbyAvatarLevelContainer{
+    opacity: 0.7;
+}
+
+#qpInfoHider{
+    opacity: 0;
+    background: #f00;
+    -webkit-mask-image: radial-gradient(circle at right bottom , transparent 0, transparent 24px, black 25px);
+    border-bottom-right-radius: 40px;
+}
+
+#qpReportFeedbackContainer {
+    margin-top: 0px;
+}
+
+.awesomplete{
+    opacity: 0.8;
+}
+
+#qpInnerContainer{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.qpSingleRateContainer {
+    -webkit-box-shadow: 1px -3px 10px rgba(0, 0, 0, 0);
+    box-shadow: 1px -3px 10px rgba(0, 0, 0, 0);
+    
+    border-left: 1px rgba(0, 0, 0, .6) solid;
+}
+
+#qpCenterInfoContainer{
+    opacity: 1;
+}
+
+#qpAnimeNameHider{
+    opacity: 0;
+}
+
+#qpOptionContainer{
+    right: 20px;
+}
+
+#qpOptionContainer {
+    -webkit-box-shadow: -1px -1px 10px rgba(0, 0, 0, 0);
+    box-shadow: -1px -1px 10px rgba(0, 0, 0, 0);
+    background-color: hsla(0, 0%, 11%, .4);
+}
+
+#qpOptionContainerHider {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(27, 27, 27, 0);
+    left: 20px;
+}
+
+#qpQualityList {
+    opacity: 0;
+    background-color: rgba(27, 27, 27, .4);
+    -webkit-box-shadow: 0 7px 10px 0px rgba(0, 0, 0, 0);
+    box-shadow: 0 7px 10px 0px rgba(0, 0, 0, 0);
+    transform: translateY(-160%);
+    transition: transform 0.5s ease-in-out, opacity 1.4s;
+    overflow: hidden;
+    border-radius: 0 0 4px 4px;
+}
+
+#qpQualityList.show {
+    opacity: 1;
+}
+
+
+#rbSettingFilterContainer {
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: transform 0.7s ease-in-out, opacity 1s;
+    background-color: rgba(27, 27, 27, .8);
+}
+
+#rbSettingFilterContainer.open{
+    opacity: 1;
+}
+
+#qpUpvoteContainer{
+    border-radius: 0 0 0 10px;
+}
+
+#qpInnerContainer {
+    border-top: solid 1px #1b1b1bad;
+}
+
+#qpVideoTroubleshootingContainer{
+    opacity: 0.7;
+}
+
+#swRightColumn{
+    opacity: 0.8;
+}
+
+#swContentTicketsContainer{
+    opacity: 0.6;
+}
+
+.fade.in{
+    backdrop-filter: blur(4px);
+    animation: blurAnime 5s linear;
+}
+
+@keyframes blurAnime {
+    from {
+    backdrop-filter: blur(0px);
+  }
+
+  to {
+    backdrop-filter: blur(4px);
+  }
+}
+
+.tab-modal .tabContainer, .tab-modal .modal-header {
+    background-color: rgba(27, 27, 27, 0);
+}
+
+div.modal-content {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+.modal-content {
+    top: calc( 50px);
+    left: calc(0px);
+    box-shadow:
+    0px 0px 15px 0px #fff, /*inner*/
+    0px 0px 100px 10px #fbfd8d, /*midle*/
+    0px 0px 100px 30px #e69b04; /*outer*/
+    
+    opacity: 1;
+}
+
+.close {
+    font-size: 26px;
+    line-height: 0.5;
+    color: #fff;
+    text-shadow: 0 0px 0 #ee076b00;
+    opacity: 1;
+}
+
+.modal-header .close {
+    opacity: 0.8;
+}
+
+
+.qpAvatarAnswerContainer {
+    position: absolute;
+    height: 37px;
+    top: -40px;
+    z-index: 5;
+    width: 120%;
+    left: -10%;
+    word-wrap: break-word;
+}
+
+.qpAvatarStatusInnerContainer {
+    background-color: #756edd;
+    opacity: 1;
+    right: -10px;
+}
+
+
+.floatingContainer {
+    background-color: #424242d1;
+    -webkit-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0);
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0);
+}
+
+.topRightBackButton{
+    background-color: rgba(27, 27, 27, .4);
+}
+
+
+.leftRightButtonTop {
+    -webkit-box-shadow: 1px -3px 10px rgba(0, 0, 0, 0);
+    box-shadow: 1px -3px 10px rgba(0, 0, 0, 0);
+}
+
+.qpAvatarInfoBar {
+    background-color: rgba(27, 27, 27, .8);
+    box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0);
+    border-radius: 5px;
+}
+
+.qpAvatarScoreContainer {
+    background-color: rgba(27, 27, 27, 1) !important;
+/*     voir pour modifier la transparence derrière le cercle */
+}
+
+.qpAvatarScoreContainer {
+    background-color: #1b1b1b;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    top: -2px;
+    left: -8px;
+    box-shadow: 0 0 0px 0px rgb(0 0 0);
+}
+
+.qpAvatarLevelBar {
+    bottom: 1px;
+    border-radius: 0 0 3px 5px;
+}
+
+#qpVideoHider{
+    background: #d10505;
+}
+
+
+#lnModeRuleButton, #lbLeaveButton{
+    opacity: 0.6;
+}
+
+#mpNewsTitleShadowHider .floatingContainer{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+#gcEmojiPickerContainer{
+        background-color: rgba(27, 27, 27, .7);
+}
+
+#rbMajorFilters {
+    position: absolute;
+    width: 310px;
+    left: -305px;
+}
+
+.ps > .ps__scrollbar-y-rail > .ps__scrollbar-y {
+    right: 3px;
+    width: 6px;
+}
+
+
+.lobbyAvatarSubTextContainer {
+    -webkit-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0);
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0);
+}
+
+.lobbyAvatarHostContainer > .lobbyAvatarSubTextContainer {
+    width: 85px;
+    height: 100%;
+}
+
+.lobbyAvatarRow.left .lobbyAvatarHostContainer {
+    right: 105px;
+}
+
+.lobbyAvatarNameContainer {
+    -webkit-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0);
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0);
+}
+
+.lobbyAvatarRow.left .lobbyAvatarNameContainer {
+    right: 95px;
+}
+
+.lobbyAvatarHostContainer h3, .lobbyAvatarLevelContainer h3 {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 0.99;
+    color: inherit;
+}
+
+
+/* @media screen and (max-width: 1230px) */
+.lobbyAvatarLevelContainer {
+    bottom: 21px;
+    height: 22px;
+    width: 80px;
+}
+
+.lobbyAvatarImgContainer {
+    overflow: visible;
+}
+
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+
+.lobbyAvatarRow.right .lbReady .lobbyAvatarImgContainer {
+    background-color: rgba(0, 0, 0, 0) !important;
+    -webkit-box-shadow: none;
+    
+    top: calc(50% - 0px);
+    left: calc(84% - 250px);
+    width: 0px;
+    height: 0px;
+    box-shadow:
+    0 0 50px 10px #fff, 
+    0 0 60px 50px #fbfd8d,
+    0 0 100px 45px #e69b04;
+}
+
+.lobbyAvatarRow.right .lbReady .lobbyAvatarImg {
+    width: 120px;
+    height: 120px;
+    top: -60px;
+    left: -60px;
+    border-radius: 50%;
+}
+
+.lobbyAvatarRow.right .lobbyAvatarImgContainer{
+    background-color: rgba(0, 0, 0, 0) !important;
+    -webkit-box-shadow: none;
+    
+    top: calc(50% - 0px);
+    left: calc(84% - 250px);
+    width: 0px;
+    height: 0px;
+    box-shadow:
+    0 0 50px 10px #fff, 
+    0 0 60px 50px #3916b6,
+    0 0 100px 45px #e604d7;
+}
+
+.lobbyAvatarRow.right .lobbyAvatarImg  {
+    width: 120px;
+    height: 120px;
+    top: -60px;
+    left: -60px;
+    border-radius: 50%;
+}
+
+.lobbyAvatarRow.right .lobbyAvatarLevelContainer .lobbyAvatarSubTextContainer {
+    border-bottom-right-radius: 10px;
+    top: 2px;
+}
+
+.lobbyAvatarRow.right .lobbyAvatarLevelContainer {
+    bottom: 22px;
+    height: 22px;
+    width: 70px !important;
+}
+
+.lobbyAvatarRow.right .lobbyAvatarLevelContainer .lobbyAvatarSubTextContainer h3{
+    text-align: center;
+/*     margin-right: 20px; */
+    
+}
+
+.lobbyAvatarRow.right .lobbyAvatarOptionContainer {
+    transform: translateX(-150%);
+    padding-left: 9px;
+}
+
+.lobbyAvatarRow.right .lobbyAvatar:hover .lobbyAvatarOptionContainer {
+    transform: translateX(0);
+}
+
+.lobbyAvatarRow.right .lobbyAvatarPlayerOptions {
+    left: 63px;
+}
+
+.lobbyAvatarRow.right .lobbyAvatarOptionContainer {
+    height: 100%;
+    top: 2px;
+    background-color: rgba(26, 26, 26, .9);
+    border-radius: 0px 0px 5px 0px;
+}
+
+.lobbyAvatarRow.right .lobbyAvatarPlayerOptions {
+    width: 55px;
+}
+
+.lobbyAvatarRow.right .lobbyAvatarNameContainer {
+    border-radius: 0 10px 10px 0;
+}
+
+.lobbyAvatarRow.right .lobbyAvatarHostOptions {
+    border-top-right-radius: 5px;
+}
+
+.lobbyAvatarRow.right .lobbyAvatarHostContainer .lobbyAvatarSubTextContainer{
+    border-radius: 0 10px 10px 0;
+}
+
+.lobbyAvatarRow.right .lobbyAvatarPlayerOptions > .lobbyAvatarCommandIcon{
+    left: 5px;
+    top: -2px;
+}
+
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+.lobbyAvatarRow.left .lbReady .lobbyAvatarImgContainer {
+    background-color: rgba(0, 0, 0, 0) !important;
+    -webkit-box-shadow: none;
+    
+    top: calc(50% - 0px);
+    left: calc(84% - 0px);
+    width: 0px;
+    height: 0px;
+    box-shadow:
+    0 0 50px 10px #fff, 
+    0 0 60px 50px #fbfd8d,
+    0 0 100px 45px #e69b04;
+}
+
+.lobbyAvatarRow.left .lbReady .lobbyAvatarImg {
+    width: 120px;
+    height: 120px;
+    top: -60px;
+    left: -60px;
+    border-radius: 50%;
+}
+
+.lobbyAvatarRow.left .lobbyAvatarImgContainer{
+    background-color: rgba(0, 0, 0, 0) !important;
+    -webkit-box-shadow: none;
+    
+    top: calc(50% - 0px);
+    left: calc(84% - 0px);
+    width: 0px;
+    height: 0px;
+    box-shadow:
+    0 0 50px 10px #fff, 
+    0 0 60px 50px #3916b6,
+    0 0 100px 45px #e604d7;
+}
+
+.lobbyAvatarRow.left .lobbyAvatarImg  {
+    width: 120px;
+    height: 120px;
+    top: -60px;
+    left: -60px;
+    border-radius: 50%;
+}
+
+.lobbyAvatarRow.left .lobbyAvatarLevelContainer .lobbyAvatarSubTextContainer {
+    border-bottom-left-radius: 10px;
+    top: 2px;
+}
+
+.lobbyAvatarRow.left .lobbyAvatarLevelContainer {
+    right: 80px;
+}
+
+.lobbyAvatarRow.left .lobbyAvatarLevelContainer {
+    bottom: 22px;
+    height: 22px;
+    width: 100px !important;
+}
+
+.lobbyAvatarRow.left .lobbyAvatarLevelContainer .lobbyAvatarSubTextContainer h3{
+    text-align: center;
+    margin-left: -20%;  
+}
+
+.lobbyAvatarSubTextContainer .lobbyAvatarRow.left .lobbyAvatarOptionContainer {
+    height: 100%;
+    top: 0;
+    background-color: rgba(26, 26, 26, .9);
+    border-radius: 0 0 0 5px;
+}
+
+.lobbyAvatarRow.left .lobbyAvatarPlayerOptions {
+    width: 55px;
+}
+
+.lobbyAvatarRow.left .lobbyAvatarNameContainer {
+    border-radius: 10px 0 0 10px;
+}
+
+.lobbyAvatarRow.left .lobbyAvatarHostOptions {
+    border-top-left-radius: 5px;
+}
+
+.lobbyAvatarRow.left .lobbyAvatarHostContainer .lobbyAvatarSubTextContainer{
+    border-radius: 10px 0 0 10px;
+}
+
+.lobbyAvatarRow.left .lobbyAvatarPlayerOptions > .lobbyAvatarCommandIcon{
+    right: 5px;
+    top: -2px;
+}
+
+.lobbyAvatarRow.left .lobbyAvatarPlayerOptions{
+    border-bottom-left-radius: 5px;
+}
+
+.lobbyAvatarRow.left .lobbyAvatarPlayerOptions.lobbyAvatarOptionContainer {
+    top: 2px;
+}
+
+.lobbyAvatarRow.left .lobbyAvatarPlayerOptions.lobbyAvatarOptionContainer {
+    right: 93px;
+    padding-right: 9px;
+}
+
+.lobbyAvatarRow.left .lobbyAvatarHostOptions {
+    width: 110px;
+}
+
+.lobbyAvatarRow.left .lobbyAvatarHostOptions.lobbyAvatarOptionContainer .lobbyAvatarCommandIcon {
+    float: left;
+    left: 7px;
+}
+
+.lobbyAvatarRow.left .lobbyAvatarCommandIcon.clickAble.playerCommandIconKick{
+    top: 0px;
+}
+
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+.lobbyAvatarImgContainer > img {
+    position: absolute;
+    top: -60px;
+    left: -60px;
+}
+
+.lobbyAvatarCommandIcon.clickAble.playerCommandIconKick{
+    top: -2px;
+}
+
+.lobbyAvatarRow.left .lobbyAvatarHostContainer .lobbyAvatarSubTextContainer .lobbyAvatarHostContainer h3, .lobbyAvatarLevelContainer h3 {
+    line-height: 0.89;
+}
+
+.qpAvatarImageContainer.floatingContainer{
+        background-color: #aaa0 !important;
+}
+
+#lobbyCountContainer {
+    text-shadow: 0px 0px 8px rgba(0, 0, 0, 0);
+/*     background-color: #424242; */
+    -webkit-box-shadow: 0 2px 10px 2px rgba(0, 0, 0, 0);
+    box-shadow: 0 2px 10px 2px rgba(0, 0, 0, 0);
+}
+
+#lobbyCountLoad {
+    width: 100%;
+    background-color: #4497ea;
+    box-shadow: 0 1px 10px 1px rgba(66, 146, 226, 0);
+}
+
+#lobbyTopCount {
+    top: 13px;
+}
+
+.topMenuBigButton h1 {
+    margin-top: 4px;
+}
+
+
+#footerMenuBarBackground{
+    opacity: 0.75;
+}
+
+#socialTab{
+    border-top-right-radius: 20px;
+}
+
+.leftRightButtonBottom {
+    -webkit-box-shadow: 1px 3px 10px rgba(0, 0, 0, 0);
+    box-shadow: 1px 3px 10px rgba(0, 0, 0, 0);
+}
+
+.rbrNumberOfSongsContainer {
+    width: 50px;
+}
+
+#qpSongArtist{
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+.mpDriveEntryName {
+    width: calc(64% - 0%);
+}
+
+#mpDriveTopContainer .mpDriveEntryName {
+    width: calc(58% - 0px);
+}
+
+.mpDriveEntryName::after {
+    background-image: linear-gradient(to left, rgb(66, 66, 66), rgba(66, 66, 66, 0));
+    opacity: 0.4;
+}
+
+#mpDriveRecentEntry-8{
+    border-radius: 0 0 3px 3px;
+}
+
+#mpDriveDonationContainer .button {
+    border-radius: 5px;
+}
+
+.mpDrivenEntryTarget {
+    font-size: large;
+}
+
+.qpScoreBoardGroupContainer {
+    margin: 0px 0px 0px 0px;
+}
+
+.qpAvatarHostIcon, .qpAvatarHiddenIcon {
+    border-radius: 4px 6px 4px 6px;
+    background-color: #d22fb7c7;
+
+}
+
+.qpTeamStandingItem {
+    margin: -0px 0px 0px 0px;
+}
+
+.qpScoreBoardGroupContainer.active {
+    box-shadow: 0px 0px 4px 2px #f6b801;
+}
+
+.qpScoreBoardGroupContainer {
+    margin: 5px 0px 0px 5px;
+}
+
+.topMenuBar > .topMenuBack, #rbMajorFilters, .topMenuButton, #rbFilterContainer, #rbSearchContainer {
+    background-color: rgba(27, 27, 27, .6) !important;
+}
+
+#rbSearchInputContainer > input{
+    background-color: rgba(27, 27, 27, 0) !important;
+}
+
+#rbSearchContainer{
+    background-color: rgba(27, 27, 27, 0) !important; /* à enlever... ou pas*/
+}
+
+#rbSettingFilterContainer {
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: transform 0.7s ease-in-out, opacity 1s;
+    background-color: rgba(27, 27, 27, .8);
+}
+
+#rbSettingFilterContainer.open{
+    opacity: 1;
+}
+
+.rightLeftTopBottom {
+    -webkit-box-shadow: 0px -3px 10px rgba(0, 0, 0, 0);
+    box-shadow: 0px -3px 10px rgba(0, 0, 0, 0);
+}
+
+#rbMajorFilters {
+    position: absolute;
+    width: 310px;
+    left: -310px;
+}
+
+.topMenuButton {
+    -webkit-box-shadow: 0px 0px 16px rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0);
+}
+
+.topMenuBigButton {
+    width: 230px;
+    height: 53px;
+}
+
+#qpVoteState {
+    border-radius: 50px 20px 20px 50px !important;
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0);
+}
+
+#qpVoteStateContainer{
+    border-radius: 50px 0 0 50px !important;
+}
+
+#gcChatMenu > div.selected {
+    background: rgba(109, 109, 109, .4);
+    border-radius: 0 0 10px 10px;
+}
+
+#gcChatMenu > div {
+    background: rgba(27, 27, 27, 0);
+}
+
+#gcChatMenu {
+    height: 40px;
+    width: calc(100% + 11px);
+    overflow: hidden;
+}
+
+#gcContent {
+    height: calc(100% - 40px);
+}
+
+.gcInputContainer > .textAreaContainer {
+    border-radius: 4px;
+}
+
+.textAreaContainer {
+    border: solid 1px #4e4e4e;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+}
+
+.textAreaContainer:focus-within {
+    -webkit-box-shadow: inset 0 0px 1px rgba(0, 0, 0, 0), 0 0 1px rgba(34, 141, 255, 0);
+    box-shadow: inset 0 0px 1px rgba(0, 0, 0, 0), 0 0 1px rgba(34, 141, 255, 0);
+    border: solid 1px #fbfd8d;
+}
+
+textarea {
+    background-color: rgba(27, 27, 27, 0.4);
+}
+
+#gcEmojiPickerButton > i {
+    font-size: 30px;
+    color: #a59898;
+    content: "Bullies";
+}
+
+#gcEmojiPickerContainer {
+    width: 350px;
+    height: 400px;
+    left: -720px;
+    background-color: rgba(27, 27, 27, .8);
+}
+
+#gcEmojiPickerRecentContainer .amqEmoji, #gcEmojiPickerAllContainer .amqEmoji {
+    max-height: 40px;
+    max-width: 40px;
+    min-height: 40px;
+    min-width: 40px;
+}
+
+.qcProgressBarContainer {
+    background-color: rgba(27, 27, 27, .5);
+}
+
+.qcQuestTypeContainer {
+    background-color: rgba(27, 27, 27, .8);
+}
+
+.qcQuestOuter {
+    font-size: 20px;
+    overflow: hidden;
+}
+
+#qcHeader {
+    height: 35px;
+    background-color: rgba(27, 27, 27, 0.7);
+    font-size: 24px;
+    position: relative;
+}
+
+#questContainer {
+    width: 350px;
+}
+
+.qcCounter {
+    width: 77px;
+    float: left;
+    text-align: center;
+}
+
+.lobbyAvatarCommandIcon {
+    background-color: rgba(215, 13, 13, 0);
+}
+
+#playerProfileLayer .floatingContainer {
+    background-color: rgba(66, 66, 66, .8);
+    border-radius: 10px;
+}
+
+.ppFooterContainer{
+    border-bottom-left-radius: 10px;
+}
+
+.ppImageContainer {
+    float: left;
+    background-color: rgb(27, 27, 27);
+    
+    border-top-left-radius: 10px;
+}
+
+.ppHeaderText > .close {
+    margin-top: 4px;
+    margin-right: 2px;
+    z-index: 5;
+    position: relative;
+}
+
+.ppStatsNameContainer {
+    background-color: rgba(27, 27, 27, .4);
+    border-bottom: #4242425c 1px solid;
+}
+
+.ppBadgeContainer {
+    background-color: rgba(27, 27, 27, .4);
+    box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, .4);
+    position: relative;
+}
+
+.ppBadgeNoBadgeText {
+    color: rgb(253, 252, 252);
+    text-shadow: 0px -1px 0px rgba(224, 36, 36, 0);
+}
+
+.ppImageContainer, .ppFooterText {
+    background-color: rgba(27, 27, 27, .6);
+}
+
+.ppFooterOptionIcon {
+    background-color: rgba(25, 25, 25, .6);
+}
+
+.ppPlayerLevelLine{
+    background-color: rgba(27, 27, 27, .9);
+}
+
+.ppPlayerLevelLowerBoarder {
+    box-shadow: 0 1px 10px 1px rgb(0 0 0);
+}
+
+#lobbyCountContainer {
+    text-shadow: 0px 0px 8px rgba(0, 0, 0, 0);
+    background-color: rgb(66, 66, 66);
+    -webkit-box-shadow: 0 2px 10px 2px rgba(0, 0, 0, 0);
+    box-shadow: 0 2px 10px 2px rgba(0, 0, 0, 0);
+}
+
+#lobbyCountLoad {
+    width: 100%;
+    background-color: rgba(255, 193, 50, .75);
+    box-shadow: 0 1px 10px 1px rgb(66 146 226 / 0%);
+}
+
+#lobbyReadyCountLoad {
+    background-color: rgba(238, 0, 255, .5);
+}
+
+#qpVoteSkip.toggled {
+    background-color: rgba(254, 193, 51, 1) !important;
+}
+
+#qpVolume  {
+    width: 120px;
+    margin-top: 7px;
+    color: rgb(255, 123, 0);
+}
+
+#qpVolumeBarIndicator {
+    width: 6px;
+    background-color: rgb(255, 123, 0);
+}
+
+.qpAvatarStatus {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0);
+    right: 12px;
+    color: #fff;
+    width: 21px;
+    bottom: 2px;
+}
+
+.qpAvatarAnswerContainer {
+    position: absolute;
+    max-height: 60px;
+    min-height: 37px;
+    height: 20px;
+    top: -40px;
+    z-index: 5;
+    width: 120%;
+    left: -10%;
+    word-wrap: break-word;
+}
+
+.switchContainer > .slider-tick-container > .switchOn {
+    display: none;
+    right: -10px;
+    background-color: rgba(46, 136, 217, 0);
+    background-image: linear-gradient(to top left, #ea4452 0, #e6b718  100%);
+}
+
+.switchContainer.active {
+    background-image: linear-gradient(to bottom, #f2da0c 0, #d65b3f 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4497EA',endColorstr='#3f8ad6',GradientType=0);
+}
+
+#optionsContainer{
+    border-radius: 20px 20px 0 0;
+}
+
+#optionGlyphIcon {
+    margin-left: 15px;
+}
+
+#gcMessageContainer > li .gcTeamMessageIcon {
+    background-color: #ffa500;
+    width: 50px;
+    border-radius: 3px;
+    left: -15px;
+}
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+/* .qpLifeActiveOverlay{
+    width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  box-shadow:
+    0 0 2px #fff,
+    -2px 0 8px #f0f,
+    2px 0 8px #0ff,
+    inset 0 0 5px #fff,
+    inset 5px 0 8px #f0f,
+    inset -5px 0 8px #0ff,
+    inset 5px 0 30px #f0f,
+    inset -5px 0 30px #0ff;
+  animation: pulsate 10s linear infinite;
+} */
+
+/* .qpLifeActiveOverlay{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  box-shadow:
+    0 0 1.3px #fff,
+    -1.3px 0 5.3px #f0f,
+    1.3px 0 5.3px #0ff,
+    inset 0 0 3.3px #fff,
+    inset 3.3px 0 5.3px #f0f,
+    inset -3.3px 0 5.3px #0ff,
+    inset 5.5px 0 20px #f0f,
+    inset -5.5px 0 20px #0ff;
+  animation: pulsate 5s linear infinite;
+}
+
+@keyframes pulsate {
+  50% {
+    box-shadow:
+      0 0 1.3px #fff,
+      1.3px 0 5.3px #f0f,
+      -1.3px 0 5.3px #0ff,
+      inset 0 0 3.3px #fff,
+      inset -3.3px 0 5.3px #f0f,
+      inset 3.3px 0 5.3px #0ff,
+      inset -3.3px 0 20px #f0f,
+      inset 3.3px 0 20px #0ff;
+  }
+} */
+
+.qpLifeActiveOverlay{
+  width: 20px !important;
+  height: 20px;
+  margin-bottom: 7px !important;
+  border-radius: 50%;
+  box-shadow:
+    0 0 1.3px #fff,
+    -1.3px 0 5.3px #f0f,
+    1.3px 0 5.3px #0ff,
+    inset 0 0 3.3px #fff,
+    inset 3.3px 0 5.3px #f0f,
+    inset -3.3px 0 5.3px #0ff,
+    inset 5.5px 0 20px #f0f,
+    inset -5.5px 0 20px #0ff;
+  animation: pulsate 15s linear infinite, spin 130s linear infinite;
+}
+
+@keyframes pulsate {
+  50% {
+    box-shadow:
+      0 0 1.3px #fff,
+      1.3px 0 5.3px #f0f,
+      -1.3px 0 5.3px #0ff,
+      inset 0 0 3.3px #fff,
+      inset -3.3px 0 5.3px #f0f,
+      inset 3.3px 0 5.3px #0ff,
+      inset -3.3px 0 20px #f0f,
+      inset 3.3px 0 20px #0ff;
+  }
+}
+
+@keyframes spin {
+    100% { -webkit-transform: rotate(360deg);
+    transform:rotate(360deg);   
+  } 
+}
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+/* .qpLife{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  box-shadow:
+    0 0 1.3px #fff,
+    -1.3px 0 5.3px #0fe,
+    1.3px 0 5.3px #ff0,
+    inset 0 0 3.3px #fff,
+    inset 3.3px 0 5.3px #0fe,
+    inset -3.3px 0 5.3px #ff0,
+    inset 5.5px 0 20px #0fe,
+    inset -5.5px 0 20px #ff0;
+  animation: pulsateAlive 5s linear infinite;
+}
+
+@keyframes pulsateAlive {
+  50% {
+    box-shadow:
+      0 0 1.3px #fff,
+      1.3px 0 5.3px #0fe,
+      -1.3px 0 5.3px #ff0,
+      inset 0 0 3.3px #fff,
+      inset -3.3px 0 5.3px #0fe,
+      inset 3.3px 0 5.3px #ff0,
+      inset -3.3px 0 20px #0fe,
+      inset 3.3px 0 20px #ff0;
+  }
+} */
+
+/* .qpLife{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  box-shadow:
+    0 0 1.3px #fff,
+    -1.3px 0 5.3px #0fe,
+    1.3px 0 5.3px #ff0,
+    inset 0 0 3.3px #fff,
+    inset 3.3px 0 5.3px #0fe,
+    inset -3.3px 0 5.3px #ff0,
+    inset 5.5px 0 20px #0fe,
+    inset -5.5px 0 20px #ff0;
+  animation: pulsateAlive 6s linear infinite, spinAlive 20s linear infinite;
+}
+
+@keyframes pulsateAlive {
+  50% {
+    box-shadow:
+      0 0 1.3px #fff,
+      1.3px 0 5.3px #0fe,
+      -1.3px 0 5.3px #ff0,
+      inset 0 0 3.3px #fff,
+      inset -3.3px 0 5.3px #0fe,
+      inset 3.3px 0 5.3px #ff0,
+      inset -3.3px 0 20px #0fe,
+      inset 3.3px 0 20px #ff0;
+  }
+}
+
+@keyframes spinAlive {
+    100% { -webkit-transform: rotate(360deg);
+    transform:rotate(360deg);   
+  } 
+} */
+
+.qpLife{
+  width: 20px !important;
+  height: 20px;
+  margin-bottom: 7px !important;
+  border-radius: 50%;
+  box-shadow:
+    0 0 1.3px #fff,
+    -1.3px 0 5.3px #f00,
+    1.3px 0 5.3px #ff0,
+    inset 0 0 3.3px #fff,
+    inset 3.3px 0 5.3px #f00,
+    inset -3.3px 0 5.3px #ff0,
+    inset 5.5px 0 20px #f00,
+    inset -5.5px 0 20px #ff0;
+  animation: pulsateAlive 15s linear infinite, spinAlive 130s linear infinite;
+}
+
+@keyframes pulsateAlive {
+  50% {
+    box-shadow:
+      0 0 1.3px #fff,
+      1.3px 0 5.3px #f00,
+      -1.3px 0 5.3px #ff0,
+      inset 0 0 3.3px #fff,
+      inset -3.3px 0 5.3px #f00,
+      inset 3.3px 0 5.3px #ff0,
+      inset -3.3px 0 20px #f00,
+      inset 3.3px 0 20px #ff0;
+  }
+}
+
+@keyframes spinAlive {
+    100% { -webkit-transform: rotate(360deg);
+    transform:rotate(360deg);   
+  } 
+}
+
+#restartMessageContainer{
+    background-color: rgba(0, 0, 0, 0.6) !important;
+    border-radius: 0 10px 10px 0;
+    top: 45% !important;
+}
+
+#restartMessageContainer .close{
+        right: 5px;
+        line-height: 0.9;
+}
+
+.close:focus, .close:hover {
+    color: #e8a808;
+    text-decoration: none;
+    filter: none;
+    opacity: 1;
+}
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+
+.qpVideoTextOverlay {
+    text-shadow: -1px 0 #e3131300, 0 1px #da121200, 1px 0 #0000, 0 -1px #0000;
+}
+
+#xpBarAnimationContainer {
+    border-radius: 10px;
+}
+
+#mhLoadContainer{
+    background-color: rgba(66, 66, 66, .6);
+    border-radius: 15px;
+}
+
+.mhLoadEntryNameContainer {
+    background-color: rgba(66, 66, 66, 0);
+}
+
+.mhLoadEntryName::after {
+    background-image: linear-gradient(to left, rgba(226, 12, 12, 0), rgba(66, 66, 66, 0));
+}
+
+.mhLoadListEntry {
+    height: 25px;
+    background-color: rgba(27, 27, 27, .4);
+    border-bottom: 1px solid #00000080;
+    overflow: hidden;
+    position: relative;
+}
+
+#mhLoadFromSaveCodeButton {
+    position: absolute;
+    bottom: 0;
+    margin: auto;
+    background-color: rgba(27, 27, 27, .6);
+    width: 100%;
+    -webkit-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0);
+    box-shadow: 0 0px 6px 1px rgba(0, 0, 0, 0);
+    
+    border-radius: 0 0 15px 15px;
+}
+
+#mhLoadHeader {
+    background-color: rgba(27, 27, 27, .75);
+    border-bottom: 1px solid #8c6a06;
+    border-radius: 15px 15px 0 0;
+}
+
+#mhLoadHeader > .close {
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    font-size: 28px;
+}
+
+.mhLoadDelete {
+    font-size: 26px;
+    position: absolute;
+    right: 5px;
+    top: -8px;
+}
+
+.tab-modal .modal-body {
+    padding-top: 3px;
+    padding-bottom: 0px;
+    border-top: 1px solid #8c6a06;
+}
+
+.modal-footer {
+    border-top: 1px solid #8c6a06;
+}
+
+
+.slider-handle, .slider-tick.in-selection {
+    background-image: -webkit-linear-gradient(to top left, #ea4452 0, #e6b718  100%);
+    background-image: -o-linear-gradient(to top left, #ea4452 0, #e6b718  100%);
+    background-image: linear-gradient(to top left, #ea4452 0, #e6b718  100%);
+/*     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4497EA',endColorstr='#3f8ad6',GradientType=0); */
+}
+
+#mhVintageSlider .slider-handle.min-slider-handle, #mhSamplePointRangeSlider .slider-handle.min-slider-handle{
+    background-image: -webkit-linear-gradient(to top right, #d84451 0, #e9d014  100%);
+    background-image: -o-linear-gradient(to top right, #d84451 0, #e9d014  100%);
+    background-image: linear-gradient(to top right, #d84451 0, #e9d014  100%);
+/*     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4497EA',endColorstr='#3f8ad6',GradientType=0); */
+}
+
+
+.slider-selection  {
+    background-image: -webkit-linear-gradient(to bottom right, #f2da0c 0, #d65b3f 100%);
+    background-image: -o-linear-gradient(to bottom right, #f2da0c 0, #d65b3f 100%);
+    background-image: linear-gradient(to bottom right, #f2da0c 0, #d65b3f 100%);
+/*     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4497EA',endColorstr='#3f8ad6',GradientType=0); */
+}
+
+.slider-selection.tick-slider-selection{
+    background-image: -webkit-linear-gradient(to top left, #ea4452 0, #e6b718  100%);
+    background-image: -o-linear-gradient(to top left, #ea4452 0, #e6b718  100%);
+    background-image: linear-gradient(to top left, #ea4452 0, #e6b718  100%);
+}
+
+.btn-primary {
+    background-color: #d56a4e;
+    background-image: linear-gradient(to bottom left, #ea4452 0, #e6b718  100%);
+    border-color: #d56a4e;
+}
+
+.filterContent {
+    border-top: 3px solid rgba(66, 66, 66, .4);
+}
+
+.filterContainer {
+    background-color: rgba(27, 27, 27, .7);
+    border-radius: 13px;
+    margin-top: -7px;
+}
+
+#mhMainContainerInner .flatTextInput {
+    border-radius: 14px 14px 0 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#mhSongTypeContainer {
+    width: 270px;
+}
+
+#mhSongTypeContainer.checkboxContainer > div {
+    display: inline-block;
+    width: 85px;
+    vertical-align: top;
+}
+
+.mhSettingCategory {
+    position: absolute;
+    top: -1px;
+    width: 100px;
+    background-color: rgba(255, 153, 0, .75);
+    left: -10px;
+    box-shadow: none;
+    border-bottom-right-radius: 5px ;
+}
+
+.mhSettingContainer {
+    border-top: solid 5px rgba(255, 153, 0, .75);
+    border-radius: 5px;
+}
+
+#mhPrivateRoomContainer {
+    position: absolute;
+    right: 0;
+    top: 30px;
+    width: 160px;
+    text-align: left;
+    padding-left: 5px;
+}
+
+#mhRoomNameInput {
+    width: 240px;
+}
+
+.customCheckbox label {
+    color: #d26634;
+}
+
+#mhQuickSelectContainer > .tab {
+    background-color: rgba(82, 82, 82, .4);
+}
+
+.tab.leftRightButtonTop.clickAble::hover {
+    background-color: rgba(227, 14, 14, .8);
+}
+
+.mhCheckTableContainer {
+    width: 500px;
+    border: solid rgba(27, 27, 27, .6) 5px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.mhctRow {
+    position: relative;
+    border-bottom: solid rgba(27, 27, 27, .6) 3px;
+    overflow: hidden;
+    height: 30px;
+}
+
+.mhctRowNameContainer {
+    background-color: rgba(27, 27, 27, .6);
+}
+
+.mhctRowItem:nth-child(2n) {
+    background-color: rgba(27, 27, 27, .6);
+}
+
+.mhctRowItem {
+    width: 24%;
+    display: inline-block;
+    padding-top: 8px;
+}
+
+#mhOpeningCategoryContainer .mhctRowItem .customCheckbox, #mhEndingCategoryContainer .mhctRowItem .customCheckbox, #mhInsertCategoryContainer .mhctRowItem .customCheckbox {
+    top: -5px;
+}
+
+#xpBarAnimationContainer {
+    opacity: 0;
+    position: absolute;
+    transition: opacity ease-in-out 1.3s;
+    box-shadow: 0 0 10px #ffffff9e, 0 0 20px #ffffff9e, 0 0 40px #eeac1c, 0 0 70px #eeac1c, 0 0 80px #eeac1c;
+}
+
+
+.ppProfileImg{
+    border-radius: 10px 0 0 0;
+}
+
+.socialTabFriendPlayerEntry > .stPlayerProfileButton {
+    margin-top: 22px;
+    margin-left: -5px;
+}
+
+.socialTabFriendPlayerEntry {
+    width: 127%;
+    margin-left: -10px;
+}
+
+#mainMenuSocailButton:hover {
+    box-shadow: 0px 6px 10px 2px #24aa9f00;
+}
+
+.btn-primary:hover {
+    -webkit-box-shadow: inset 0 0 20px 9px #eeac1c00;
+    box-shadow: inset 0 0 20px 9px #d2663400;
+    background-image: linear-gradient(to bottom left, #e6b718 0,  #ea4452  100%);
+    border-color: #d26634;
+}
+
+.btn-primary.active, .btn-primary:active, .open>.dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #e0992f;
+    border-color: #fff;
+}
+
+.btn-primary:focus {
+    background-color: #febb32;
+    border-color: #fff;
+}
+
+#mhWatchedDisitributionContainer{
+    padding-top: 8px;
+}
+
+.mhCustomSliderContainer {
+    background-color: rgba(27, 27, 27, .65);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-left: -8px;
+}
+
+.mhAdvancedContainerTitle {
+    left: 0px;
+}
+
+.form-control:focus {
+    border-color: #febb32;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgba(254, 187, 50, .6);
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgba(254, 187, 50, .6);
+}
+
+#gcQueueActionButtonText {
+    margin-top: -6px;
+}
+
+#qpAnswerInputLoadingContainer {
+    right: 15px;
+}
+
+#qpVoteSkipGlowContainer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    -webkit-box-shadow: 3px 0px 10px 5px #228dff00;
+    box-shadow: 3px 0px 10px 5px #f2600f00;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+#qpVideoTroubleshootingContainer > .close {
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+#qpVideoTroubleshootingContainer{
+    border-bottom-left-radius: 15px;
+}
+
+.awesomplete > ul.ps {
+    max-height: 290px;
+}
+
+
+.gcUserName {
+    font-weight: bold;
+    color: #fd857b;
+    animation: colorSmooth 400s infinite alternate;
+}
+
+@keyframes colorSmooth {
+    0% {
+        color: #fdea96;
+  }
+    14% {
+        color: #e25cc8;
+  }
+    28% {
+        color: #b6325f;
+  }
+    42% {
+        color: #ff887c;
+  }
+    56% {
+        color: #f2acb4;
+  }
+    70% {
+        color: #84bcd2;
+  }
+    84% {
+        color: #2dc9d2;
+  }
+    100% {
+        color: #6c7ae0;
+  }
+}
+
+.chatBoxFooter {
+    width: 100%;
+    height: 100%;
+    float: left;
+    background-color: rgba(27, 27, 27, .6);
+}
+
+.chatBox::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(27, 27, 27, 0);
+    width: 100%;
+    height: 100%;
+    left: -25px;
+}
+
+.chatBoxContainer {
+    border-right: solid 2px rgba(27, 27, 27, .4);
+    border-left: solid 2px rgba(27, 27, 27, .4);
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0);
+    transform: translateY(125%);
+    background-color: rgba(27, 27, 27, .6);
+    border: none;
+    border-radius: 5px 5px 0 0;
+}
+
+.chatTopBar {
+    background-color: rgba(27, 27, 27, .5);
+    font-size: 12px;
+    height: 16px;
+}
+
+.chatTopBar p:after {
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    width: 50px;
+    height: 16px;
+    top: 0;
+    right: 72px;
+    background-image: -webkit-linear-gradient(to left, rgba(27, 27, 27, 0), rgba(27, 27, 27, 0));
+    background-image: -moz-linear-gradient(to left, rgba(27, 27, 27, 0), rgba(27, 27, 27, 0));
+    background-image: -ms-linear-gradient(to left, rgba(27, 27, 27, 0), rgba(27, 27, 27, 0));
+    background-image: -o-linear-gradient(to left, rgba(27, 27, 27, 0), rgba(27, 27, 27, 0));
+    background-image: linear-gradient(to left, rgba(27, 27, 27, 0), rgba(27, 27, 27, 0));
+}
+
+.chatTopBar .glyphicon-remove{
+    margin-right: 2px;
+    margin-top: 1px;
+}
+
+.chatBoxContainer .header {
+    -webkit-box-shadow: 0px 4px 10px -3px rgba(0, 0, 0, 0);
+    box-shadow: 0px 4px 10px -3px rgba(0, 0, 0, 0);
+    border-bottom: solid 1px #ad931c;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: normal;
+    overflow: hidden;
+}
+
+.chatTopBar p {
+    margin-left: 2px;
+}
+
+.chatBoxContainer .textAreaContainer {
+    border-radius: 3px;
+}
+
+#qpAnswerStateContainerInner {
+    right: -5px;
+    background-color: rgba(232, 109, 115, 1);
+}
+#qpAnswerStateContainerOuter {
+    width: 45px;
+}
+
+#qpAnswerStateCheck {
+    left: 6px;
+    top: 15px;
+}
+
+
+/* rgba(255, 221, 117, 0.8) beau jaune */
+/* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+/* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+/* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+/* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+/* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+/* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+/* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+/* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+/* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+/* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+/* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+/* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+/* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+/* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+/* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+
+
+
+#startPage {
+    background-image: var(--bg);
+    background-size: cover;
+}
+#gameContainer {
+    background-image: var(--bg);
+    background-size: cover;
+}
+#loadingScreen {
+    background-image: var(--bg);
+    background-size: cover;
+}
+#gameChatPage > .col-xs-9 {
+    background: rgba(0, 0, 0, 0.7);
+}
+#gcGameChatButton > .col-xs-9 {
+    color: #ffffff;
+    box-shadow: none;
+    text-shadow: 0 0 20px #96FF96, 0 0 30px #66FF66, 0 0 40px #66FF66, 0 0 50px #66FF66 !important;
+}
+
+#footerMenuBarBackground {
+    background: transparent;
+}
+#awMainView {
+    background-image: var(--bg);
+    background-size: cover;
+}
+#gameChatContainer {
+    background: var(--chatbg);
+}
+.leftShadowBorder, #currencyContainer, #menuBarOptionContainer, #awContentRow .rightShadowBorder {
+    box-shadow:none;
+}
+#footerMenuBar .menuBar, #rightMenuBarPartContainer::before, .gcList > li:nth-child(2n) {
+    background-color: #1b1b1b;
+    background-color: #1b1b1b00;
+}
+#socialTab:not(.open), #optionsContainer:not(.open) {
+    display:none;
+}
+#mainMenuSocailButton, #avatarUserImgContainer {
+    border:none !important;
+}
+#rbMajorFilters {
+    background-color: #1b1b1b;
+    padding-left: 10px;
+}
+.leftShadowBorder {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+.gcList > li:nth-child(2n) {
+    background: none;
+}
+.gcInputContainer {
+    background: none;
+}
+#xpBarOuter {
+/* 	background-color: #1b1b1b;  */
+    background-color: #04232b; 
+}
+
+#xpBarInner {
+    background: #c1d243;
+    box-shadow: none;
+/*Change Colour of XP bar*/
+}
+.levelText {
+    color: #e3fcff;
+/*Change Colour of text.*/
+}
+
+/* Legibility fix for guesses */
+ .qpAvatarAnswerContainer.rightAnswer .qpAvatarAnswer {
+    box-shadow: none;
+    text-shadow: none;
+}
+.qpAvatarAnswerContainer.wrongAnswer .qpAvatarAnswer {
+    box-shadow: none;
+    text-shadow: none;
+}
+.avatarIsHostContainer {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+.avatarIsHostContainerOuter {
+    position: initial;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+.qpAvatarNameContainer .avatarIsHostContainer {
+    background-color: unset;
+    background-image: url("https://files.catbox.moe/jizubh.png");
+    transform: none;
+    left: 25px;
+    width: 20px;
+    margin-top: 4px;
+}
+#mainMenuSocailButton {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.menuBarOptionContainer {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.menuBarMainButton {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+#avatarUserImgContainer {
+    opacity: 0.5;
+/*     filter: alpha(opacity=50); */
+}
+#avatarUserImgContainer:hover {
+    opacity: 1.0;
+/*     filter: alpha(opacity=100); */
+}
+.lobbyAvatarTextContainer {
+    background: rgba(0, 0, 0, 0.7);
+}
+#mainMenuSocailButton, #avatarUserImgContainer, #awContentRow, #awMainView, .gcInputContainer, .qpSideContainer, .qpAnimeNameContainer, #qpCounter, #qpWaitBuffering {
+    background-color: rgba(0, 0, 0, 0.4);
+    background-size: 100% auto !important;
+    background-attachment: fixed !important;
+    background-position: 0px !important;
+    box-shadow: none
+}
+#gameChatPage > .col-xs-9 {
+	background-color: rgba(0, 0, 0, 0);
+}
+#gameChatContainer {
+    background: rgba(0, 0, 0, 1);
+}    
+#qpAnimeNameHider {
+    background-color: #1b1b1b
+}
+#qpVideoHider {
+    background-color: #1b1b1b
+}
+#qpInfoHider {
+    background-color: #1b1b1b
+}
+#xpBarCoverInner {
+    background-color: #1b1b1b
+}
+.qpAvatarNameContainer {
+    background-color: #1b1b1b
+}
+.qpAvatarAnswerContainer {
+    background-color: rgba(27, 27, 27, .75)
+}
+.rbRoom, .rbrRoomImageContainer {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.qpAvatarLevelText {
+    background-color: #1b1b1b;
+    border-radius: 1px 1px 50px 50px
+                                
+}
+.qpAvatarPointText {
+    background-color: #1b1b1b;
+    border-radius: 50px 50px 1px 1px
+}
+.qpAvatarNameContainer .avatarIsHostContainer {
+    position: fixed;
+    left: 24px;
+    top: 155px;
+    z-index: -1;
+}
+
+#socialTabFriendsText{
+  text-indent: -9999px;
+  line-height: 0; /* Collapse the original line */
+}
+
+#socialTabFriendsText::after {
+    content: "Friends";
+    text-indent: 0;
+    display: block;
+    line-height: initial; /* New content takes up original line height */
+}
+
+#socialTabFriendsText{
+    right: 10px;
+}
+
+#socialTabFriendsText {
+	position: relative; 
+	top: 0px;
+	left: 0px;
+}
+
+#socialTab, #mainMenuSocailButton{
+    width: 270px;
+}
+                                    
+#socialTabFriendsText{
+  text-indent: -9999px;
+  line-height: 0; /* Collapse the original line */
+}
+
+#mmSocialButtonOnlineContainer {
+    height: 100%;
+    width: 100%;
+}
+
+.menuBar .popOut {
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0);
+}
+
+#mainMenuSocailButton > i {
+    display: none;
+}
+#mainMenuSocailButton {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+#mpPlayButton {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#mpExpandButton {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#mpDriveDonationContainer .button {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+#mpDriveStatsContainer {
+    background-color: rgba(0, 0, 0, 0.0);
+}
+#mpAvatarDriveContainer, #mpAvatarDriveHeaderShadowHider .floatingContainer {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#mpNewsContainer, #mpNewsTitleShadowHider div {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#mpPatreonContainer .button {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#awSkinPreviewContainer {
+    background-color: transparent;
+}
+.lobbyAvatarNameContainer {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.qpAvatarImgContainer {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.avatarUserImgContainer {
+    box-shadow: none;
+}
+#brMapContent {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.brShowEntry, .brMapObject {
+    background-color: rgb(217, 179, 0);
+}
+.topMenuBar {
+    background-color: transparent;
+}
+.elInputContainer {
+    background: rgba(0, 0, 0, 0.5);
+}
+#xpBarCoverOuter {
+    border-color: #1b1b1b
+}
+#xpBarCoverInner {
+    border: none;
+}
+#lobbyCountContainer {
+	background: rgba(0, 0, 0, 0.8);
+}
+#mpRankedButton {
+    background: rgba(0, 0, 0, 0.5);
+}
+#mpLeaderboardButton {
+    background: rgba(0, 0, 0, 0.5);
+}
+#lobbyCountContainer {
+     top: -15px;
+
+}
+.ps > .ps__scrollbar-y-rail > .ps__scrollbar-y {
+      position: absolute;
+      /* please don't change 'position' */
+      background-color: #faf5f5;
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      border-radius: 6px;
+      -webkit-transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, -webkit-border-radius .2s ease-in-out;
+      transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, -webkit-border-radius .2s ease-in-out;
+      -o-transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, border-radius .2s ease-in-out;
+      -moz-transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, border-radius .2s ease-in-out, -moz-border-radius .2s ease-in-out;
+/*       transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, border-radius .2s ease-in-out; */
+/*       transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, border-radius .2s ease-in-out, -webkit-border-radius .2s ease-in-out, -moz-border-radius .2s ease-in-out; */
+      right: 2px;
+      /* there must be 'right' for ps__scrollbar-y */
+      width: 6px; }
+ .ps:hover > .ps__scrollbar-y-rail:hover > .ps__scrollbar-y {
+      background-color: #f9feff; 
+}
+
+#qpHiderText {
+    background: rgba(0, 0, 0, 0.0);
+}
+
+#qpVideoOverflowContainer {
+	background: rgba(0, 0, 0, 0.3);
+    box-shadow: none
+/* Change opacity of background of "sound only". Can change colour too if you fancy*/
+}
+
+#qpVideoHider {
+    background: rgba(0, 0, 0, 0.0);
+}
+#qpVideoSoundOnly {
+    opacity: 0.0
+}
+#qpVideoContainer {
+    box-shadow: none
+}
+#qpAnswerInputContainer {
+    border: none;
+  	border-radius: 0%;
+}
+#qpAnswerInputContainer.floatingContainer {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#qpVoteState {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#qpAnswerInputContainer.focused {
+    box-shadow: none
+}
+#qpVoteSkip {
+    background-color: rgba(46, 63, 99);
+}
+#qpVoteSkip.toggled {
+    background-color: rgba(173, 138, 189);
+/*Change Vote Skip Button Colour When Clicked*/
+}
+
+#qpVoteSkip > p {
+    opacity: 0.0
+}
+
+#qpVideoProgressBar {
+    background-color: rgba(255, 221, 117, 0.8);
+/*Change colour bar at the bottom of the video colour*/
+}
+.qpSingleRateContainer {
+    background-color: rgba(0, 0, 0, 0.0)
+                                            
+}
+.qpAvatarStatus {
+    background: rgba(47, 127, 145, 0.0);
+}
+
+#qpWaitBuffering {
+    opacity: 0.0;
+}
+
+/**Expand player Opacity**/
+#elQuestionNoSongSelectedContainer, .elQuestionAnime.floatingContainer.clickAble, #elCounterContainer.floatingContainer.text-center{
+    background-color: #1b1b1b;
+ 	opacity: 0.9 ;
+}
+
+.elQuestionSong.floatingContainer.clickAble.open, .elQuestionSong.floatingContainer.clickAble {
+    background-color: #1b1b1b;
+    opacity: 0.8;
+}
+
+#elInputContainer {
+    width: 35%;
+}
+#elInputVideoContainer {
+    height: 40%;
+}
+
+div#startPageCenter {
+    background-color: rgb(19, 12, 12, 0.7);
+    box-shadow: none;
+}
+    
+div#startPageLogoContainer {
+    background-color: rgb(0, 0, 0, 0);
+}
+
+.qpsPlayerName.self {
+    color: #fdea96;
+    text-shadow: 0 0 10px #f2aeb3; /*à modifier*/
+}
+
+.progress-bar {
+    background-color: #ffe500ad;
+}
+
+.fa-friend {
+    color: #ea0441;
+}
+
+.qpAvatarAnswerText.wrongAnswer {
+    text-shadow: none
+}
+
+.qpAvatarAnswerText.rightAnswer {
+    text-shadow: none
+}
+
+.qpAvatarImage[src*="Right."]~.particleEmiter {
+    top: calc(50% - 20px);
+    left: calc(50% - 20px);
+    width: 0px;
+    height: 0px;
+    box-shadow:
+    10px 10px 60px 30px #fff, /*inner*/
+    10px 10px 100px 60px #fbfd8d, /*midle*/
+    10px 10px 140px 90px #e69b04; /*outer*/
+}
+.qpAvatarImage[src*="Wrong."]~.particleEmiter {
+    top: calc(50% - 20px);
+    left: calc(50% - 20px);
+    width: 0px;
+    height: 0px;
+    box-shadow:
+    10px 10px 60px 30px #fff, /*inner*/
+    10px 10px 120px 60px #f40, /*midle*/
+    10px 10px 140px 90px #ef088f; /*outer*/
+}
+
+.qpAvatarImage[src*="Confused."]~.particleEmiter {
+    top: calc(50% - 20px);
+    left: calc(50% - 20px);
+    width: 0px;
+    height: 0px;
+    box-shadow:
+    10px 10px 60px 30px #fff, /*inner*/
+    10px 10px 100px 60px #163914, /*midle*/
+    10px 10px 140px 90px #83ef89; /*outer*/
+}
+
+.qpAvatarImage[src*="Thinking."]~.particleEmiter {
+    top: calc(50% - 20px);
+    left: calc(50% - 20px);
+    width: 0px;
+    height: 0px;
+    box-shadow:
+    10px 10px 60px 30px #fff, /*inner*/
+    10px 10px 100px 60px rgb(255, 255, 255), /*midle*/
+    10px 10px 140px 90px #0ff; /*outer*/
+}
+
+.qpAvatarImage[src*="Waiting."]~.particleEmiter {
+    top: calc(50% - 20px);
+    left: calc(50% - 20px);
+    width: 0px;
+    height: 0px;
+    box-shadow:
+    10px 10px 60px 30px #fff, /*inner*/
+    10px 10px 100px 60px #ca03f7, /*midle*/
+    10px 10px 140px 90px #00dafc; /*outer*/
+    
+}
+
+.qpAvatarImage[src*="Basic."]~.particleEmiter {
+    top: calc(50% - 20px);
+    left: calc(50% - 20px);
+    width: 0px;
+    height: 0px;
+    box-shadow:
+    10px 10px 60px 30px #fff, /*inner*/
+    10px 10px 100px 60px #f0f, /*midle*/
+    10px 10px 140px 90px #0ff; /*outer*/
+}
+
+
+/* Le joueur a quitté la partie... EN FAIT NON */
+.qpAvatarImage[src*="Basic."]{
+    opacity: 1;
+}
+
+.qpAvatarImage~.particleEmiter {
+    border-radius: 10px;
+    opacity: 1;
+    z-index: -1;
+}
+
+.runAnimation > .particleEmiter {
+    animation: particleSpawn 0 alternate;
+}
+
+.qpAvatarContainer.disabled .particleEmiter {
+    opacity: 0;
+}
+
+.qpAvatarAnswerText {
+    text-align: center;
+	border-right: 17px solid transparent;
+	border-left: 10px solid transparent;
+}
+
+
+/*Change Particle colour**/
+.particleShadow {
+    box-shadow: 0 0 10px rgba(255, 237, 133, 0.8), 0 0 20px rgba(255, 237, 133, 0.8), 0 0 30px rgba(255, 237, 133, 0.8), 0 0 40px #2b47ff, 0 0 70px #2b47ff, 0 0 80px #2b47ff, 0 0 100px #2b47ff, 0 0 150px #2b47ff;
+    animation: pulse 400ms infinite alternate;
+}
+
+.particle {
+    background-color: rgba(255, 237, 133, 0.8);
+    box-shadow: 0 0 5px rgba(255, 237, 133, 0.8), 0 0 10px rgba(255, 237, 133, 0.8), 0 0 15px rgba(255, 237, 133, 0.8);
+}
+
+/**Change Colour of List Showing Up**/
+.qpAvatarStatusBar.completed {
+    left: 0px;
+    opacity: 1;
+    background-color: #3f0;
+}
+.qpAvatarStatusBar.watching {
+    left: 0px;
+    opacity: 1;
+    background-color: #ff00c7;
+}
+.qpAvatarStatusBar.hold {
+    left: 0px;
+    opacity: 1;
+    background-color: #f7ff32;
+}
+.qpAvatarStatusBar.dropped {
+    left: 0px;
+    opacity: 1;
+    background-color: #f00;
+}
+.qpAvatarStatusBar.planning {
+    left: 0px;
+    opacity: 1;
+    background-color: white;
+}
+
+#storeWindow {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+div#swNoSelectionContainer {
+    opacity: 0
+}
+
+div#restartMessageContainer.floatingContainer.popoutMessage.noShadow.open {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+div#restartMessageContainer.floatingContainer.popoutMessage.noShadow {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+div#popoutMessageContainer.floatingContainer.popoutMessage.noShadow {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+#mpPlayMultiplayer:hover, #mpPlaySolo:hover {
+    background-color: #000000;
+    opacity: 0.5
+}
+#mpNewSocialTab {
+	border-bottom: none;
+}
+
+#mpNewSocailTab > .leftRightButtonTop {
+    background-color: rgba(0, 0, 0, 0.0);
+}
+
+#elInputContainer.floatingContainer {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#elQuestionInputSongName::after, #elQuestionInputArtistName::after {
+    background-image: none;
+}
+
+/*Change team colour*/
+.gcTeamMessageIcon {
+    opacity: 0.4;
+    background-color: #fcb103;
+}
+
+.qpAvatarStatusOuterContainer{
+  border-radius: 0px 10px 10px 0px
+}
+
+.qpAvatarScoreContainer::after {
+    height: 25px;
+    width: 26px;
+    right: -12px;
+    background: none ;
+    clip-path: polygon(0 0, 100% 4%, 81% 100%, 50% 100%, 51% 98%, 53% 90%, 54% 80%, 51% 73%, 43% 60%, 43% 45%);
+}
+
+.lobbyAvatarCommandIcon {
+    border-radius: 2px;
+}
+
+#qpAnswerStateContainerOuter {
+    border-radius: 0 20px 20px 0;
+}
+
+.qpAvatarImage {
+    border-radius: 15px;
+}
+
+#\33 YearCelebrationContainer.floatingContainer {
+    background-color: #1b1b1b
+}
+
+/*Circling things - remove all below if you want it back to normal - Increase "border radius" if you want it more round*/
+#qpVideoOverflowContainer {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1;
+    border-radius: 20px;
+}
+
+#qpVideoHider {
+     border-radius: 20px;
+}
+#qpVoteShadowHider {
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    width: 80px;
+    height: 100%;
+    border-radius: 20px;
+}
+#qpAnswerInputContainer.floatingContainer {
+    border-radius: 20px;
+}
+#qpVoteState {
+    border-radius: 20px;
+}
+
+#qpAnswerInputContainer .awesomplete {
+    width: 95%;
+}
+
+.qpAvatarAnswerContainer {
+    border-radius: 10px;
+}
+
+.qpAvatarImgContainer {
+    border-radius: 10px;
+}
+
+#qpAnimeNameHider {
+    border-radius: 10px;
+}
+
+.qpSideContainer, .qpAnimeNameContainer {
+    border-radius: 10px;
+}
+
+#mpNewsBody.ps.ps--theme_default.ps--active-y{
+    border-radius: 20px;
+}
+#mpNewsContainer.floatingContainer.mpMainContentContainer{
+    border-radius: 20px;
+    box-shadow: none;
+}
+
+#mpAvatarDriveContainer {
+    border-radius: 20px;
+    box-shadow: none;
+}
+
+#mpPlayButton.button.floatingContainer {
+    border-radius: 15px;
+    box-shadow: none;
+}
+
+#mpExpandButton.button.floatingContainer.mainMenuButton {
+    border-radius: 15px;
+    box-shadow: none;
+}
+
+#mpRankedButton.button.floatingContainer.mainMenuButton.off {
+    border-radius: 15px;
+    box-shadow: none;
+}
+
+#mpLeaderboardButton.button.floatingContainer.mainMenuButton {
+    border-radius: 15px;
+    box-shadow: none;
+}
+
+.rbRoom, .rbrRoomImageContainer {
+    border-radius: 15px;
+    box-shadow: none;
+}
+
+#elInputContainer {
+    border-radius: 15px;
+}
+
+.qpTeamStandingItem {
+    background: none
+}
+
+
+/*Joseph Addon - "Userscript Homepage" "Song List"*/
+#mpInstalled.button.floatingContainer.mainMenuButton {
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: none;
+}
+#listWindowBody.modal-body.resizableList.slWindowBody {
+    background-color: #1b1b1b;
+}
+#listWindowHeader.modal-header.ui-draggable-handle {
+    background-color: #1b1b1b;
+}
+#slSearch {
+    background-color: #1b1b1b;
+}
+button.btn.btn-default.songListOptionsButton {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+}
+
+tr.songData.clickAble{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#listWindowOptions.customWindowPanel {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#listWindowTableContainer.customWindowPanel {
+        background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-header.customWindowHeader.draggableWindow {
+    	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.customWindow.ui-draggable {
+    	background-color: rgba(0, 0, 0, 0.5);
+}
+.customWindowPanel {
+   		background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Rounding option*/
+#mpInstalled.button.floatingContainer.mainMenuButton {
+    border-radius: 15px;
+}
+
+.flatTextInput {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+/*Klem's Expand Player*/
+#openRadioButton {
+    background-color: rgba(0, 0, 0, 0.8) !important;
+}
+#radioOverlay {
+    background-color: rgba(0, 0, 0, 0.8) !important;
+}
+div.modal-content {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+/*     backdrop-filter: blur(6px); */
+}
