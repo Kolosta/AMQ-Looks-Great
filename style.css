@@ -23,7 +23,26 @@ https://userstyles.world/style/1435/elodie-s-amq-script-v8-4-4 */
 /*      --bg: url(https://images.hdqwalls.com/download/oneshot-2o-1920x1080.jpg); */
 /*      x-x-x-x-x-x-x-x-x-x-x-x-x-x */
     /* Optional: if you want a different background for chat. Phone wallpapers tend to work best. */
-    --chatbg: rgba(0, 0, 0, 0.5);
+     --chatbg: rgba(0, 0, 0, 0.5);
+     
+     --gris0: rgb(66, 66, 66);
+     --gris2: rgba(66, 66, 66, .2);
+     --gris4: rgba(66, 66, 66, .4);
+     --gris75:rgba(66, 66, 66, .75);
+     --gris6: rgba(66, 66, 66, .6);
+     --gris8: rgba(66, 66, 66, .8);
+     
+     --noir0: rgb(0, 0, 0);
+     --noir2: rgba(0, 0, 0, .2);
+     --noir4: rgba(0, 0, 0, .4);
+     --noir5: rgba(0, 0, 0, .5);
+     --noir6: rgba(0, 0, 0, .6);
+     --noir8: rgba(0, 0, 0, .8);
+     
+     --jauneXP: rgba(255, 221, 0, 0.6);
+     
+     --textColor: white;
+     
 }
 
 /* ______________________________________________________________________________________________________________________________________________________ */
@@ -31,18 +50,13 @@ https://userstyles.world/style/1435/elodie-s-amq-script-v8-4-4 */
 /* ______________________________________________________________________________________________________________________________________________________ */
 
 #mainContainer {
-    color: #fff;
+    color: var(--textColor);
 }
 
 
 
 #mainContainer{
-/*     @import url('https://fonts.googleapis.com/css2?family=Pushster&family=Roboto+Mono:ital,wght@0,300;1,300&family=Yellowtail&display=swap'); */
-/*     font-family: 'Bahnschrift'; */
-    font-family: 'Posterama Text';
-/*     font-size: 100%; */
-/*     font-family: 'Qanelas Soft'; */
-/*     color: #05b327 !important; */
+    font-family: 'Posterama Text' ;
 }
 
 
@@ -66,16 +80,13 @@ https://userstyles.world/style/1435/elodie-s-amq-script-v8-4-4 */
 
 .qpAvatarImageContainer.Standard {
     background: none !important;
-    background: #29202000 !important;
+    background: transparent !important;
     opacity: 1;
 }
 
 .floatingContainer {
-    background-color: rgba(66, 66, 66, .75);
+    background-color: var(--gris75);
 }
-
-
-
 
 
 
@@ -84,11 +95,11 @@ https://userstyles.world/style/1435/elodie-s-amq-script-v8-4-4 */
 }
 
 #mpKomugiPromo, #mpPatreonContainer{
-    background-color: rgba(27, 27, 27, 0.6);
+    background-color: var(--gris4);
 }
 
 .mpSpringPromoContainer{
-    background-color: rgba(27, 27, 27, 0);
+    background-color: transparent;
 }
 
 
@@ -101,8 +112,8 @@ https://userstyles.world/style/1435/elodie-s-amq-script-v8-4-4 */
     font-size: 1.5em;
 }
 
-#startPageSocailContainer{
-    opacity: 0.6;
+#startPageSocailContainer .startPageSocailIcon.button {
+        background-color: var(--noir5);
 }
 
 #infoFooter{
@@ -157,14 +168,14 @@ https://userstyles.world/style/1435/elodie-s-amq-script-v8-4-4 */
 }
 
 #questContainer{
-    background-color: rgba(66, 66, 66, .6);
+    background-color: var(--grisV306);
     transition: transform ease-in-out 0.4s, box-shadow ease-in-out 2s;
     bottom: max(calc(0% - 0px), 100px);
 }
 
 #questContainer.open {
     transform: translateX(0%);
-    box-shadow: 0 0 20px 0px rgb(0, 0, 0);
+    box-shadow: 0 0 20px 0px black;
     transition: transform ease-in-out 0.5s;
 }
 
@@ -182,7 +193,7 @@ https://userstyles.world/style/1435/elodie-s-amq-script-v8-4-4 */
 }
 
 #xpBarInner{
-    background: rgba(255, 221, 0, 0.6) !important;
+    background: var(--jauneXP) !important;
 }
 
 #xpBarOuter {
@@ -281,10 +292,14 @@ https://userstyles.world/style/1435/elodie-s-amq-script-v8-4-4 */
     margin-top: 0px;
 }
 
-.awesomplete{
-    opacity: 0.8;
+.awesomplete > ul {
+    background: rgba(66, 66, 66, .8);
+    border: none;
+    -webkit-box-shadow: 0 0 10px 2px rgba(0, 0, 0, .3);
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, .3);
+    border-radius: 0 0 6px 6px;
+    top: 34px;
 }
-
 #qpInnerContainer{
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -492,9 +507,9 @@ div.modal-content {
 }
 
 
-#gcEmojiPickerContainer{
+/* #gcEmojiPickerContainer{
         background-color: rgba(27, 27, 27, .7);
-}
+} */
 
 #rbMajorFilters {
     position: absolute;
@@ -552,6 +567,10 @@ div.modal-content {
 
 
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+
+
+
 
 
 .lobbyAvatarRow.right .lbReady .lobbyAvatarImgContainer {
@@ -981,17 +1000,20 @@ textarea {
     background-color: rgba(27, 27, 27, 0.4);
 }
 
-#gcEmojiPickerButton > i {
+/* #gcEmojiPickerButton > i {
     font-size: 30px;
-    color: #a59898;
+    color: #f2eded;
     content: "Bullies";
-}
+} */
 
 #gcEmojiPickerContainer {
     width: 350px;
     height: 400px;
-    left: -720px;
-    background-color: rgba(27, 27, 27, .8);
+    left: -310px;
+    top: -30px;
+/*     background-color: rgba(27, 27, 27, .7); */
+    border-radius: 5px 0 0 5px;
+    box-shadow: none;
 }
 
 #gcEmojiPickerRecentContainer .amqEmoji, #gcEmojiPickerAllContainer .amqEmoji {
@@ -1123,11 +1145,11 @@ textarea {
 }
 
 .qpAvatarStatus {
-    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0);
+/*     text-shadow: 0px -1px 0px rgba(0, 0, 0, 0);
     right: 12px;
     color: #fff;
     width: 21px;
-    bottom: 2px;
+    bottom: 2px; */
 }
 
 .qpAvatarAnswerContainer {
@@ -1384,10 +1406,6 @@ textarea {
     text-shadow: -1px 0 #e3131300, 0 1px #da121200, 1px 0 #0000, 0 -1px #0000;
 }
 
-#xpBarAnimationContainer {
-    border-radius: 10px;
-}
-
 #mhLoadContainer{
     background-color: rgba(66, 66, 66, .6);
     border-radius: 15px;
@@ -1584,9 +1602,10 @@ textarea {
 }
 
 #xpBarAnimationContainer {
+    border-radius: 10px;
     opacity: 0;
     position: absolute;
-    transition: opacity ease-in-out 1.3s;
+    transition: opacity ease-in-out 2.3s !important;
     box-shadow: 0 0 10px #ffffff9e, 0 0 20px #ffffff9e, 0 0 40px #eeac1c, 0 0 70px #eeac1c, 0 0 80px #eeac1c;
 }
 
@@ -1798,8 +1817,167 @@ textarea {
     top: 15px;
 }
 
+/* TESTTESTTEST */
+
+/* #gameChatContainer{
+    height: 105%;
+} */
+
+/* #footerMenuBar {
+    width: 75%;
+}
+ */
+/* #avatarUserImgContainer {
+    height: 74px;
+    width: 74px;
+} */
+
+/* #avatarUserImg {
+    width: 80px;
+} */
+
+/* #footerMenuBarBackground {
+    position: absolute;
+} */
+
+#currencyContainer {
+    left: 260px;
+}
+
+#currencyContainer .currencyIcon {
+    width: 35px;
+    position: absolute;
+    top: 7px;
+    right: 0px;
+}
+
+#currencyTicketContainer {
+    right: -10px
+}
+
+/* #menuBarOptionContainer {
+    right: 50px;
+} */
+
+#optionsContainer {
+    right: 70px;
+}
+
+#gcEmojiPickerOuterContainer {
+    left: -40px;
+    top: 35px;
+}
+
+/* .fa-smile-o:before{
+    left: -34px;
+    top: 43px;
+} */
+
+/* .gcInputContainer > .textAreaContainer {
+    width: calc(100% - 48px);
+    height: calc(100% - 10px);
+    margin: 5px 5px 5px 43px;
+} */
+
+
 
 /* rgba(255, 221, 117, 0.8) beau jaune */
+
+/* _________________________________________________________________________________ */
+
+
+.qpAvatarStatusInnerContainer {
+    background-color: #f2a170;
+    opacity: 1;
+    right: -8px;
+    top: 19px;
+    
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    transform: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 50%;
+}
+
+.qpAvatarStatus {
+    position: absolute;
+    font-weight: bold;
+    width: 21px;
+    font-size: 18px;
+    text-align: center;
+    white-space: nowrap;
+    text-shadow: 0px -1px 0px rgb(0 0 0 / 0%);
+    color: #fff;
+    bottom: 2.5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+.qpAvatarStatusOuterContainer{
+    overflow: visible;
+}
+
+.qpAvatarStatusBar {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    left: 21px;
+    top: 21px;
+    opacity: 1;
+}
+
+/* _________________________________________________________________________________ */
+
+
+.gcInputContainer{
+    background-color: rgba(0, 0, 0, 0.0);
+    background-size: 100% auto !important;
+    background-attachment: fixed !important;
+    background-position: 0px !important;
+    box-shadow: none
+}
+
+#gcEmojiPickerContainer{
+        background: rgba(0, 0, 0, 0.6) !important;
+}
+
+#gcEmojiPickerContainer > .ps__scrollbar-y-rail > .ps__scrollbar-y {
+    opacity: 0.7;
+/*     background-color: var(--jauneXP); */
+    background-color: rgba(244, 201, 68, .8);
+}
+
+#gcEmojiPickerButton > i {
+    font-size: 30px;
+    color: #f2eded;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 50% 0%  0% 50%;
+    width: 40px;
+    height: 40px;
+}
+
+#gcEmojiPickerButton .fa-smile-o:before{
+    position: relative;
+    top: 13%;
+    left: 8px;
+/*     background-color: red; */
+}
+
+#lobbyBottomCount {
+    bottom: 8px;
+}
+
+
+#xpOuterContainer {
+    left: -25%;
+}
+
+
+
 /* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
 /* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
 /* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
@@ -1937,8 +2115,8 @@ textarea {
 .lobbyAvatarTextContainer {
     background: rgba(0, 0, 0, 0.7);
 }
-#mainMenuSocailButton, #avatarUserImgContainer, #awContentRow, #awMainView, .gcInputContainer, .qpSideContainer, .qpAnimeNameContainer, #qpCounter, #qpWaitBuffering {
-    background-color: rgba(0, 0, 0, 0.4);
+#mainMenuSocailButton, #avatarUserImgContainer, #awContentRow, #awMainView, .qpSideContainer, .qpAnimeNameContainer, #qpCounter, #qpWaitBuffering {
+    background-color: rgba(0, 0, 0, 0.40);
     background-size: 100% auto !important;
     background-attachment: fixed !important;
     background-position: 0px !important;
@@ -2332,28 +2510,28 @@ div#startPageLogoContainer {
 
 /**Change Colour of List Showing Up**/
 .qpAvatarStatusBar.completed {
-    left: 0px;
-    opacity: 1;
+/*     left: 0px; */
+/*     opacity: 1; */
     background-color: #3f0;
 }
 .qpAvatarStatusBar.watching {
-    left: 0px;
-    opacity: 1;
+/*     left: 0px; */
+/*     opacity: 1; */
     background-color: #ff00c7;
 }
 .qpAvatarStatusBar.hold {
-    left: 0px;
-    opacity: 1;
+/*     left: 0px; */
+/*     opacity: 1; */
     background-color: #f7ff32;
 }
 .qpAvatarStatusBar.dropped {
-    left: 0px;
-    opacity: 1;
+/*     left: 0px; */
+/*     opacity: 1; */
     background-color: #f00;
 }
 .qpAvatarStatusBar.planning {
-    left: 0px;
-    opacity: 1;
+/*     left: 0px; */
+/*     opacity: 1; */
     background-color: white;
 }
 
@@ -2587,5 +2765,4 @@ tr.songData.clickAble{
 }
 div.modal-content {
     background-color: rgba(0, 0, 0, 0.6) !important;
-/*     backdrop-filter: blur(6px); */
 }
