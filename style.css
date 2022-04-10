@@ -1772,6 +1772,7 @@ textarea {
     background-color: rgba(27, 27, 27, .6);
     border: none;
     border-radius: 5px 5px 0 0;
+/*     right: 320px; */
 }
 
 .chatTopBar {
@@ -1808,6 +1809,10 @@ textarea {
     line-height: 14px;
     font-weight: normal;
     overflow: hidden;
+}
+
+#chatContainer {
+    left: -12%;
 }
 
 .chatTopBar .p {
