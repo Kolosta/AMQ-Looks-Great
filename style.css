@@ -32,6 +32,10 @@ https://userstyles.world/style/1435/elodie-s-amq-script-v8-4-4 */
      --gris6: rgba(66, 66, 66, .6);
      --gris8: rgba(66, 66, 66, .8);
      
+     --gris01: rgba(27, 27, 27, .4);
+     --gris02: rgba(27, 27, 27, .6);
+     --gris03: rgba(27, 27, 27, .8);
+     
      --noir0: rgb(0, 0, 0);
      --noir2: rgba(0, 0, 0, .2);
      --noir4: rgba(0, 0, 0, .4);
@@ -165,6 +169,7 @@ https://userstyles.world/style/1435/elodie-s-amq-script-v8-4-4 */
     right: -60px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 7px;
+        box-shadow: 0px 0px 10px rgb(0 0 0 / 0%);
 }
 
 #questContainer{
@@ -177,7 +182,9 @@ https://userstyles.world/style/1435/elodie-s-amq-script-v8-4-4 */
     transform: translateX(0%);
     box-shadow: 0 0 20px 0px black;
     transition: transform ease-in-out 0.5s;
+/*     background-color:  rgba(27, 27, 27, 0.7); */
 }
+
 
 #mainMenuSocailButton{
     opacity: 0.6;
@@ -193,7 +200,7 @@ https://userstyles.world/style/1435/elodie-s-amq-script-v8-4-4 */
 }
 
 #xpBarInner{
-    background: var(--jauneXP) !important;
+    background: rgba(255, 193, 51, .8) !important;
 }
 
 #xpBarOuter {
@@ -277,9 +284,9 @@ https://userstyles.world/style/1435/elodie-s-amq-script-v8-4-4 */
 }
 
 
-.lobbyAvatarLevelContainer{
+/* .lobbyAvatarLevelContainer{
     opacity: 0.7;
-}
+} */
 
 #qpInfoHider{
     opacity: 0;
@@ -442,12 +449,6 @@ div.modal-content {
     word-wrap: break-word;
 }
 
-.qpAvatarStatusInnerContainer {
-    background-color: #756edd;
-    opacity: 1;
-    right: -10px;
-}
-
 
 .floatingContainer {
     background-color: #424242d1;
@@ -489,7 +490,8 @@ div.modal-content {
 
 .qpAvatarLevelBar {
     bottom: 1px;
-    border-radius: 0 0 3px 5px;
+    border-radius: 0;
+    background-color: rgba(27, 27, 27, .8);
 }
 
 #qpVideoHider{
@@ -617,6 +619,10 @@ div.modal-content {
     border-radius: 50%;
 }
 
+.lobbyAvatarLevelContainer > .lobbyAvatarSubTextContainer {
+    background-color: rgba(27, 27, 27, .7);
+}
+
 .lobbyAvatarRow.right .lobbyAvatarLevelContainer .lobbyAvatarSubTextContainer {
     border-bottom-right-radius: 10px;
     top: 2px;
@@ -625,11 +631,13 @@ div.modal-content {
 .lobbyAvatarRow.right .lobbyAvatarLevelContainer {
     bottom: 22px;
     height: 22px;
-    width: 70px !important;
+    width: 108px !important;
+    transform: translateX(-20%) skewX(-35.5deg);
 }
 
 .lobbyAvatarRow.right .lobbyAvatarLevelContainer .lobbyAvatarSubTextContainer h3{
     text-align: center;
+    transform: translateX(13%) skewX(35.5deg);
 /*     margin-right: 20px; */
     
 }
@@ -728,18 +736,23 @@ div.modal-content {
 }
 
 .lobbyAvatarRow.left .lobbyAvatarLevelContainer {
-    right: 80px;
+    right: 100px;
 }
 
 .lobbyAvatarRow.left .lobbyAvatarLevelContainer {
+/*     bottom: 22px;
+    height: 22px;
+    width: 100px !important; */
+    
     bottom: 22px;
     height: 22px;
-    width: 100px !important;
+    width: 108px !important;
+    transform: translateX(20%) skewX(35.5deg);
 }
 
 .lobbyAvatarRow.left .lobbyAvatarLevelContainer .lobbyAvatarSubTextContainer h3{
     text-align: center;
-    margin-left: -20%;  
+    transform: translateX(-13%) skewX(-35.5deg);
 }
 
 .lobbyAvatarSubTextContainer .lobbyAvatarRow.left .lobbyAvatarOptionContainer {
@@ -891,9 +904,10 @@ div.modal-content {
 }
 
 .qpAvatarHostIcon, .qpAvatarHiddenIcon {
-    border-radius: 4px 6px 4px 6px;
-    background-color: #d22fb7c7;
-
+/*     border-radius: 4px 6px 4px 6px; */
+    background-color: rgba(232, 109, 115, 1);
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0);
+    border-radius: 0 5px 5px 0;
 }
 
 .qpTeamStandingItem {
@@ -1144,13 +1158,13 @@ textarea {
     background-color: rgb(255, 123, 0);
 }
 
-.qpAvatarStatus {
-/*     text-shadow: 0px -1px 0px rgba(0, 0, 0, 0);
+/* .qpAvatarStatus {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0);
     right: 12px;
     color: #fff;
     width: 21px;
-    bottom: 2px; */
-}
+    bottom: 2px; 
+} */
 
 .qpAvatarAnswerContainer {
     position: absolute;
@@ -1796,7 +1810,7 @@ textarea {
     overflow: hidden;
 }
 
-.chatTopBar p {
+.chatTopBar .p {
     margin-left: 2px;
 }
 
@@ -1805,9 +1819,15 @@ textarea {
 }
 
 #qpAnswerStateContainerInner {
-    right: -5px;
+    right: -16px;
     background-color: rgba(232, 109, 115, 1);
+    width: 50px;
 }
+#qpAnswerStateContainerOuter {
+    width: 65px !important;
+}
+
+
 #qpAnswerStateContainerOuter {
     width: 45px;
 }
@@ -1860,7 +1880,7 @@ textarea {
 } */
 
 #optionsContainer {
-    right: 70px;
+    right: 112px;
 }
 
 #gcEmojiPickerOuterContainer {
@@ -1887,7 +1907,7 @@ textarea {
 
 
 .qpAvatarStatusInnerContainer {
-    background-color: #f2a170;
+    background-color: rgba(232, 109, 115, 1);
     opacity: 1;
     right: -8px;
     top: 19px;
@@ -1899,6 +1919,8 @@ textarea {
     -webkit-box-shadow: none;
     box-shadow: none;
     border-radius: 50%;
+    
+    overflow: hidden;
 }
 
 .qpAvatarStatus {
@@ -1910,9 +1932,9 @@ textarea {
     white-space: nowrap;
     text-shadow: 0px -1px 0px rgb(0 0 0 / 0%);
     color: #fff;
-    bottom: 2.5px;
+    bottom: 2.75px;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-53%);
 }
 
 
@@ -1925,7 +1947,7 @@ textarea {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    left: 21px;
+    left: 20px;
     top: 21px;
     opacity: 1;
 }
@@ -1977,6 +1999,150 @@ textarea {
 }
 
 
+/* .popover{
+    background-color: rgba(0, 0, 0, 0.6);
+} */
+
+.qpAvatarStatusBar.completed, .qpAvatarStatusBar.looted{
+        background-color: rgba(38, 68, 143, 0);
+}
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+
+#elInputStatusBar {
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    background-color: transparent;
+}
+
+.elStatusName {
+    width: 70px;
+    background-color: transparent;
+    margin-left: 10px;
+}
+
+.elStatusName::after {
+    width: 0px;
+    height: 0px;
+}
+
+.elResOption {
+    background-color: transparent;
+}
+
+.elResStatus.uploaded {
+    background-color: #ffc132;
+}
+
+#elQuestionInputState {
+    color: #ffc132;
+}
+
+#elCounterContainer.floatingContainer.text-center {
+    background-color: var(--gris02) !important;
+    opacity: 1 !important;
+}
+
+#elQuestionFilter {
+    background-color: var(--gris02);
+    transform: translateX(-50%);
+    -webkit-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0);
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    position: relative;
+    z-index: 2;
+}
+
+#elQuestionFilterInput {
+    width: 96%;
+    background-color: var(--gris02);
+    border-radius: 3px;
+    margin: 0 2% 5px;
+}
+
+.elQuestionHostFilter {
+    opacity: 0.8;
+}
+
+#elQuestionFilter > h3 {
+    margin-bottom: 8px;
+}
+
+#elInputVideoPreviewContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: var(--gris02);
+}
+
+#elInputContainer.floatingContainer {
+    background-color: var(--gris03) !important;
+}
+
+#elQuestionNoSongSelectedContainer{
+    background-color: #1b1b1b;
+    opacity: 1 !important;
+}
+
+#elQuestionNoSongSelectedText {
+    color: white;
+    text-shadow: 0px -1px 0px rgb(0 0 0 / 0%);
+}
+
+.elQuestionAnime.floatingContainer.clickAble{
+    background-color: var(--gris03) !important;
+    opacity: 1 !important;
+    border-radius: 6px 0 0 6px;
+}
+
+.elQuestionSong.floatingContainer.clickAble.open, .elQuestionSong.floatingContainer.clickAble {
+    background-color: var(--gris02) !important;
+    opacity: 1 !important;
+    border-radius: 4px 0 0 4px;
+}
+
+.elQuestionSongNameContaniner::after, .elQuestionSongArtistContainer::after {
+    width: 0px;
+}
+
+.elQuestionAnimeName::after {
+    width: 0px;
+}
+
+.ps > .ps__scrollbar-y-rail > .ps__scrollbar-y {
+    position: absolute;
+    background-color: var(--gris02) !important;
+}
+
+#elInputVideoSelector {
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    text-align: center;
+    background-color: transparent;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 0px;
+}
+
+/* _____________________________________________________________________________ */
+
+.flatTextInput {
+/*     width: 95%; */
+}
+
+/* Update de paques : */
+#qpNameFixed {
+    position: absolute;
+    right: -18px;
+    width: 65px;
+    font-size: 21px;
+    background-color: #ffbf00;
+    -webkit-box-shadow: 0 0 0px 0px rgb(0 0 0);
+    box-shadow: 0 0 0px 0px rgb(0 0 0);
+    color: black;
+}
 
 /* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
 /* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
@@ -2508,32 +2674,74 @@ div#startPageLogoContainer {
     box-shadow: 0 0 5px rgba(255, 237, 133, 0.8), 0 0 10px rgba(255, 237, 133, 0.8), 0 0 15px rgba(255, 237, 133, 0.8);
 }
 
-/**Change Colour of List Showing Up**/
+/**Change Colour of List Showing Up WITH HALF CIRCLE**/
 .qpAvatarStatusBar.completed {
-/*     left: 0px; */
-/*     opacity: 1; */
+    background-color: rgba(0, 0, 0, 0);
+    border: 4px #3f0 solid;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    left: -6px;
+    top: -6px;
+    opacity: 1;
+}
+.qpAvatarStatusBar.watching {
+    background-color: rgba(0, 0, 0, 0);
+    border: 4px #b700ff solid;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    left: -6px;
+    top: -6px;
+    opacity: 1;
+}
+.qpAvatarStatusBar.hold {
+    background-color: rgba(0, 0, 0, 0);
+    border: 4px #f7ff32 solid;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    left: -6px;
+    top: -6px;
+    opacity: 1;
+}
+.qpAvatarStatusBar.dropped {
+    background-color: rgba(0, 0, 0, 0);
+    border: 4px #f00 solid;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    left: -6px;
+    top: -6px;
+    opacity: 1;
+}
+.qpAvatarStatusBar.planning {
+    background-color: rgba(0, 0, 0, 0);
+    border: 4px white solid;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    left: -6px;
+    top: -6px;
+    opacity: 1;
+}
+
+/**Change Colour of List Showing Up WITH POINTS**/
+/* .qpAvatarStatusBar.completed {
     background-color: #3f0;
 }
 .qpAvatarStatusBar.watching {
-/*     left: 0px; */
-/*     opacity: 1; */
-    background-color: #ff00c7;
+    background-color: #b700ff;
 }
 .qpAvatarStatusBar.hold {
-/*     left: 0px; */
-/*     opacity: 1; */
     background-color: #f7ff32;
 }
 .qpAvatarStatusBar.dropped {
-/*     left: 0px; */
-/*     opacity: 1; */
     background-color: #f00;
 }
 .qpAvatarStatusBar.planning {
-/*     left: 0px; */
-/*     opacity: 1; */
     background-color: white;
-}
+} */
 
 #storeWindow {
     background-color: rgba(0, 0, 0, 0.8);
