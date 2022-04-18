@@ -9,6 +9,7 @@
 /* @-moz-document domain(animemusicquiz.com) */
 /* @document domain(animemusicquiz.com) */
 
+
 /* Original script by melodyelodie here ;
 https://userstyles.world/style/1435/elodie-s-amq-script-v8-4-4 */
 
@@ -92,8 +93,6 @@ https://userstyles.world/style/1435/elodie-s-amq-script-v8-4-4 */
 .floatingContainer {
     background-color: var(--gris75);
 }
-
-
 
 #mpKomugiPromo,  #mpSpringSkinPromo, #mpPatreonContainer, #mpHalloweenSkinPromo{
     border-radius: 10px;
@@ -182,7 +181,7 @@ https://userstyles.world/style/1435/elodie-s-amq-script-v8-4-4 */
 
 #questContainer.open {
     transform: translateX(0%);
-    box-shadow: 0 0 20px 0px black;
+    box-shadow: 0 0 0px 0px black;
     transition: transform ease-in-out 0.5s;
 /*     background-color:  rgba(27, 27, 27, 0.7); */
 }
@@ -2181,6 +2180,18 @@ textarea {
 }
 
 
+/* .qcCounter{
+    background-color: var(--gris02);
+} */
+
+.qcQuestOuter.clickAble{
+    background-color: var(--gris02);
+}
+
+.qcQuestOuter:last-child{
+    border-bottom-right-radius: 10px;
+}
+
 /* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
 /* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
 /* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
@@ -3087,5 +3098,95 @@ div.modal-content {
 #speedrunWindowUpper{
     height: 200px;
 }
+
+#diceWindow .customWindow.ui-draggable{
+    min-width: 265px;
+}
+
+#listWindowOptions.customWindowPanel, #listWindowTableContainer.customWindowPanel {
+    background-color: var(--gris02);
+}
+
+#listWindowOptions .btn-default {
+    color: white;
+/*     background-color: #fff;
+    border-color: #ccc; */
+/*     rgba(0, 0, 0, 0.5) */
+}
+
+#slSearch {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+tr.songData.clickAble.correctGuess{
+    background-color: rgba(0, 255, 0, .15);
+}
+
+tr.songData.clickAble.incorrectGuess {
+    background-color: rgba(255, 0, 0, .15);
+}
+
+tr.songData.hover{
+    box-shadow: 0 3px 15px black;
+}
+
+#listWindowTable{
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.header > td {
+    border: 1px solid #0000;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.songData > td {
+    vertical-align: middle;
+    border: 0px solid black;
+    text-align: center;
+}
+
+
+#storeWindow .modal-body.customWindowBody .scroller{
+    display: none;
+}
+
+/* Tout ce qui suit : Ouverture du d'une autre page avec le UserScript "AMQ Song List UI" */
+body {
+    background-image: url( https://i.redd.it/2cioa12l3zv71.png );
+    background-size: cover;
+}
+
+#slContainer tr {
+    background-color: var(--gris01);
+}
+
+#slContainer .correctGuess {
+    background-color: rgba(0, 255, 0, .2);
+}
+
+#slContainer .incorrectGuess {
+    background-color: rgba(255, 0, 0, .2);
+}
+
+
+#slContainer .header > td, #slContainer .songData td {
+    border: 0px solid black;
+}
+
+
+#slContainer{
+    margin-top: 20px;
+}
+
+#slContainer * {
+    color: white;
+}
+
+
+
+
+
 
 
