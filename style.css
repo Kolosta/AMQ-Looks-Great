@@ -6,7 +6,8 @@
 @author       Kolosta (based on melodyelodie's work)
 ==/UserStyle== */
 
-/*@-moz-document domain(animemusicquiz.com)*/
+/* @-moz-document domain(animemusicquiz.com) */
+/* @document domain(animemusicquiz.com) */
 
 /* Original script by melodyelodie here ;
 https://userstyles.world/style/1435/elodie-s-amq-script-v8-4-4 */
@@ -165,7 +166,8 @@ https://userstyles.world/style/1435/elodie-s-amq-script-v8-4-4 */
 
 /* Daily Quests */
 #qcStickOut{
-    opacity: 0.8;
+/*     opacity: 0.8; */
+    background-color: var(--gris02);
     right: -60px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 7px;
@@ -346,7 +348,7 @@ https://userstyles.world/style/1435/elodie-s-amq-script-v8-4-4 */
 }
 
 #qpQualityList {
-    opacity: 0;
+    opacity: 1;
     background-color: rgba(27, 27, 27, .4);
     -webkit-box-shadow: 0 7px 10px 0px rgba(0, 0, 0, 0);
     box-shadow: 0 7px 10px 0px rgba(0, 0, 0, 0);
@@ -531,12 +533,12 @@ div.modal-content {
 }
 
 .lobbyAvatarHostContainer > .lobbyAvatarSubTextContainer {
-    width: 85px;
+    width: 110px;
     height: 100%;
 }
 
 .lobbyAvatarRow.left .lobbyAvatarHostContainer {
-    right: 105px;
+    right: 95px;
 }
 
 .lobbyAvatarNameContainer {
@@ -551,7 +553,7 @@ div.modal-content {
 .lobbyAvatarHostContainer h3, .lobbyAvatarLevelContainer h3 {
     font-family: inherit;
     font-weight: 500;
-    line-height: 0.99;
+    line-height: 1.09;
     color: inherit;
 }
 
@@ -565,6 +567,10 @@ div.modal-content {
 
 .lobbyAvatarImgContainer {
     overflow: visible;
+}
+
+.lobbyAvatarHostContainer {
+    top: 5.5px;
 }
 
 
@@ -625,7 +631,7 @@ div.modal-content {
 
 .lobbyAvatarRow.right .lobbyAvatarLevelContainer .lobbyAvatarSubTextContainer {
     border-bottom-right-radius: 10px;
-    top: 2px;
+    top: 2.5px;
 }
 
 .lobbyAvatarRow.right .lobbyAvatarLevelContainer {
@@ -643,7 +649,7 @@ div.modal-content {
 }
 
 .lobbyAvatarRow.right .lobbyAvatarOptionContainer {
-    transform: translateX(-150%);
+    transform: translateX(-300%);
     padding-left: 9px;
 }
 
@@ -652,14 +658,15 @@ div.modal-content {
 }
 
 .lobbyAvatarRow.right .lobbyAvatarPlayerOptions {
-    left: 63px;
+    left: 115px;
 }
+
 
 .lobbyAvatarRow.right .lobbyAvatarOptionContainer {
     height: 100%;
-    top: 2px;
+    top: 2.5px;
     background-color: rgba(26, 26, 26, .9);
-    border-radius: 0px 0px 5px 0px;
+    border-radius: 0px 0px 5px 8px;
 }
 
 .lobbyAvatarRow.right .lobbyAvatarPlayerOptions {
@@ -682,6 +689,11 @@ div.modal-content {
     left: 5px;
     top: -2px;
 }
+
+.lobbyAvatarOptionContainer {
+    transition: transform 0.5s ease-in-out;
+}
+
 
 
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
@@ -732,7 +744,7 @@ div.modal-content {
 
 .lobbyAvatarRow.left .lobbyAvatarLevelContainer .lobbyAvatarSubTextContainer {
     border-bottom-left-radius: 10px;
-    top: 2px;
+    top: 2.5px;
 }
 
 .lobbyAvatarRow.left .lobbyAvatarLevelContainer {
@@ -788,12 +800,11 @@ div.modal-content {
 }
 
 .lobbyAvatarRow.left .lobbyAvatarPlayerOptions.lobbyAvatarOptionContainer {
-    top: 2px;
-}
-
-.lobbyAvatarRow.left .lobbyAvatarPlayerOptions.lobbyAvatarOptionContainer {
-    right: 93px;
+    top: 2.5px;
+    right: 115px;
     padding-right: 9px;
+    border-radius: 0px 0px 8px 5px;
+/*  transform: translateX(300%) !important; */
 }
 
 .lobbyAvatarRow.left .lobbyAvatarHostOptions {
@@ -807,6 +818,10 @@ div.modal-content {
 
 .lobbyAvatarRow.left .lobbyAvatarCommandIcon.clickAble.playerCommandIconKick{
     top: 0px;
+}
+
+.lobbyAvatarOptionContainer {
+    background-color: rgba(26, 26, 26, .9);
 }
 
 
@@ -1773,6 +1788,7 @@ textarea {
     border: none;
     border-radius: 5px 5px 0 0;
 /*     right: 320px; */
+    width: 100%;
 }
 
 .chatTopBar {
@@ -1798,8 +1814,17 @@ textarea {
 
 .chatTopBar .glyphicon-remove{
     margin-right: 2px;
+    margin-top: 1.5px;
+}
+
+.chatTopBar .glyphicon > i{
     margin-top: 1px;
 }
+
+.chatTopBar .glyphicon-arrow-right, .chatTopBar .glyphicon-arrow-left{
+    margin-top: 0.75px;
+}
+
 
 .chatBoxContainer .header {
     -webkit-box-shadow: 0px 4px 10px -3px rgba(0, 0, 0, 0);
@@ -1812,15 +1837,21 @@ textarea {
 }
 
 #chatContainer {
-    left: -12%;
+    left: 100px;
 }
 
-.chatTopBar .p {
-    margin-left: 2px;
+.chatTopBar p {
+    margin-left: 3px;
+    width: 74px;
 }
 
 .chatBoxContainer .textAreaContainer {
     border-radius: 3px;
+}
+
+.chatBoxFooter > h4{
+    left: 50%;
+    transform: translateX(-50%) skew(35.5deg);
 }
 
 #qpAnswerStateContainerInner {
@@ -2000,7 +2031,7 @@ textarea {
 
 
 #xpOuterContainer {
-    left: -25%;
+    left: -0%;
 }
 
 
@@ -2133,9 +2164,9 @@ textarea {
 
 /* _____________________________________________________________________________ */
 
-.flatTextInput {
-/*     width: 95%; */
-}
+/* .flatTextInput {
+    width: 95%;
+} */
 
 /* Update de paques : */
 #qpNameFixed {
@@ -2148,6 +2179,7 @@ textarea {
     box-shadow: 0 0 0px 0px rgb(0 0 0);
     color: black;
 }
+
 
 /* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
 /* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
@@ -2749,7 +2781,7 @@ div#startPageLogoContainer {
 } */
 
 #storeWindow {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: var(--noir5);
 }
 
 div#swNoSelectionContainer {
@@ -2818,7 +2850,7 @@ div#popoutMessageContainer.floatingContainer.popoutMessage.noShadow {
     border-radius: 15px;
 }
 
-#\33 YearCelebrationContainer.floatingContainer {
+#YearCelebrationContainer.floatingContainer {
     background-color: #1b1b1b
 }
 
@@ -2979,3 +3011,81 @@ tr.songData.clickAble{
 div.modal-content {
     background-color: rgba(0, 0, 0, 0.6) !important;
 }
+
+
+#swRhythmContainer {
+    position: absolute;
+    top: 200px;
+    background-color: var(--gris02);
+    left: -20px;
+    padding-left: 23px;
+    padding-right: 25px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 7px;
+}
+
+
+/* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+/* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+/* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+/* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+/* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+/* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+/* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+/* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+/* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+/* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+/* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+/* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+/* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+/* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+/* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+/* ==UserScript== style */
+
+
+.customWindow.ui-draggable {
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 20px;
+}
+
+.customWindow {
+    background-color: var(--gris01);
+    border: 1px solid rgba(27, 27, 27, 0.2);
+    box-shadow: 0 5px 15px rgb(0 0 0 / 50%);
+}
+
+.customWindow {
+    margin: 5px;
+    background-color: #424242;
+    border: 0px solid rgba(27, 27, 27, 0);
+    box-shadow: 0 5px 15px rgb(0 0 0 / 0%);
+}
+
+.customWindowPanel::-webkit-scrollbar {
+    display: none;
+}
+ 
+.modal-header.customWindowHeader.draggableWindow {
+    background-color: var(--gris02);
+}
+
+.customWindowPanel {
+    background-color: var(--gris02);
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+
+#speedrunInfoLeft, #speedrunTimesLeft{
+    border-radius: 5px 0 0 5px;
+}
+
+#speedrunInfoRight, #speedrunTimesRight{
+    border-radius: 0 5px 5px 0;
+}
+
+#speedrunWindowUpper{
+    height: 200px;
+}
+
+
