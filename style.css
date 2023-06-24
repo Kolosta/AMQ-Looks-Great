@@ -4,3188 +4,3552 @@
 @namespace    userstyles.world/user/kolosta
 @description  A script to improve the rendering of the Anime Music Quiz web site
 @author       Kolosta (based on melodyelodie's work)
+@homepageURL https://animemusicquiz.com/*
+@updateURL   https://animemusicquiz.com/*
 ==/UserStyle== */
 
 /* @-moz-document domain(animemusicquiz.com) */
 /* @document domain(animemusicquiz.com) */
 
-
 /* Original script by melodyelodie here ;
 https://userstyles.world/style/1435/elodie-s-amq-script-v8-4-4 */
 
- :root {
-    /* Change the URL in quotes to whatever you want the bg to be. */
-/*     --bg: url(https://static.tumblr.com/6ed50bddfea34fd928ace05d42b51582/kr9wz9j/DoCnxitsy/tumblr_static_2w68fwtzcqec8ww4s0k00ws4c_2048_v2.png); */
-/*      Some backgrounds :*/
-     --bg: url(https://i.redd.it/2cioa12l3zv71.png);
-/*      --bg: url(https://i.pinimg.com/originals/8f/b7/06/8fb706c006b8777e8738f901ebefcc10.jpg); */
-/*      --bg: url(https://wallpapercave.com/wp/wp1906477.png); */
-/*      --bg: url(https://i.imgur.com/uIOaQbf.png); */
-/*      --bg: url(https://i.imgur.com/CEW3dUK.jpeg); */
-/*      --bg: url(https://images.hdqwalls.com/download/oneshot-2o-1920x1080.jpg); */
-/*      x-x-x-x-x-x-x-x-x-x-x-x-x-x */
-    /* Optional: if you want a different background for chat. Phone wallpapers tend to work best. */
-     --chatbg: rgba(0, 0, 0, 0.5);
-     
-     --gris0: rgb(66, 66, 66);
-     --gris2: rgba(66, 66, 66, .2);
-     --gris4: rgba(66, 66, 66, .4);
-     --gris75:rgba(66, 66, 66, .75);
-     --gris6: rgba(66, 66, 66, .6);
-     --gris8: rgba(66, 66, 66, .8);
-     
-     --gris01: rgba(27, 27, 27, .4);
-     --gris02: rgba(27, 27, 27, .6);
-     --gris03: rgba(27, 27, 27, .8);
-     
-     --noir0: rgb(0, 0, 0);
-     --noir2: rgba(0, 0, 0, .2);
-     --noir4: rgba(0, 0, 0, .4);
-     --noir5: rgba(0, 0, 0, .5);
-     --noir6: rgba(0, 0, 0, .6);
-     --noir8: rgba(0, 0, 0, .8);
-     
-     --jauneXP: rgba(255, 221, 0, 0.6);
-     
-     --textColor: white;
-     
-}
-
-/* ______________________________________________________________________________________________________________________________________________________ */
-/* ______________________________________________________________________________________________________________________________________________________ */
-/* ______________________________________________________________________________________________________________________________________________________ */
-
-#mainContainer {
-    color: var(--textColor);
-}
-
-
-
-#mainContainer{
-    font-family: 'Posterama Text' ;
-}
-
-
-/* AVATAR ET FOND */
-.qpAvatarImageContainer.Standard > .particleEmiter {
-/*     background-image: url("https://cdn.animemusicquiz.com/v1/backgrounds/200px/Marine_Standard_BLUE_vert.webp"); */
-    background-size: contain;
-    opacity: 1;
-}
-
-.qpAvatarImageContainer.Standard{
-    background-image: url("https://cdn.animemusicquiz.com/v1/backgrounds/200px/Marine_Standard_BLUE_vert.webp");
-    background-size: contain;
-    opacity: 1;
-}
-
-.qpAvatarImageContainer{
-    border-radius: 10px;
-/*     color: #19930b; */
-}
-
-.qpAvatarImageContainer.Standard {
-    background: none !important;
-    background: transparent !important;
-    opacity: 1;
-}
-
-.floatingContainer {
-    background-color: var(--gris75);
-}
-
-#mpKomugiPromo,  #mpSpringSkinPromo, #mpPatreonContainer, #mpHalloweenSkinPromo{
-    border-radius: 10px;
-}
-
-#mpKomugiPromo, #mpPatreonContainer{
-    background-color: var(--gris4);
-}
-
-.mpSpringPromoContainer{
-    background-color: transparent;
-}
-
-
-
-#mpRankedButton{
-    border-radius: 20px;
-}
-
-#mpPatreonContainerInner h3{
-    font-size: 1.5em;
-}
-
-#startPageSocailContainer .startPageSocailIcon.button {
-        background-color: var(--noir5);
-}
-
-#infoFooter{
-    opacity: 0.6;
-}
-
-
-#mpNewsMerchTab .leftRightButtonTop{
-    opacity: 0.4;
-}
-
-#mpNewsMerchTab .leftRightButtonTop h3{
-    opacity: 1;
-}
+@-moz-document url-prefix("https://animemusicquiz.com/") {
+
+    :root {
+        /* Change the URL in quotes to whatever you want the bg to be. */
+/*         --bg: url(https://static.tumblr.com/6ed50bddfea34fd928ace05d42b51582/kr9wz9j/DoCnxitsy/tumblr_static_2w68fwtzcqec8ww4s0k00ws4c_2048_v2.png); */
+    /*      Some backgrounds :*/
+         --bg: url(https://i.redd.it/2cioa12l3zv71.png);
+/*          --bg: url(https://img.freepik.com/photos-gratuite/fond-mur-blanc_24836-89.jpg?w=2000); */
+/*          --bg: url(https://i.pinimg.com/originals/8f/b7/06/8fb706c006b8777e8738f901ebefcc10.jpg); */
+/*          --bg: url(https://wallpapercave.com/wp/wp1906477.png); */
+/*          --bg: url(https://i.imgur.com/uIOaQbf.png); */
+/*          --bg: url(https://i.imgur.com/CEW3dUK.jpeg); */
+/*          --bg: url(https://images.hdqwalls.com/download/oneshot-2o-1920x1080.jpg); */
+    /*      x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+        /* Optional: if you want a different background for chat. Phone wallpapers tend to work best. */
+         --chatbg: rgba(0, 0, 0, 0.5);
 
-.mpNewsBottomTab{
-    border-color: rgba(0, 0, 0, 0); 
-}
+         --gris0: rgb(66, 66, 66);
+         --gris2: rgba(66, 66, 66, .2);
+         --gris4: rgba(66, 66, 66, .4);
+         --gris75:rgba(66, 66, 66, .75);
+         --gris6: rgba(66, 66, 66, .6);
+         --gris8: rgba(66, 66, 66, .8);
 
+         --gris01: rgba(27, 27, 27, .4);
+         --gris02: rgba(27, 27, 27, .6);
+         --gris03: rgba(27, 27, 27, .8);
 
-#mpNewsMerchTab{
-    border-bottom-left-radius: 12px 20px;
-}
+         --noir0: rgb(0, 0, 0);
+         --noir2: rgba(0, 0, 0, .2);
+         --noir4: rgba(0, 0, 0, .4);
+         --noir5: rgba(0, 0, 0, .5);
+         --noir6: rgba(0, 0, 0, .6);
+         --noir8: rgba(0, 0, 0, .8);
 
-#mpAvatarDriveHeaderShadowHider {
-    top: -33px;
-    padding: 0px 0px 0px 0px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
+         --jauneXP: rgba(255, 221, 0, 0.6);
 
-#mpDriveStatsContainer{
-    opacity: 0.8;
-}
+         --textColor: white;
+
+    }
 
-#mpRankedDescriptionButton{
-    opacity: 0.4;
-}
+    /* ______________________________________________________________________________________________________________________________________________________ */
+    /* ______________________________________________________________________________________________________________________________________________________ */
+    /* ______________________________________________________________________________________________________________________________________________________ */
 
-#mpPlayButton h1 {
-    color: rgba(255, 255, 255, 1);
-}
+    #mainContainer {
+        color: var(--textColor);
+    }
 
+
+
+    #mainContainer{
+        font-family: 'Calibri' ;
+    }
 
-
-/* Daily Quests */
-#qcStickOut{
-/*     opacity: 0.8; */
-    background-color: var(--gris02);
-    right: -60px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 7px;
-        box-shadow: 0px 0px 10px rgb(0 0 0 / 0%);
-}
 
-#questContainer{
-    background-color: var(--grisV306);
-    transition: transform ease-in-out 0.4s, box-shadow ease-in-out 2s;
-    bottom: max(calc(0% - 0px), 100px);
-}
-
-#questContainer.open {
-    transform: translateX(0%);
-    box-shadow: 0 0 0px 0px black;
-    transition: transform ease-in-out 0.5s;
-/*     background-color:  rgba(27, 27, 27, 0.7); */
-}
-
-
-#mainMenuSocailButton{
-    opacity: 0.6;
-}
-
-#footerMenuBarBackground{
-    opacity: 0.4;
-}
-
-#xpOuterContainer {
-    height: 100%;
-    opacity: 1;
-}
-
-#xpBarInner{
-    background: rgba(255, 193, 51, .8) !important;
-}
-
-#xpBarOuter {
-    background-color: rgba(4, 35, 43, .6) !important;
-}
-
-#xpBarOuter, #xpBarInner{
-    border-radius: 10px 10px 10px 10px;
-}
-
-#xpBarInnerOverflow{
-    border-radius: 10px 10px 10px 10px;
-}
-
-#menuBarOptionContainer{
-    opacity: 1;
-    bottom: 3px;
-}
-
-#rightMenuBarPartContainer::before{
-    opacity: 0;
-} 
-
-#mpRankedTimer{
-    opacity: 0.4;
-}
-
-
-#roomBrowserPage{
-    opacity: 1;
-}
-
-#rbBackButton{
-    opacity: 1;
-}
-
-.modal-content{
-    opacity: 1;
-    border-radius: 20px;
-}
-
-.modal-header{
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
-
-.mhAdvancedContainerTitle {
-    background-color: rgba(0, 0, 0, 0);
-}
-
-.mhCustomSliderContainer{
-    border-radius: 10px;
-}
-
-#mhQuickSelectContainer{
-    opacity: 1;
-}
-
-#rbMajorFilters, #rbFilterContainer{
-    border-radius: 0 0 0 10px;
-}
-
-#lbStartButton, #lnSettingsButton{
-     opacity: 0.6;
-}
-
-#gameChatContainer, #lobbyCountContainer{
-    background: rgba(0, 0, 0, 0.6) !important;
-}
-
-
-#lobbyRoomNameContainer {
-    color: rgba(0, 0, 0, .5);
-    mix-blend-mode: difference;
-}
-
-
-#popoutMessageContainer{
-    opacity: 0.6;
-    border-radius: 0 10px 10px 0;
-}
-
-
-/* .lobbyAvatarLevelContainer{
-    opacity: 0.7;
-} */
-
-#qpInfoHider{
-    opacity: 0;
-    background: #f00;
-    -webkit-mask-image: radial-gradient(circle at right bottom , transparent 0, transparent 24px, black 25px);
-    border-bottom-right-radius: 40px;
-}
-
-#qpReportFeedbackContainer {
-    margin-top: 0px;
-}
-
-.awesomplete > ul {
-    background: rgba(66, 66, 66, .8);
-    border: none;
-    -webkit-box-shadow: 0 0 10px 2px rgba(0, 0, 0, .3);
-    box-shadow: 0 0 10px 2px rgba(0, 0, 0, .3);
-    border-radius: 0 0 6px 6px;
-    top: 34px;
-}
-#qpInnerContainer{
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-.qpSingleRateContainer {
-    -webkit-box-shadow: 1px -3px 10px rgba(0, 0, 0, 0);
-    box-shadow: 1px -3px 10px rgba(0, 0, 0, 0);
+    /* AVATAR ET FOND */
+    .qpAvatarImageContainer.Standard > .particleEmiter {
+    /*     background-image: url("https://cdn.animemusicquiz.com/v1/backgrounds/200px/Marine_Standard_BLUE_vert.webp"); */
+        background-size: contain;
+        opacity: 1;
+    }
+
+    .qpAvatarImageContainer.Standard{
+        background-image: url("https://cdn.animemusicquiz.com/v1/backgrounds/200px/Marine_Standard_BLUE_vert.webp");
+        background-size: contain;
+        opacity: 1;
+    }
+
+    .qpAvatarImageContainer{
+        border-radius: 10px;
+    /*     color: #19930b; */
+    }
+
+    .qpAvatarImageContainer.Standard {
+        background: none !important;
+        background: transparent !important;
+        opacity: 1;
+    }
+
+    .floatingContainer {
+        background-color: var(--gris75);
+    }
+
+    #mpKomugiPromo,  #mpSpringSkinPromo, #mpPatreonContainer, #mpHalloweenSkinPromo, #mpTicketSaleBanner{
+        border-radius: 10px;
+    }
+
+    #mpKomugiPromo, #mpPatreonContainer{
+        background-color: var(--gris4);
+    }
+
+    .mpSpringPromoContainer{
+        background-color: transparent;
+    }
+
+
+
+    #mpRankedButton{
+        border-radius: 20px;
+    }
+
+    #mpPatreonContainerInner h3{
+        font-size: 1.5em;
+    }
+
+    #startPageSocailContainer .startPageSocailIcon.button {
+            background-color: var(--noir5);
+    }
+
+    #infoFooter{
+        opacity: 0.6;
+    }
+
+
+    #mpNewsMerchTab .leftRightButtonTop{
+        opacity: 0.4;
+    }
+
+    #mpNewsMerchTab .leftRightButtonTop h3{
+        opacity: 1;
+    }
+
+    .mpNewsBottomTab{
+        border-color: rgba(0, 0, 0, 0); 
+    }
+
+
+    #mpNewsMerchTab{
+        border-bottom-left-radius: 12px 20px;
+    }
+
+    #mpAvatarDriveHeaderShadowHider {
+        top: -33px;
+        padding: 0;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    #mpDriveStatsContainer{
+        opacity: 0.8;
+    }
+
+    #mpRankedDescriptionButton{
+        opacity: 0.4;
+    }
+
+    #mpPlayButton h1 {
+        color: rgba(255, 255, 255, 1);
+    }
+
+
+
+    /* Daily Quests */
+    #qcStickOut{
+    /*     opacity: 0.8; */
+        background-color: var(--gris02);
+        right: -60px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 7px;
+            box-shadow: 0px 0px 10px rgb(0 0 0 / 0%);
+    }
+
+    #questContainer{
+        background-color: var(--grisV306);
+        transition: transform ease-in-out 0.4s, box-shadow ease-in-out 2s;
+        bottom: max(calc(0% - 0px), 100px);
+    }
+
+    #questContainer.open {
+        transform: translateX(0);
+        box-shadow: 0 0 0px 0px black;
+        transition: transform ease-in-out 0.5s;
+    /*     background-color:  rgba(27, 27, 27, 0.7); */
+    }
+
+
+    #mainMenuSocailButton{
+        opacity: 0.6;
+    }
+
+    #footerMenuBarBackground{
+        opacity: 0.4;
+    }
+
+    #xpOuterContainer {
+        height: 100%;
+        opacity: 1;
+        left: -25% !important;
+    }
+
+    #xpBarOuter {
+        background-color: rgba(4, 35, 43, .6) !important;
+        border-radius: 10px 10px 0px 0px;
+    }
     
-    border-left: 1px rgba(0, 0, 0, .6) solid;
-}
-
-#qpCenterInfoContainer{
-    opacity: 1;
-}
-
-#qpAnimeNameHider{
-    opacity: 0;
-}
-
-#qpOptionContainer{
-    right: 20px;
-}
-
-#qpOptionContainer {
-    -webkit-box-shadow: -1px -1px 10px rgba(0, 0, 0, 0);
-    box-shadow: -1px -1px 10px rgba(0, 0, 0, 0);
-    background-color: hsla(0, 0%, 11%, .4);
-}
-
-#qpOptionContainerHider {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(27, 27, 27, 0);
-    left: 20px;
-}
-
-#qpQualityList {
-    opacity: 1;
-    background-color: rgba(27, 27, 27, .4);
-    -webkit-box-shadow: 0 7px 10px 0px rgba(0, 0, 0, 0);
-    box-shadow: 0 7px 10px 0px rgba(0, 0, 0, 0);
-    transform: translateY(-160%);
-    transition: transform 0.5s ease-in-out, opacity 1.4s;
-    overflow: hidden;
-    border-radius: 0 0 4px 4px;
-}
-
-#qpQualityList.show {
-    opacity: 1;
-}
-
-
-#rbSettingFilterContainer {
-    opacity: 0;
-    transform: translateY(-100%);
-    transition: transform 0.7s ease-in-out, opacity 1s;
-    background-color: rgba(27, 27, 27, .8);
-}
-
-#rbSettingFilterContainer.open{
-    opacity: 1;
-}
-
-#qpUpvoteContainer{
-    border-radius: 0 0 0 10px;
-}
-
-#qpInnerContainer {
-    border-top: solid 1px #1b1b1bad;
-}
-
-#qpVideoTroubleshootingContainer{
-    opacity: 0.7;
-}
-
-#swRightColumn{
-    opacity: 0.8;
-}
-
-#swContentTicketsContainer{
-    opacity: 0.6;
-}
-
-.fade.in{
-    backdrop-filter: blur(4px);
-    animation: blurAnime 5s linear;
-}
-
-@keyframes blurAnime {
-    from {
-    backdrop-filter: blur(0px);
-  }
-
-  to {
-    backdrop-filter: blur(4px);
-  }
-}
-
-.tab-modal .tabContainer, .tab-modal .modal-header {
-    background-color: rgba(27, 27, 27, 0);
-}
-
-div.modal-content {
-    background-color: rgba(0, 0, 0, 0.7) !important;
-}
-
-.modal-content {
-    top: calc( 50px);
-    left: calc(0px);
-    box-shadow:
-    0px 0px 15px 0px #fff, /*inner*/
-    0px 0px 100px 10px #fbfd8d, /*midle*/
-    0px 0px 100px 30px #e69b04; /*outer*/
-    
-    opacity: 1;
-}
-
-.close {
-    font-size: 26px;
-    line-height: 0.5;
-    color: #fff;
-    text-shadow: 0 0px 0 #ee076b00;
-    opacity: 1;
-}
-
-.modal-header .close {
-    opacity: 0.8;
-}
-
-
-.qpAvatarAnswerContainer {
-    position: absolute;
-    height: 37px;
-    top: -40px;
-    z-index: 5;
-    width: 120%;
-    left: -10%;
-    word-wrap: break-word;
-}
-
-
-.floatingContainer {
-    background-color: #424242d1;
-    -webkit-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0);
-    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0);
-}
-
-.topRightBackButton{
-    background-color: rgba(27, 27, 27, .4);
-}
-
-
-.leftRightButtonTop {
-    -webkit-box-shadow: 1px -3px 10px rgba(0, 0, 0, 0);
-    box-shadow: 1px -3px 10px rgba(0, 0, 0, 0);
-}
-
-.qpAvatarInfoBar {
-    background-color: rgba(27, 27, 27, .8);
-    box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0);
-    border-radius: 5px;
-}
-
-.qpAvatarScoreContainer {
-    background-color: rgba(27, 27, 27, 1) !important;
-/*     voir pour modifier la transparence derrière le cercle */
-}
-
-.qpAvatarScoreContainer {
-    background-color: #1b1b1b;
-    border-radius: 100%;
-    width: 42px;
-    height: 42px;
-    position: absolute;
-    top: -2px;
-    left: -8px;
-    box-shadow: 0 0 0px 0px rgb(0 0 0);
-}
-
-.qpAvatarLevelBar {
-    bottom: 1px;
-    border-radius: 0;
-    background-color: rgba(27, 27, 27, .8);
-}
-
-#qpVideoHider{
-    background: #d10505;
-}
-
-
-#lnModeRuleButton, #lbLeaveButton{
-    opacity: 0.6;
-}
-
-#mpNewsTitleShadowHider .floatingContainer{
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
-
-
-/* #gcEmojiPickerContainer{
-        background-color: rgba(27, 27, 27, .7);
-} */
-
-#rbMajorFilters {
-    position: absolute;
-    width: 310px;
-    left: -305px;
-}
-
-.ps > .ps__scrollbar-y-rail > .ps__scrollbar-y {
-    right: 3px;
-    width: 6px;
-}
-
-
-.lobbyAvatarSubTextContainer {
-    -webkit-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0);
-    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0);
-}
-
-.lobbyAvatarHostContainer > .lobbyAvatarSubTextContainer {
-    width: 110px;
-    height: 100%;
-}
-
-.lobbyAvatarRow.left .lobbyAvatarHostContainer {
-    right: 95px;
-}
-
-.lobbyAvatarNameContainer {
-    -webkit-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0);
-    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0);
-}
-
-.lobbyAvatarRow.left .lobbyAvatarNameContainer {
-    right: 95px;
-}
-
-.lobbyAvatarHostContainer h3, .lobbyAvatarLevelContainer h3 {
-    font-family: inherit;
-    font-weight: 500;
-    line-height: 1.09;
-    color: inherit;
-}
-
-
-/* @media screen and (max-width: 1230px) */
-.lobbyAvatarLevelContainer {
-    bottom: 21px;
-    height: 22px;
-    width: 80px;
-}
-
-.lobbyAvatarImgContainer {
-    overflow: visible;
-}
-
-.lobbyAvatarHostContainer {
-    top: 5.5px;
-}
-
-
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-
-
-
-
-
-
-.lobbyAvatarRow.right .lbReady .lobbyAvatarImgContainer {
-    background-color: rgba(0, 0, 0, 0) !important;
-    -webkit-box-shadow: none;
-    
-    top: calc(50% - 0px);
-    left: calc(84% - 250px);
-    width: 0px;
-    height: 0px;
-    box-shadow:
-    0 0 50px 10px #fff, 
-    0 0 60px 50px #fbfd8d,
-    0 0 100px 45px #e69b04;
-}
-
-.lobbyAvatarRow.right .lbReady .lobbyAvatarImg {
-    width: 120px;
-    height: 120px;
-    top: -60px;
-    left: -60px;
-    border-radius: 50%;
-}
-
-.lobbyAvatarRow.right .lobbyAvatarImgContainer{
-    background-color: rgba(0, 0, 0, 0) !important;
-    -webkit-box-shadow: none;
-    
-    top: calc(50% - 0px);
-    left: calc(84% - 250px);
-    width: 0px;
-    height: 0px;
-    box-shadow:
-    0 0 50px 10px #fff, 
-    0 0 60px 50px #3916b6,
-    0 0 100px 45px #e604d7;
-}
-
-.lobbyAvatarRow.right .lobbyAvatarImg  {
-    width: 120px;
-    height: 120px;
-    top: -60px;
-    left: -60px;
-    border-radius: 50%;
-}
-
-.lobbyAvatarLevelContainer > .lobbyAvatarSubTextContainer {
-    background-color: rgba(27, 27, 27, .7);
-}
-
-.lobbyAvatarRow.right .lobbyAvatarLevelContainer .lobbyAvatarSubTextContainer {
-    border-bottom-right-radius: 10px;
-    top: 2.5px;
-}
-
-.lobbyAvatarRow.right .lobbyAvatarLevelContainer {
-    bottom: 22px;
-    height: 22px;
-    width: 108px !important;
-    transform: translateX(-20%) skewX(-35.5deg);
-}
-
-.lobbyAvatarRow.right .lobbyAvatarLevelContainer .lobbyAvatarSubTextContainer h3{
-    text-align: center;
-    transform: translateX(13%) skewX(35.5deg);
-/*     margin-right: 20px; */
-    
-}
-
-.lobbyAvatarRow.right .lobbyAvatarOptionContainer {
-    transform: translateX(-300%);
-    padding-left: 9px;
-}
-
-.lobbyAvatarRow.right .lobbyAvatar:hover .lobbyAvatarOptionContainer {
-    transform: translateX(0);
-}
-
-.lobbyAvatarRow.right .lobbyAvatarPlayerOptions {
-    left: 115px;
-}
-
-
-.lobbyAvatarRow.right .lobbyAvatarOptionContainer {
-    height: 100%;
-    top: 2.5px;
-    background-color: rgba(26, 26, 26, .9);
-    border-radius: 0px 0px 5px 8px;
-}
-
-.lobbyAvatarRow.right .lobbyAvatarPlayerOptions {
-    width: 55px;
-}
-
-.lobbyAvatarRow.right .lobbyAvatarNameContainer {
-    border-radius: 0 10px 10px 0;
-}
-
-.lobbyAvatarRow.right .lobbyAvatarHostOptions {
-    border-top-right-radius: 5px;
-}
-
-.lobbyAvatarRow.right .lobbyAvatarHostContainer .lobbyAvatarSubTextContainer{
-    border-radius: 0 10px 10px 0;
-}
-
-.lobbyAvatarRow.right .lobbyAvatarPlayerOptions > .lobbyAvatarCommandIcon{
-    left: 5px;
-    top: -2px;
-}
-
-.lobbyAvatarOptionContainer {
-    transition: transform 0.5s ease-in-out;
-}
-
-
-
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-
-.lobbyAvatarRow.left .lbReady .lobbyAvatarImgContainer {
-    background-color: rgba(0, 0, 0, 0) !important;
-    -webkit-box-shadow: none;
-    
-    top: calc(50% - 0px);
-    left: calc(84% - 0px);
-    width: 0px;
-    height: 0px;
-    box-shadow:
-    0 0 50px 10px #fff, 
-    0 0 60px 50px #fbfd8d,
-    0 0 100px 45px #e69b04;
-}
-
-.lobbyAvatarRow.left .lbReady .lobbyAvatarImg {
-    width: 120px;
-    height: 120px;
-    top: -60px;
-    left: -60px;
-    border-radius: 50%;
-}
-
-.lobbyAvatarRow.left .lobbyAvatarImgContainer{
-    background-color: rgba(0, 0, 0, 0) !important;
-    -webkit-box-shadow: none;
-    
-    top: calc(50% - 0px);
-    left: calc(84% - 0px);
-    width: 0px;
-    height: 0px;
-    box-shadow:
-    0 0 50px 10px #fff, 
-    0 0 60px 50px #3916b6,
-    0 0 100px 45px #e604d7;
-}
-
-.lobbyAvatarRow.left .lobbyAvatarImg  {
-    width: 120px;
-    height: 120px;
-    top: -60px;
-    left: -60px;
-    border-radius: 50%;
-}
-
-.lobbyAvatarRow.left .lobbyAvatarLevelContainer .lobbyAvatarSubTextContainer {
-    border-bottom-left-radius: 10px;
-    top: 2.5px;
-}
-
-.lobbyAvatarRow.left .lobbyAvatarLevelContainer {
-    right: 100px;
-}
-
-.lobbyAvatarRow.left .lobbyAvatarLevelContainer {
-/*     bottom: 22px;
-    height: 22px;
-    width: 100px !important; */
-    
-    bottom: 22px;
-    height: 22px;
-    width: 108px !important;
-    transform: translateX(20%) skewX(35.5deg);
-}
-
-.lobbyAvatarRow.left .lobbyAvatarLevelContainer .lobbyAvatarSubTextContainer h3{
-    text-align: center;
-    transform: translateX(-13%) skewX(-35.5deg);
-}
-
-.lobbyAvatarSubTextContainer .lobbyAvatarRow.left .lobbyAvatarOptionContainer {
-    height: 100%;
-    top: 0;
-    background-color: rgba(26, 26, 26, .9);
-    border-radius: 0 0 0 5px;
-}
-
-.lobbyAvatarRow.left .lobbyAvatarPlayerOptions {
-    width: 55px;
-}
-
-.lobbyAvatarRow.left .lobbyAvatarNameContainer {
-    border-radius: 10px 0 0 10px;
-}
-
-.lobbyAvatarRow.left .lobbyAvatarHostOptions {
-    border-top-left-radius: 5px;
-}
-
-.lobbyAvatarRow.left .lobbyAvatarHostContainer .lobbyAvatarSubTextContainer{
-    border-radius: 10px 0 0 10px;
-}
-
-.lobbyAvatarRow.left .lobbyAvatarPlayerOptions > .lobbyAvatarCommandIcon{
-    right: 5px;
-    top: -2px;
-}
-
-.lobbyAvatarRow.left .lobbyAvatarPlayerOptions{
-    border-bottom-left-radius: 5px;
-}
-
-.lobbyAvatarRow.left .lobbyAvatarPlayerOptions.lobbyAvatarOptionContainer {
-    top: 2.5px;
-    right: 115px;
-    padding-right: 9px;
-    border-radius: 0px 0px 8px 5px;
-/*  transform: translateX(300%) !important; */
-}
-
-.lobbyAvatarRow.left .lobbyAvatarHostOptions {
-    width: 110px;
-}
-
-.lobbyAvatarRow.left .lobbyAvatarHostOptions.lobbyAvatarOptionContainer .lobbyAvatarCommandIcon {
-    float: left;
-    left: 7px;
-}
-
-.lobbyAvatarRow.left .lobbyAvatarCommandIcon.clickAble.playerCommandIconKick{
-    top: 0px;
-}
-
-.lobbyAvatarOptionContainer {
-    background-color: rgba(26, 26, 26, .9);
-}
-
-
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-
-.lobbyAvatarImgContainer > img {
-    position: absolute;
-    top: -60px;
-    left: -60px;
-}
-
-.lobbyAvatarCommandIcon.clickAble.playerCommandIconKick{
-    top: -2px;
-}
-
-.lobbyAvatarRow.left .lobbyAvatarHostContainer .lobbyAvatarSubTextContainer .lobbyAvatarHostContainer h3, .lobbyAvatarLevelContainer h3 {
-    line-height: 0.89;
-}
-
-.qpAvatarImageContainer.floatingContainer{
-        background-color: #aaa0 !important;
-}
-
-#lobbyCountContainer {
-    text-shadow: 0px 0px 8px rgba(0, 0, 0, 0);
-/*     background-color: #424242; */
-    -webkit-box-shadow: 0 2px 10px 2px rgba(0, 0, 0, 0);
-    box-shadow: 0 2px 10px 2px rgba(0, 0, 0, 0);
-}
-
-#lobbyCountLoad {
-    width: 100%;
-    background-color: #4497ea;
-    box-shadow: 0 1px 10px 1px rgba(66, 146, 226, 0);
-}
-
-#lobbyTopCount {
-    top: 13px;
-}
-
-.topMenuBigButton h1 {
-    margin-top: 4px;
-}
-
-
-#footerMenuBarBackground{
-    opacity: 0.75;
-}
-
-#socialTab{
-    border-top-right-radius: 20px;
-}
-
-.leftRightButtonBottom {
-    -webkit-box-shadow: 1px 3px 10px rgba(0, 0, 0, 0);
-    box-shadow: 1px 3px 10px rgba(0, 0, 0, 0);
-}
-
-.rbrNumberOfSongsContainer {
-    width: 50px;
-}
-
-#qpSongArtist{
-    padding-left: 1px;
-    padding-right: 1px;
-}
-
-.mpDriveEntryName {
-    width: calc(64% - 0%);
-}
-
-#mpDriveTopContainer .mpDriveEntryName {
-    width: calc(58% - 0px);
-}
-
-.mpDriveEntryName::after {
-    background-image: linear-gradient(to left, rgb(66, 66, 66), rgba(66, 66, 66, 0));
-    opacity: 0.4;
-}
-
-#mpDriveRecentEntry-8{
-    border-radius: 0 0 3px 3px;
-}
-
-#mpDriveDonationContainer .button {
-    border-radius: 5px;
-}
-
-.mpDrivenEntryTarget {
-    font-size: large;
-}
-
-.qpScoreBoardGroupContainer {
-    margin: 0px 0px 0px 0px;
-}
-
-.qpAvatarHostIcon, .qpAvatarHiddenIcon {
-/*     border-radius: 4px 6px 4px 6px; */
-    background-color: rgba(232, 109, 115, 1);
-    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0);
-    border-radius: 0 5px 5px 0;
-}
-
-.qpTeamStandingItem {
-    margin: -0px 0px 0px 0px;
-}
-
-.qpScoreBoardGroupContainer.active {
-    box-shadow: 0px 0px 4px 2px #f6b801;
-}
-
-.qpScoreBoardGroupContainer {
-    margin: 5px 0px 0px 5px;
-}
-
-.topMenuBar > .topMenuBack, #rbMajorFilters, .topMenuButton, #rbFilterContainer, #rbSearchContainer {
-    background-color: rgba(27, 27, 27, .6) !important;
-}
-
-#rbSearchInputContainer > input{
-    background-color: rgba(27, 27, 27, 0) !important;
-}
-
-#rbSearchContainer{
-    background-color: rgba(27, 27, 27, 0) !important; /* à enlever... ou pas*/
-}
-
-#rbSettingFilterContainer {
-    opacity: 0;
-    transform: translateY(-100%);
-    transition: transform 0.7s ease-in-out, opacity 1s;
-    background-color: rgba(27, 27, 27, .8);
-}
-
-#rbSettingFilterContainer.open{
-    opacity: 1;
-}
-
-.rightLeftTopBottom {
-    -webkit-box-shadow: 0px -3px 10px rgba(0, 0, 0, 0);
-    box-shadow: 0px -3px 10px rgba(0, 0, 0, 0);
-}
-
-#rbMajorFilters {
-    position: absolute;
-    width: 310px;
-    left: -310px;
-}
-
-.topMenuButton {
-    -webkit-box-shadow: 0px 0px 16px rgba(0, 0, 0, 0);
-    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0);
-}
-
-.topMenuBigButton {
-    width: 230px;
-    height: 53px;
-}
-
-#qpVoteState {
-    border-radius: 50px 20px 20px 50px !important;
-    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0);
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0);
-}
-
-#qpVoteStateContainer{
-    border-radius: 50px 0 0 50px !important;
-}
-
-#gcChatMenu > div.selected {
-    background: rgba(109, 109, 109, .4);
-    border-radius: 0 0 10px 10px;
-}
-
-#gcChatMenu > div {
-    background: rgba(27, 27, 27, 0);
-}
-
-#gcChatMenu {
-    height: 40px;
-    width: calc(100% + 11px);
-    overflow: hidden;
-}
-
-#gcContent {
-    height: calc(100% - 40px);
-}
-
-.gcInputContainer > .textAreaContainer {
-    border-radius: 4px;
-}
-
-.textAreaContainer {
-    border: solid 1px #4e4e4e;
-    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
-}
-
-.textAreaContainer:focus-within {
-    -webkit-box-shadow: inset 0 0px 1px rgba(0, 0, 0, 0), 0 0 1px rgba(34, 141, 255, 0);
-    box-shadow: inset 0 0px 1px rgba(0, 0, 0, 0), 0 0 1px rgba(34, 141, 255, 0);
-    border: solid 1px #fbfd8d;
-}
-
-textarea {
-    background-color: rgba(27, 27, 27, 0.4);
-}
-
-/* #gcEmojiPickerButton > i {
-    font-size: 30px;
-    color: #f2eded;
-    content: "Bullies";
-} */
-
-#gcEmojiPickerContainer {
-    width: 350px;
-    height: 400px;
-    left: -310px;
-    top: -30px;
-/*     background-color: rgba(27, 27, 27, .7); */
-    border-radius: 5px 0 0 5px;
-    box-shadow: none;
-}
-
-#gcEmojiPickerRecentContainer .amqEmoji, #gcEmojiPickerAllContainer .amqEmoji {
-    max-height: 40px;
-    max-width: 40px;
-    min-height: 40px;
-    min-width: 40px;
-}
-
-.qcProgressBarContainer {
-    background-color: rgba(27, 27, 27, .5);
-}
-
-.qcQuestTypeContainer {
-    background-color: rgba(27, 27, 27, .8);
-}
-
-.qcQuestOuter {
-    font-size: 20px;
-    overflow: hidden;
-}
-
-#qcHeader {
-    height: 35px;
-    background-color: rgba(27, 27, 27, 0.7);
-    font-size: 24px;
-    position: relative;
-}
-
-#questContainer {
-    width: 350px;
-}
-
-.qcCounter {
-    width: 77px;
-    float: left;
-    text-align: center;
-}
-
-.lobbyAvatarCommandIcon {
-    background-color: rgba(215, 13, 13, 0);
-}
-
-#playerProfileLayer .floatingContainer {
-    background-color: rgba(66, 66, 66, .8);
-    border-radius: 10px;
-}
-
-.ppFooterContainer{
-    border-bottom-left-radius: 10px;
-}
-
-.ppImageContainer {
-    float: left;
-    background-color: rgb(27, 27, 27);
-    
-    border-top-left-radius: 10px;
-}
-
-.ppHeaderText > .close {
-    margin-top: 4px;
-    margin-right: 2px;
-    z-index: 5;
-    position: relative;
-}
-
-.ppStatsNameContainer {
-    background-color: rgba(27, 27, 27, .4);
-    border-bottom: #4242425c 1px solid;
-}
-
-.ppBadgeContainer {
-    background-color: rgba(27, 27, 27, .4);
-    box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, .4);
-    position: relative;
-}
-
-.ppBadgeNoBadgeText {
-    color: rgb(253, 252, 252);
-    text-shadow: 0px -1px 0px rgba(224, 36, 36, 0);
-}
-
-.ppImageContainer, .ppFooterText {
-    background-color: rgba(27, 27, 27, .6);
-}
-
-.ppFooterOptionIcon {
-    background-color: rgba(25, 25, 25, .6);
-}
-
-.ppPlayerLevelLine{
-    background-color: rgba(27, 27, 27, .9);
-}
-
-.ppPlayerLevelLowerBoarder {
-    box-shadow: 0 1px 10px 1px rgb(0 0 0);
-}
-
-#lobbyCountContainer {
-    text-shadow: 0px 0px 8px rgba(0, 0, 0, 0);
-    background-color: rgb(66, 66, 66);
-    -webkit-box-shadow: 0 2px 10px 2px rgba(0, 0, 0, 0);
-    box-shadow: 0 2px 10px 2px rgba(0, 0, 0, 0);
-}
-
-#lobbyCountLoad {
-    width: 100%;
-    background-color: rgba(255, 193, 50, .75);
-    box-shadow: 0 1px 10px 1px rgb(66 146 226 / 0%);
-}
-
-#lobbyReadyCountLoad {
-    background-color: rgba(238, 0, 255, .5);
-}
-
-#qpVoteSkip.toggled {
-    background-color: rgba(254, 193, 51, 1) !important;
-}
-
-#qpVolume  {
-    width: 120px;
-    margin-top: 7px;
-    color: rgb(255, 123, 0);
-}
-
-#qpVolumeBarIndicator {
-    width: 6px;
-    background-color: rgb(255, 123, 0);
-}
-
-/* .qpAvatarStatus {
-    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0);
-    right: 12px;
-    color: #fff;
-    width: 21px;
-    bottom: 2px; 
-} */
-
-.qpAvatarAnswerContainer {
-    position: absolute;
-    max-height: 60px;
-    min-height: 37px;
-    height: 20px;
-    top: -40px;
-    z-index: 5;
-    width: 120%;
-    left: -10%;
-    word-wrap: break-word;
-}
-
-.switchContainer > .slider-tick-container > .switchOn {
-    display: none;
-    right: -10px;
-    background-color: rgba(46, 136, 217, 0);
-    background-image: linear-gradient(to top left, #ea4452 0, #e6b718  100%);
-}
-
-.switchContainer.active {
-    background-image: linear-gradient(to bottom, #f2da0c 0, #d65b3f 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4497EA',endColorstr='#3f8ad6',GradientType=0);
-}
-
-#optionsContainer{
-    border-radius: 20px 20px 0 0;
-}
-
-#optionGlyphIcon {
-    margin-left: 15px;
-}
-
-#gcMessageContainer > li .gcTeamMessageIcon {
-    background-color: #ffa500;
-    width: 50px;
-    border-radius: 3px;
-    left: -15px;
-}
-
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-
-/* .qpLifeActiveOverlay{
-    width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  box-shadow:
-    0 0 2px #fff,
-    -2px 0 8px #f0f,
-    2px 0 8px #0ff,
-    inset 0 0 5px #fff,
-    inset 5px 0 8px #f0f,
-    inset -5px 0 8px #0ff,
-    inset 5px 0 30px #f0f,
-    inset -5px 0 30px #0ff;
-  animation: pulsate 10s linear infinite;
-} */
-
-/* .qpLifeActiveOverlay{
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  box-shadow:
-    0 0 1.3px #fff,
-    -1.3px 0 5.3px #f0f,
-    1.3px 0 5.3px #0ff,
-    inset 0 0 3.3px #fff,
-    inset 3.3px 0 5.3px #f0f,
-    inset -3.3px 0 5.3px #0ff,
-    inset 5.5px 0 20px #f0f,
-    inset -5.5px 0 20px #0ff;
-  animation: pulsate 5s linear infinite;
-}
-
-@keyframes pulsate {
-  50% {
-    box-shadow:
-      0 0 1.3px #fff,
-      1.3px 0 5.3px #f0f,
-      -1.3px 0 5.3px #0ff,
-      inset 0 0 3.3px #fff,
-      inset -3.3px 0 5.3px #f0f,
-      inset 3.3px 0 5.3px #0ff,
-      inset -3.3px 0 20px #f0f,
-      inset 3.3px 0 20px #0ff;
-  }
-} */
-
-.qpLifeActiveOverlay{
-  width: 20px !important;
-  height: 20px;
-  margin-bottom: 7px !important;
-  border-radius: 50%;
-  box-shadow:
-    0 0 1.3px #fff,
-    -1.3px 0 5.3px #f0f,
-    1.3px 0 5.3px #0ff,
-    inset 0 0 3.3px #fff,
-    inset 3.3px 0 5.3px #f0f,
-    inset -3.3px 0 5.3px #0ff,
-    inset 5.5px 0 20px #f0f,
-    inset -5.5px 0 20px #0ff;
-  animation: pulsate 15s linear infinite, spin 130s linear infinite;
-}
-
-@keyframes pulsate {
-  50% {
-    box-shadow:
-      0 0 1.3px #fff,
-      1.3px 0 5.3px #f0f,
-      -1.3px 0 5.3px #0ff,
-      inset 0 0 3.3px #fff,
-      inset -3.3px 0 5.3px #f0f,
-      inset 3.3px 0 5.3px #0ff,
-      inset -3.3px 0 20px #f0f,
-      inset 3.3px 0 20px #0ff;
-  }
-}
-
-@keyframes spin {
-    100% { -webkit-transform: rotate(360deg);
-    transform:rotate(360deg);   
-  } 
-}
-
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-
-/* .qpLife{
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  box-shadow:
-    0 0 1.3px #fff,
-    -1.3px 0 5.3px #0fe,
-    1.3px 0 5.3px #ff0,
-    inset 0 0 3.3px #fff,
-    inset 3.3px 0 5.3px #0fe,
-    inset -3.3px 0 5.3px #ff0,
-    inset 5.5px 0 20px #0fe,
-    inset -5.5px 0 20px #ff0;
-  animation: pulsateAlive 5s linear infinite;
-}
-
-@keyframes pulsateAlive {
-  50% {
-    box-shadow:
-      0 0 1.3px #fff,
-      1.3px 0 5.3px #0fe,
-      -1.3px 0 5.3px #ff0,
-      inset 0 0 3.3px #fff,
-      inset -3.3px 0 5.3px #0fe,
-      inset 3.3px 0 5.3px #ff0,
-      inset -3.3px 0 20px #0fe,
-      inset 3.3px 0 20px #ff0;
-  }
-} */
-
-/* .qpLife{
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  box-shadow:
-    0 0 1.3px #fff,
-    -1.3px 0 5.3px #0fe,
-    1.3px 0 5.3px #ff0,
-    inset 0 0 3.3px #fff,
-    inset 3.3px 0 5.3px #0fe,
-    inset -3.3px 0 5.3px #ff0,
-    inset 5.5px 0 20px #0fe,
-    inset -5.5px 0 20px #ff0;
-  animation: pulsateAlive 6s linear infinite, spinAlive 20s linear infinite;
-}
-
-@keyframes pulsateAlive {
-  50% {
-    box-shadow:
-      0 0 1.3px #fff,
-      1.3px 0 5.3px #0fe,
-      -1.3px 0 5.3px #ff0,
-      inset 0 0 3.3px #fff,
-      inset -3.3px 0 5.3px #0fe,
-      inset 3.3px 0 5.3px #ff0,
-      inset -3.3px 0 20px #0fe,
-      inset 3.3px 0 20px #ff0;
-  }
-}
-
-@keyframes spinAlive {
-    100% { -webkit-transform: rotate(360deg);
-    transform:rotate(360deg);   
-  } 
-} */
-
-.qpLife{
-  width: 20px !important;
-  height: 20px;
-  margin-bottom: 7px !important;
-  border-radius: 50%;
-  box-shadow:
-    0 0 1.3px #fff,
-    -1.3px 0 5.3px #f00,
-    1.3px 0 5.3px #ff0,
-    inset 0 0 3.3px #fff,
-    inset 3.3px 0 5.3px #f00,
-    inset -3.3px 0 5.3px #ff0,
-    inset 5.5px 0 20px #f00,
-    inset -5.5px 0 20px #ff0;
-  animation: pulsateAlive 15s linear infinite, spinAlive 130s linear infinite;
-}
-
-@keyframes pulsateAlive {
-  50% {
-    box-shadow:
-      0 0 1.3px #fff,
-      1.3px 0 5.3px #f00,
-      -1.3px 0 5.3px #ff0,
-      inset 0 0 3.3px #fff,
-      inset -3.3px 0 5.3px #f00,
-      inset 3.3px 0 5.3px #ff0,
-      inset -3.3px 0 20px #f00,
-      inset 3.3px 0 20px #ff0;
-  }
-}
-
-@keyframes spinAlive {
-    100% { -webkit-transform: rotate(360deg);
-    transform:rotate(360deg);   
-  } 
-}
-
-#restartMessageContainer{
-    background-color: rgba(0, 0, 0, 0.6) !important;
-    border-radius: 0 10px 10px 0;
-    top: 45% !important;
-}
-
-#restartMessageContainer .close{
-        right: 5px;
-        line-height: 0.9;
-}
-
-.close:focus, .close:hover {
-    color: #e8a808;
-    text-decoration: none;
-    filter: none;
-    opacity: 1;
-}
-
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-
-
-.qpVideoTextOverlay {
-    text-shadow: -1px 0 #e3131300, 0 1px #da121200, 1px 0 #0000, 0 -1px #0000;
-}
-
-#mhLoadContainer{
-    background-color: rgba(66, 66, 66, .6);
-    border-radius: 15px;
-}
-
-.mhLoadEntryNameContainer {
-    background-color: rgba(66, 66, 66, 0);
-}
-
-.mhLoadEntryName::after {
-    background-image: linear-gradient(to left, rgba(226, 12, 12, 0), rgba(66, 66, 66, 0));
-}
-
-.mhLoadListEntry {
-    height: 25px;
-    background-color: rgba(27, 27, 27, .4);
-    border-bottom: 1px solid #00000080;
-    overflow: hidden;
-    position: relative;
-}
-
-#mhLoadFromSaveCodeButton {
-    position: absolute;
-    bottom: 0;
-    margin: auto;
-    background-color: rgba(27, 27, 27, .6);
-    width: 100%;
-    -webkit-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0);
-    box-shadow: 0 0px 6px 1px rgba(0, 0, 0, 0);
-    
-    border-radius: 0 0 15px 15px;
-}
-
-#mhLoadHeader {
-    background-color: rgba(27, 27, 27, .75);
-    border-bottom: 1px solid #8c6a06;
-    border-radius: 15px 15px 0 0;
-}
-
-#mhLoadHeader > .close {
-    position: absolute;
-    right: 4px;
-    top: 4px;
-    font-size: 28px;
-}
-
-.mhLoadDelete {
-    font-size: 26px;
-    position: absolute;
-    right: 5px;
-    top: -8px;
-}
-
-.tab-modal .modal-body {
-    padding-top: 3px;
-    padding-bottom: 0px;
-    border-top: 1px solid #8c6a06;
-}
-
-.modal-footer {
-    border-top: 1px solid #8c6a06;
-}
-
-
-.slider-handle, .slider-tick.in-selection {
-    background-image: -webkit-linear-gradient(to top left, #ea4452 0, #e6b718  100%);
-    background-image: -o-linear-gradient(to top left, #ea4452 0, #e6b718  100%);
-    background-image: linear-gradient(to top left, #ea4452 0, #e6b718  100%);
-/*     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4497EA',endColorstr='#3f8ad6',GradientType=0); */
-}
-
-#mhVintageSlider .slider-handle.min-slider-handle, #mhSamplePointRangeSlider .slider-handle.min-slider-handle{
-    background-image: -webkit-linear-gradient(to top right, #d84451 0, #e9d014  100%);
-    background-image: -o-linear-gradient(to top right, #d84451 0, #e9d014  100%);
-    background-image: linear-gradient(to top right, #d84451 0, #e9d014  100%);
-/*     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4497EA',endColorstr='#3f8ad6',GradientType=0); */
-}
-
-
-.slider-selection  {
-    background-image: -webkit-linear-gradient(to bottom right, #f2da0c 0, #d65b3f 100%);
-    background-image: -o-linear-gradient(to bottom right, #f2da0c 0, #d65b3f 100%);
-    background-image: linear-gradient(to bottom right, #f2da0c 0, #d65b3f 100%);
-/*     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4497EA',endColorstr='#3f8ad6',GradientType=0); */
-}
-
-.slider-selection.tick-slider-selection{
-    background-image: -webkit-linear-gradient(to top left, #ea4452 0, #e6b718  100%);
-    background-image: -o-linear-gradient(to top left, #ea4452 0, #e6b718  100%);
-    background-image: linear-gradient(to top left, #ea4452 0, #e6b718  100%);
-}
-
-.btn-primary {
-    background-color: #d56a4e;
-    background-image: linear-gradient(to bottom left, #ea4452 0, #e6b718  100%);
-    border-color: #d56a4e;
-}
-
-.filterContent {
-    border-top: 3px solid rgba(66, 66, 66, .4);
-}
-
-.filterContainer {
-    background-color: rgba(27, 27, 27, .7);
-    border-radius: 13px;
-    margin-top: -7px;
-}
-
-#mhMainContainerInner .flatTextInput {
-    border-radius: 14px 14px 0 0;
-    background-color: rgba(0, 0, 0, 0);
-}
-
-#mhSongTypeContainer {
-    width: 270px;
-}
-
-#mhSongTypeContainer.checkboxContainer > div {
-    display: inline-block;
-    width: 85px;
-    vertical-align: top;
-}
-
-.mhSettingCategory {
-    position: absolute;
-    top: -1px;
-    width: 100px;
-    background-color: rgba(255, 153, 0, .75);
-    left: -10px;
-    box-shadow: none;
-    border-bottom-right-radius: 5px ;
-}
-
-.mhSettingContainer {
-    border-top: solid 5px rgba(255, 153, 0, .75);
-    border-radius: 5px;
-}
-
-#mhPrivateRoomContainer {
-    position: absolute;
-    right: 0;
-    top: 30px;
-    width: 160px;
-    text-align: left;
-    padding-left: 5px;
-}
-
-#mhRoomNameInput {
-    width: 240px;
-}
-
-.customCheckbox label {
-    color: #d26634;
-}
-
-#mhQuickSelectContainer > .tab {
-    background-color: rgba(82, 82, 82, .4);
-}
-
-.tab.leftRightButtonTop.clickAble::hover {
-    background-color: rgba(227, 14, 14, .8);
-}
-
-.mhCheckTableContainer {
-    width: 500px;
-    border: solid rgba(27, 27, 27, .6) 5px;
-    margin-top: 20px;
-    border-radius: 10px;
-}
-
-.mhctRow {
-    position: relative;
-    border-bottom: solid rgba(27, 27, 27, .6) 3px;
-    overflow: hidden;
-    height: 30px;
-}
-
-.mhctRowNameContainer {
-    background-color: rgba(27, 27, 27, .6);
-}
-
-.mhctRowItem:nth-child(2n) {
-    background-color: rgba(27, 27, 27, .6);
-}
-
-.mhctRowItem {
-    width: 24%;
-    display: inline-block;
-    padding-top: 8px;
-}
-
-#mhOpeningCategoryContainer .mhctRowItem .customCheckbox, #mhEndingCategoryContainer .mhctRowItem .customCheckbox, #mhInsertCategoryContainer .mhctRowItem .customCheckbox {
-    top: -5px;
-}
-
-#xpBarAnimationContainer {
-    border-radius: 10px;
-    opacity: 0;
-    position: absolute;
-    transition: opacity ease-in-out 2.3s !important;
-    box-shadow: 0 0 10px #ffffff9e, 0 0 20px #ffffff9e, 0 0 40px #eeac1c, 0 0 70px #eeac1c, 0 0 80px #eeac1c;
-}
-
-
-.ppProfileImg{
-    border-radius: 10px 0 0 0;
-}
-
-.socialTabFriendPlayerEntry > .stPlayerProfileButton {
-    margin-top: 22px;
-    margin-left: -5px;
-}
-
-.socialTabFriendPlayerEntry {
-    width: 127%;
-    margin-left: -10px;
-}
-
-#mainMenuSocailButton:hover {
-    box-shadow: 0px 6px 10px 2px #24aa9f00;
-}
-
-.btn-primary:hover {
-    -webkit-box-shadow: inset 0 0 20px 9px #eeac1c00;
-    box-shadow: inset 0 0 20px 9px #d2663400;
-    background-image: linear-gradient(to bottom left, #e6b718 0,  #ea4452  100%);
-    border-color: #d26634;
-}
-
-.btn-primary.active, .btn-primary:active, .open>.dropdown-toggle.btn-primary {
-    color: #fff;
-    background-color: #e0992f;
-    border-color: #fff;
-}
-
-.btn-primary:focus {
-    background-color: #febb32;
-    border-color: #fff;
-}
-
-#mhWatchedDisitributionContainer{
-    padding-top: 8px;
-}
-
-.mhCustomSliderContainer {
-    background-color: rgba(27, 27, 27, .65);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    margin-left: -8px;
-}
-
-.mhAdvancedContainerTitle {
-    left: 0px;
-}
-
-.form-control:focus {
-    border-color: #febb32;
-    outline: 0;
-    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgba(254, 187, 50, .6);
-    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgba(254, 187, 50, .6);
-}
-
-#gcQueueActionButtonText {
-    margin-top: -6px;
-}
-
-#qpAnswerInputLoadingContainer {
-    right: 15px;
-}
-
-#qpVoteSkipGlowContainer {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    -webkit-box-shadow: 3px 0px 10px 5px #228dff00;
-    box-shadow: 3px 0px 10px 5px #f2600f00;
-    opacity: 0.7;
-    z-index: -1;
-}
-
-#qpVideoTroubleshootingContainer > .close {
-    margin-right: 5px;
-    margin-top: 5px;
-}
-
-#qpVideoTroubleshootingContainer{
-    border-bottom-left-radius: 15px;
-}
-
-.awesomplete > ul.ps {
-    max-height: 290px;
-}
-
-
-.gcUserName {
-    font-weight: bold;
-    color: #fd857b;
-    animation: colorSmooth 400s infinite alternate;
-}
-
-@keyframes colorSmooth {
-    0% {
-        color: #fdea96;
-  }
-    14% {
-        color: #e25cc8;
-  }
-    28% {
-        color: #b6325f;
-  }
-    42% {
-        color: #ff887c;
-  }
-    56% {
-        color: #f2acb4;
-  }
-    70% {
-        color: #84bcd2;
-  }
-    84% {
-        color: #2dc9d2;
-  }
-    100% {
-        color: #6c7ae0;
-  }
-}
-
-.chatBoxFooter {
-    width: 100%;
-    height: 100%;
-    float: left;
-    background-color: rgba(27, 27, 27, .6);
-}
-
-.chatBox::before {
-    content: "";
-    position: absolute;
-    background-color: rgba(27, 27, 27, 0);
-    width: 100%;
-    height: 100%;
-    left: -25px;
-}
-
-.chatBoxContainer {
-    border-right: solid 2px rgba(27, 27, 27, .4);
-    border-left: solid 2px rgba(27, 27, 27, .4);
-    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0);
-    transform: translateY(125%);
-    background-color: rgba(27, 27, 27, .6);
-    border: none;
-    border-radius: 5px 5px 0 0;
-/*     right: 320px; */
-    width: 100%;
-}
-
-.chatTopBar {
-    background-color: rgba(27, 27, 27, .5);
-    font-size: 12px;
-    height: 16px;
-}
-
-.chatTopBar p:after {
-    content: "";
-    pointer-events: none;
-    position: absolute;
-    width: 50px;
-    height: 16px;
-    top: 0;
-    right: 72px;
-    background-image: -webkit-linear-gradient(to left, rgba(27, 27, 27, 0), rgba(27, 27, 27, 0));
-    background-image: -moz-linear-gradient(to left, rgba(27, 27, 27, 0), rgba(27, 27, 27, 0));
-    background-image: -ms-linear-gradient(to left, rgba(27, 27, 27, 0), rgba(27, 27, 27, 0));
-    background-image: -o-linear-gradient(to left, rgba(27, 27, 27, 0), rgba(27, 27, 27, 0));
-    background-image: linear-gradient(to left, rgba(27, 27, 27, 0), rgba(27, 27, 27, 0));
-}
-
-.chatTopBar .glyphicon-remove{
-    margin-right: 2px;
-    margin-top: 1.5px;
-}
-
-.chatTopBar .glyphicon > i{
-    margin-top: 1px;
-}
-
-.chatTopBar .glyphicon-arrow-right, .chatTopBar .glyphicon-arrow-left{
-    margin-top: 0.75px;
-}
-
-
-.chatBoxContainer .header {
-    -webkit-box-shadow: 0px 4px 10px -3px rgba(0, 0, 0, 0);
-    box-shadow: 0px 4px 10px -3px rgba(0, 0, 0, 0);
-    border-bottom: solid 1px #ad931c;
-    font-size: 14px;
-    line-height: 14px;
-    font-weight: normal;
-    overflow: hidden;
-}
-
-#chatContainer {
-    left: 100px;
-}
-
-.chatTopBar p {
-    margin-left: 3px;
-    width: 74px;
-}
-
-.chatBoxContainer .textAreaContainer {
-    border-radius: 3px;
-}
-
-.chatBoxFooter > h4{
-    left: 50%;
-    transform: translateX(-50%) skew(35.5deg);
-}
-
-#qpAnswerStateContainerInner {
-    right: -16px;
-    background-color: rgba(232, 109, 115, 1);
-    width: 50px;
-}
-#qpAnswerStateContainerOuter {
-    width: 65px !important;
-}
-
-
-#qpAnswerStateContainerOuter {
-    width: 45px;
-}
-
-#qpAnswerStateCheck {
-    left: 6px;
-    top: 15px;
-}
-
-/* TESTTESTTEST */
-
-/* #gameChatContainer{
-    height: 105%;
-} */
-
-/* #footerMenuBar {
-    width: 75%;
-}
- */
-/* #avatarUserImgContainer {
-    height: 74px;
-    width: 74px;
-} */
-
-/* #avatarUserImg {
-    width: 80px;
-} */
-
-/* #footerMenuBarBackground {
-    position: absolute;
-} */
-
-#currencyContainer {
-    left: 260px;
-}
-
-#currencyContainer .currencyIcon {
-    width: 35px;
-    position: absolute;
-    top: 7px;
-    right: 0px;
-}
-
-#currencyTicketContainer {
-    right: -10px
-}
-
-/* #menuBarOptionContainer {
-    right: 50px;
-} */
-
-#optionsContainer {
-    right: 112px;
-}
-
-#gcEmojiPickerOuterContainer {
-    left: -40px;
-    top: 35px;
-}
-
-/* .fa-smile-o:before{
-    left: -34px;
-    top: 43px;
-} */
-
-/* .gcInputContainer > .textAreaContainer {
-    width: calc(100% - 48px);
-    height: calc(100% - 10px);
-    margin: 5px 5px 5px 43px;
-} */
-
-
-
-/* rgba(255, 221, 117, 0.8) beau jaune */
-
-/* _________________________________________________________________________________ */
-
-
-.qpAvatarStatusInnerContainer {
-    background-color: rgba(232, 109, 115, 1);
-    opacity: 1;
-    right: -8px;
-    top: 19px;
-    
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    transform: none;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    border-radius: 50%;
-    
-    overflow: hidden;
-}
-
-.qpAvatarStatus {
-    position: absolute;
-    font-weight: bold;
-    width: 21px;
-    font-size: 18px;
-    text-align: center;
-    white-space: nowrap;
-    text-shadow: 0px -1px 0px rgb(0 0 0 / 0%);
-    color: #fff;
-    bottom: 2.75px;
-    left: 50%;
-    transform: translateX(-53%);
-}
-
-
-
-.qpAvatarStatusOuterContainer{
-    overflow: visible;
-}
-
-.qpAvatarStatusBar {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    left: 20px;
-    top: 21px;
-    opacity: 1;
-}
-
-/* _________________________________________________________________________________ */
-
-
-.gcInputContainer{
-    background-color: rgba(0, 0, 0, 0.0);
-    background-size: 100% auto !important;
-    background-attachment: fixed !important;
-    background-position: 0px !important;
-    box-shadow: none
-}
-
-#gcEmojiPickerContainer{
+    #xpBarInner{
+        background: rgba(255, 193, 51, .8) !important;
+         border-radius: 0;
+    }
+
+    #xpBarInnerOverflow{
+        border-radius: 10px 10px 0px 0px;
+        border-radius: none;
+    }
+
+    #menuBarOptionContainer{
+        opacity: 1;
+        bottom: 3px;
+    }
+
+    #rightMenuBarPartContainer::before{
+        opacity: 0;
+    } 
+
+    #mpRankedTimer{
+        opacity: 0.4;
+    }
+
+
+    #roomBrowserPage{
+        opacity: 1;
+    }
+
+    #rbBackButton{
+        opacity: 1;
+    }
+
+    .modal-content{
+        opacity: 1;
+        border-radius: 20px;
+    }
+
+    .modal-header{
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .mhAdvancedContainerTitle {
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .mhCustomSliderContainer{
+        border-radius: 10px;
+    }
+
+    #mhQuickSelectContainer{
+        opacity: 1;
+    }
+
+    #rbMajorFilters, #rbFilterContainer{
+        border-radius: 0 0 0 10px;
+    }
+
+    #lbStartButton, #lnSettingsButton{
+         opacity: 0.6;
+    }
+
+    #gameChatContainer, #lobbyCountContainer{
         background: rgba(0, 0, 0, 0.6) !important;
-}
-
-#gcEmojiPickerContainer > .ps__scrollbar-y-rail > .ps__scrollbar-y {
-    opacity: 0.7;
-/*     background-color: var(--jauneXP); */
-    background-color: rgba(244, 201, 68, .8);
-}
-
-#gcEmojiPickerButton > i {
-    font-size: 30px;
-    color: #f2eded;
-    background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 50% 0%  0% 50%;
-    width: 40px;
-    height: 40px;
-}
-
-#gcEmojiPickerButton .fa-smile-o:before{
-    position: relative;
-    top: 13%;
-    left: 8px;
-/*     background-color: red; */
-}
-
-#lobbyBottomCount {
-    bottom: 8px;
-}
-
-
-#xpOuterContainer {
-    left: -0%;
-}
-
-
-/* .popover{
-    background-color: rgba(0, 0, 0, 0.6);
-} */
-
-.qpAvatarStatusBar.completed, .qpAvatarStatusBar.looted{
-        background-color: rgba(38, 68, 143, 0);
-}
-
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-
-
-#elInputStatusBar {
-    border-top: 1px solid transparent;
-    border-bottom: 1px solid transparent;
-    background-color: transparent;
-}
-
-.elStatusName {
-    width: 70px;
-    background-color: transparent;
-    margin-left: 10px;
-}
-
-.elStatusName::after {
-    width: 0px;
-    height: 0px;
-}
-
-.elResOption {
-    background-color: transparent;
-}
-
-.elResStatus.uploaded {
-    background-color: #ffc132;
-}
-
-#elQuestionInputState {
-    color: #ffc132;
-}
-
-#elCounterContainer.floatingContainer.text-center {
-    background-color: var(--gris02) !important;
-    opacity: 1 !important;
-}
-
-#elQuestionFilter {
-    background-color: var(--gris02);
-    transform: translateX(-50%);
-    -webkit-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0);
-    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0);
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    position: relative;
-    z-index: 2;
-}
-
-#elQuestionFilterInput {
-    width: 96%;
-    background-color: var(--gris02);
-    border-radius: 3px;
-    margin: 0 2% 5px;
-}
-
-.elQuestionHostFilter {
-    opacity: 0.8;
-}
-
-#elQuestionFilter > h3 {
-    margin-bottom: 8px;
-}
-
-#elInputVideoPreviewContainer {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background-color: var(--gris02);
-}
-
-#elInputContainer.floatingContainer {
-    background-color: var(--gris03) !important;
-}
-
-#elQuestionNoSongSelectedContainer{
-    background-color: #1b1b1b;
-    opacity: 1 !important;
-}
-
-#elQuestionNoSongSelectedText {
-    color: white;
-    text-shadow: 0px -1px 0px rgb(0 0 0 / 0%);
-}
-
-.elQuestionAnime.floatingContainer.clickAble{
-    background-color: var(--gris03) !important;
-    opacity: 1 !important;
-    border-radius: 6px 0 0 6px;
-}
-
-.elQuestionSong.floatingContainer.clickAble.open, .elQuestionSong.floatingContainer.clickAble {
-    background-color: var(--gris02) !important;
-    opacity: 1 !important;
-    border-radius: 4px 0 0 4px;
-}
-
-.elQuestionSongNameContaniner::after, .elQuestionSongArtistContainer::after {
-    width: 0px;
-}
-
-.elQuestionAnimeName::after {
-    width: 0px;
-}
-
-.ps > .ps__scrollbar-y-rail > .ps__scrollbar-y {
-    position: absolute;
-    background-color: var(--gris02) !important;
-}
-
-#elInputVideoSelector {
-    position: absolute;
-    top: 5px;
-    right: 0px;
-    text-align: center;
-    background-color: transparent;
-    border-bottom-left-radius: 7px;
-    border-bottom-right-radius: 0px;
-}
-
-/* _____________________________________________________________________________ */
-
-/* .flatTextInput {
-    width: 95%;
-} */
-
-/* Update de paques : */
-#qpNameFixed {
-    position: absolute;
-    right: -18px;
-    width: 65px;
-    font-size: 21px;
-    background-color: #ffbf00;
-    -webkit-box-shadow: 0 0 0px 0px rgb(0 0 0);
-    box-shadow: 0 0 0px 0px rgb(0 0 0);
-    color: black;
-}
-
-
-/* .qcCounter{
-    background-color: var(--gris02);
-} */
-
-.qcQuestOuter.clickAble{
-    background-color: var(--gris02);
-}
-
-.qcQuestOuter:last-child{
-    border-bottom-right-radius: 10px;
-}
-
-
-.button:hover{
-    -webkit-box-shadow: 0 0 0px 0px rgb(0 0 0 / 0%);
-    box-shadow: 0 0 0px 0px rgb(0 0 0 / 0%);
-}
-
-/* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
-/* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
-/* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
-/* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
-/* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
-/* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
-/* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
-/* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
-/* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
-/* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
-/* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
-/* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
-/* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
-/* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
-/* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
-
-
-
-#startPage {
-    background-image: var(--bg);
-    background-size: cover;
-}
-#gameContainer {
-    background-image: var(--bg);
-    background-size: cover;
-}
-#loadingScreen {
-    background-image: var(--bg);
-    background-size: cover;
-}
-#gameChatPage > .col-xs-9 {
-    background: rgba(0, 0, 0, 0.7);
-}
-#gcGameChatButton > .col-xs-9 {
-    color: #ffffff;
-    box-shadow: none;
-    text-shadow: 0 0 20px #96FF96, 0 0 30px #66FF66, 0 0 40px #66FF66, 0 0 50px #66FF66 !important;
-}
-
-#footerMenuBarBackground {
-    background: transparent;
-}
-#awMainView {
-    background-image: var(--bg);
-    background-size: cover;
-}
-#gameChatContainer {
-    background: var(--chatbg);
-}
-.leftShadowBorder, #currencyContainer, #menuBarOptionContainer, #awContentRow .rightShadowBorder {
-    box-shadow:none;
-}
-#footerMenuBar .menuBar, #rightMenuBarPartContainer::before, .gcList > li:nth-child(2n) {
-    background-color: #1b1b1b;
-    background-color: #1b1b1b00;
-}
-#socialTab:not(.open), #optionsContainer:not(.open) {
-    display:none;
-}
-#mainMenuSocailButton, #avatarUserImgContainer {
-    border:none !important;
-}
-#rbMajorFilters {
-    background-color: #1b1b1b;
-    padding-left: 10px;
-}
-.leftShadowBorder {
-    box-shadow: none;
-    -webkit-box-shadow: none;
-}
-.gcList > li:nth-child(2n) {
-    background: none;
-}
-.gcInputContainer {
-    background: none;
-}
-#xpBarOuter {
-/* 	background-color: #1b1b1b;  */
-    background-color: #04232b; 
-}
-
-#xpBarInner {
-    background: #c1d243;
-    box-shadow: none;
-/*Change Colour of XP bar*/
-}
-.levelText {
-    color: #e3fcff;
-/*Change Colour of text.*/
-}
-
-/* Legibility fix for guesses */
- .qpAvatarAnswerContainer.rightAnswer .qpAvatarAnswer {
-    box-shadow: none;
-    text-shadow: none;
-}
-.qpAvatarAnswerContainer.wrongAnswer .qpAvatarAnswer {
-    box-shadow: none;
-    text-shadow: none;
-}
-.avatarIsHostContainer {
-    box-shadow: none;
-    -webkit-box-shadow: none;
-}
-.avatarIsHostContainerOuter {
-    position: initial;
-    box-shadow: none;
-    -webkit-box-shadow: none;
-}
-.qpAvatarNameContainer .avatarIsHostContainer {
-    background-color: unset;
-    background-image: url("https://files.catbox.moe/jizubh.png");
-    transform: none;
-    left: 25px;
-    width: 20px;
-    margin-top: 4px;
-}
-#mainMenuSocailButton {
-    background-color: rgba(0, 0, 0, 0.7);
-}
-.menuBarOptionContainer {
-    background-color: rgba(0, 0, 0, 0.7);
-}
-.menuBarMainButton {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-#avatarUserImgContainer {
-    opacity: 0.5;
-/*     filter: alpha(opacity=50); */
-}
-#avatarUserImgContainer:hover {
-    opacity: 1.0;
-/*     filter: alpha(opacity=100); */
-}
-.lobbyAvatarTextContainer {
-    background: rgba(0, 0, 0, 0.7);
-}
-#mainMenuSocailButton, #avatarUserImgContainer, #awContentRow, #awMainView, .qpSideContainer, .qpAnimeNameContainer, #qpCounter, #qpWaitBuffering {
-    background-color: rgba(0, 0, 0, 0.40);
-    background-size: 100% auto !important;
-    background-attachment: fixed !important;
-    background-position: 0px !important;
-    box-shadow: none
-}
-#gameChatPage > .col-xs-9 {
-	background-color: rgba(0, 0, 0, 0);
-}
-#gameChatContainer {
-    background: rgba(0, 0, 0, 1);
-}    
-#qpAnimeNameHider {
-    background-color: #1b1b1b
-}
-#qpVideoHider {
-    background-color: #1b1b1b
-}
-#qpInfoHider {
-    background-color: #1b1b1b
-}
-#xpBarCoverInner {
-    background-color: #1b1b1b
-}
-.qpAvatarNameContainer {
-    background-color: #1b1b1b
-}
-.qpAvatarAnswerContainer {
-    background-color: rgba(27, 27, 27, .75)
-}
-.rbRoom, .rbrRoomImageContainer {
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.qpAvatarLevelText {
-    background-color: #1b1b1b;
-    border-radius: 1px 1px 50px 50px
-                                
-}
-.qpAvatarPointText {
-    background-color: #1b1b1b;
-    border-radius: 50px 50px 1px 1px
-}
-.qpAvatarNameContainer .avatarIsHostContainer {
-    position: fixed;
-    left: 24px;
-    top: 155px;
-    z-index: -1;
-}
-
-#socialTabFriendsText{
-  text-indent: -9999px;
-  line-height: 0; /* Collapse the original line */
-}
-
-#socialTabFriendsText::after {
-    content: "Friends";
-    text-indent: 0;
-    display: block;
-    line-height: initial; /* New content takes up original line height */
-}
-
-#socialTabFriendsText{
-    right: 10px;
-}
-
-#socialTabFriendsText {
-	position: relative; 
-	top: 0px;
-	left: 0px;
-}
-
-#socialTab, #mainMenuSocailButton{
-    width: 270px;
-}
-                                    
-#socialTabFriendsText{
-  text-indent: -9999px;
-  line-height: 0; /* Collapse the original line */
-}
-
-#mmSocialButtonOnlineContainer {
-    height: 100%;
-    width: 100%;
-}
-
-.menuBar .popOut {
-    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0);
-}
-
-#mainMenuSocailButton > i {
-    display: none;
-}
-#mainMenuSocailButton {
-    background-color: rgba(0, 0, 0, 0.6);
-}
-#mpPlayButton {
-    background-color: rgba(0, 0, 0, 0.5);
-}
-#mpExpandButton {
-    background-color: rgba(0, 0, 0, 0.5);
-}
-#mpDriveDonationContainer .button {
-    background-color: rgba(0, 0, 0, 0.1);
-}
-#mpDriveStatsContainer {
-    background-color: rgba(0, 0, 0, 0.0);
-}
-#mpAvatarDriveContainer, #mpAvatarDriveHeaderShadowHider .floatingContainer {
-    background-color: rgba(0, 0, 0, 0.5);
-}
-#mpNewsContainer, #mpNewsTitleShadowHider div {
-    background-color: rgba(0, 0, 0, 0.5);
-}
-#mpPatreonContainer .button {
-    background-color: rgba(0, 0, 0, 0.5);
-}
-#awSkinPreviewContainer {
-    background-color: transparent;
-}
-.lobbyAvatarNameContainer {
-    background-color: rgba(0, 0, 0, 0.3);
-}
-.qpAvatarImgContainer {
-    background-color: rgba(0, 0, 0, 0.3);
-}
-.avatarUserImgContainer {
-    box-shadow: none;
-}
-#brMapContent {
-    background-color: rgba(0, 0, 0, 0.5);
-}
-.brShowEntry, .brMapObject {
-    background-color: rgb(217, 179, 0);
-}
-.topMenuBar {
-    background-color: transparent;
-}
-.elInputContainer {
-    background: rgba(0, 0, 0, 0.5);
-}
-#xpBarCoverOuter {
-    border-color: #1b1b1b
-}
-#xpBarCoverInner {
-    border: none;
-}
-#lobbyCountContainer {
-	background: rgba(0, 0, 0, 0.8);
-}
-#mpRankedButton {
-    background: rgba(0, 0, 0, 0.5);
-}
-#mpLeaderboardButton {
-    background: rgba(0, 0, 0, 0.5);
-}
-#lobbyCountContainer {
-     top: -15px;
-
-}
-.ps > .ps__scrollbar-y-rail > .ps__scrollbar-y {
-      position: absolute;
-      /* please don't change 'position' */
-      background-color: #faf5f5;
-      -webkit-border-radius: 6px;
-      -moz-border-radius: 6px;
-      border-radius: 6px;
-      -webkit-transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, -webkit-border-radius .2s ease-in-out;
-      transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, -webkit-border-radius .2s ease-in-out;
-      -o-transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, border-radius .2s ease-in-out;
-      -moz-transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, border-radius .2s ease-in-out, -moz-border-radius .2s ease-in-out;
-/*       transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, border-radius .2s ease-in-out; */
-/*       transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, border-radius .2s ease-in-out, -webkit-border-radius .2s ease-in-out, -moz-border-radius .2s ease-in-out; */
-      right: 2px;
-      /* there must be 'right' for ps__scrollbar-y */
-      width: 6px; }
- .ps:hover > .ps__scrollbar-y-rail:hover > .ps__scrollbar-y {
-      background-color: #f9feff; 
-}
-
-#qpHiderText {
-    background: rgba(0, 0, 0, 0.0);
-}
-
-#qpVideoOverflowContainer {
-	background: rgba(0, 0, 0, 0.3);
-    box-shadow: none
-/* Change opacity of background of "sound only". Can change colour too if you fancy*/
-}
-
-#qpVideoHider {
-    background: rgba(0, 0, 0, 0.0);
-}
-#qpVideoSoundOnly {
-    opacity: 0.0
-}
-#qpVideoContainer {
-    box-shadow: none
-}
-#qpAnswerInputContainer {
-    border: none;
-  	border-radius: 0%;
-}
-#qpAnswerInputContainer.floatingContainer {
-    background-color: rgba(0, 0, 0, 0.5);
-}
-#qpVoteState {
-    background-color: rgba(0, 0, 0, 0.5);
-}
-#qpAnswerInputContainer.focused {
-    box-shadow: none
-}
-#qpVoteSkip {
-    background-color: rgba(46, 63, 99);
-}
-#qpVoteSkip.toggled {
-    background-color: rgba(173, 138, 189);
-/*Change Vote Skip Button Colour When Clicked*/
-}
-
-#qpVoteSkip > p {
-    opacity: 0.0
-}
-
-#qpVideoProgressBar {
-    background-color: rgba(255, 221, 117, 0.8);
-/*Change colour bar at the bottom of the video colour*/
-}
-.qpSingleRateContainer {
-    background-color: rgba(0, 0, 0, 0.0)
-                                            
-}
-.qpAvatarStatus {
-    background: rgba(47, 127, 145, 0.0);
-}
-
-#qpWaitBuffering {
-    opacity: 0.0;
-}
-
-/**Expand player Opacity**/
-#elQuestionNoSongSelectedContainer, .elQuestionAnime.floatingContainer.clickAble, #elCounterContainer.floatingContainer.text-center{
-    background-color: #1b1b1b;
- 	opacity: 0.9 ;
-}
-
-.elQuestionSong.floatingContainer.clickAble.open, .elQuestionSong.floatingContainer.clickAble {
-    background-color: #1b1b1b;
-    opacity: 0.8;
-}
-
-#elInputContainer {
-    width: 35%;
-}
-#elInputVideoContainer {
-    height: 40%;
-}
-
-div#startPageCenter {
-    background-color: rgb(19, 12, 12, 0.7);
-    box-shadow: none;
-}
+    }
+
+
+    #lobbyRoomNameContainer {
+        color: rgba(0, 0, 0, .5);
+        mix-blend-mode: difference;
+    }
+
+
+    #popoutMessageContainer{
+        opacity: 0.6;
+        border-radius: 0 10px 10px 0;
+    }
+
+
+    /* .lobbyAvatarLevelContainer{
+        opacity: 0.7;
+    } */
+
+    #qpInfoHider{
+        opacity: 0;
+        background: #f00;
+        -webkit-mask-image: radial-gradient(circle at right bottom , transparent 0, transparent 24px, black 25px);
+        border-bottom-right-radius: 40px;
+    }
+
+    #qpReportFeedbackContainer {
+        margin-top: 0px;
+    }
+
+    .awesomplete > ul {
+        background: rgba(66, 66, 66, .8);
+        border: none;
+        -webkit-box-shadow: 0 0 10px 2px rgba(0, 0, 0, .3);
+        box-shadow: 0 0 10px 2px rgba(0, 0, 0, .3);
+        border-radius: 0 0 6px 6px;
+        top: 34px;
+    }
+    #qpInnerContainer{
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .qpSingleRateContainer {
+        -webkit-box-shadow: 1px -3px 10px rgba(0, 0, 0, 0);
+        box-shadow: 1px -3px 10px rgba(0, 0, 0, 0);
+
+        border-left: 1px rgba(0, 0, 0, .6) solid;
+    }
+
+    #qpCenterInfoContainer{
+        opacity: 1;
+    }
+
+    #qpAnimeNameHider{
+        opacity: 0;
+    }
+
+    #qpOptionContainer{
+        right: 20px;
+    }
+
+    #qpOptionContainer {
+        -webkit-box-shadow: -1px -1px 10px rgba(0, 0, 0, 0);
+        box-shadow: -1px -1px 10px rgba(0, 0, 0, 0);
+        background-color: hsla(0, 0%, 11%, .4);
+    }
+
+    #qpOptionContainerHider {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(27, 27, 27, 0);
+        left: 20px;
+    }
+
+    #qpQualityList {
+        opacity: 1;
+        background-color: rgba(27, 27, 27, .4);
+        -webkit-box-shadow: 0 7px 10px 0px rgba(0, 0, 0, 0);
+        box-shadow: 0 7px 10px 0px rgba(0, 0, 0, 0);
+        transform: translateY(-160%);
+        transition: transform 0.5s ease-in-out, opacity 1.4s;
+        overflow: hidden;
+        border-radius: 0 0 4px 4px;
+    }
+
+    #qpQualityList.show {
+        opacity: 1;
+    }
+
+
+    #rbSettingFilterContainer {
+        opacity: 0;
+        transform: translateY(-100%);
+        transition: transform 0.7s ease-in-out, opacity 1s;
+        background-color: rgba(27, 27, 27, .8);
+    }
+
+    #rbSettingFilterContainer.open{
+        opacity: 1;
+    }
+
+    #qpUpvoteContainer{
+        border-radius: 0 0 0 10px;
+    }
+
+    #qpInnerContainer {
+        border-top: solid 1px #1b1b1bad;
+    }
+
+    #qpVideoTroubleshootingContainer{
+        opacity: 0.7;
+    }
+
+    #swRightColumn{
+        opacity: 0.8;
+    }
+
+    #swContentTicketsContainer{
+        opacity: 0.6;
+    }
+
+    .fade.in{
+        backdrop-filter: blur(4px);
+        animation: blurAnime 5s linear;
+    }
+
+    @keyframes blurAnime {
+        from {
+        backdrop-filter: blur(0px);
+      }
+
+      to {
+        backdrop-filter: blur(4px);
+      }
+    }
+
+    .tab-modal .tabContainer, .tab-modal .modal-header {
+        background-color: rgba(27, 27, 27, 0);
+    }
+
+    div.modal-content {
+        background-color: rgba(0, 0, 0, 0.7) !important;
+    }
+
+    .modal-content {
+        top: calc( 50px);
+        left: calc(0px);
+        box-shadow:
+        0px 0px 15px 0px #fff, /*inner*/
+        0px 0px 100px 10px #fbfd8d, /*midle*/
+        0px 0px 100px 30px #e69b04; /*outer*/
+
+        opacity: 1;
+    }
+
+    .close {
+        font-size: 26px;
+        line-height: 0.5;
+        color: #fff;
+        text-shadow: 0 0px 0 #ee076b00;
+        opacity: 1;
+    }
+
+    .modal-header .close {
+        opacity: 0.8;
+    }
+
+
+    .qpAvatarAnswerContainer {
+        position: absolute;
+        height: 37px;
+        top: -40px;
+        z-index: 5;
+        width: 120%;
+        left: -10%;
+        word-wrap: break-word;
+    }
+
+
+    .floatingContainer {
+        background-color: #424242d1;
+        -webkit-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0);
+        box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0);
+    }
+
+    .topRightBackButton{
+        background-color: rgba(27, 27, 27, .4);
+    }
+
+
+    .leftRightButtonTop {
+        -webkit-box-shadow: 1px -3px 10px rgba(0, 0, 0, 0);
+        box-shadow: 1px -3px 10px rgba(0, 0, 0, 0);
+    }
+
+    .qpAvatarInfoBar {
+        background-color: rgba(27, 27, 27, .8);
+        box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0);
+        border-radius: 5px;
+    }
+
+    .qpAvatarScoreContainer {
+        background-color: rgba(27, 27, 27, 1) !important;
+    /*     voir pour modifier la transparence derrière le cercle */
+    }
+
+    .qpAvatarScoreContainer {
+        background-color: #1b1b1b;
+        border-radius: 100%;
+        width: 42px;
+        height: 42px;
+        position: absolute;
+        top: -2px;
+        left: -8px;
+        box-shadow: 0 0 0px 0px rgb(0 0 0);
+    }
+
+    .qpAvatarLevelBar {
+        bottom: 1px;
+        border-radius: 0;
+        background-color: rgba(27, 27, 27, .8);
+    }
+
+    #qpVideoHider{
+        background: #d10505;
+    }
+
+
+    #lnModeRuleButton, #lbLeaveButton{
+        opacity: 0.6;
+    }
+
+    #mpNewsTitleShadowHider .floatingContainer{
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+
+    /* #gcEmojiPickerContainer{
+            background-color: rgba(27, 27, 27, .7);
+    } */
+
+    #rbMajorFilters {
+        position: absolute;
+        width: 310px;
+        left: -305px;
+    }
+
+    .ps > .ps__scrollbar-y-rail > .ps__scrollbar-y {
+        right: 3px;
+        width: 6px;
+    }
+
+
+    .lobbyAvatarSubTextContainer {
+        -webkit-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0);
+        box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0);
+    }
+
+    .lobbyAvatarHostContainer > .lobbyAvatarSubTextContainer {
+        width: 110px;
+        height: 100%;
+    }
+
+    .lobbyAvatarRow.left .lobbyAvatarHostContainer {
+        right: 95px;
+    }
+
+    .lobbyAvatarNameContainer {
+        -webkit-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0);
+        box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0);
+    }
+
+    .lobbyAvatarRow.left .lobbyAvatarNameContainer {
+        right: 95px;
+    }
+
+    .lobbyAvatarHostContainer h3, .lobbyAvatarLevelContainer h3 {
+        font-family: inherit;
+        font-weight: 500;
+        line-height: 1.09;
+        color: inherit;
+    }
+
+
+    /* @media screen and (max-width: 1230px) */
+    .lobbyAvatarLevelContainer {
+        bottom: 21px;
+        height: 22px;
+        width: 80px;
+    }
+
+    .lobbyAvatarImgContainer {
+        overflow: visible;
+    }
+
+    .lobbyAvatarHostContainer {
+        top: 5.5px;
+    }
     
-div#startPageLogoContainer {
-    background-color: rgb(0, 0, 0, 0);
-}
-
-.qpsPlayerName.self {
-    color: #fdea96;
-    text-shadow: 0 0 10px #f2aeb3; /*à modifier*/
-}
-
-.progress-bar {
-    background-color: #ffe500ad;
-}
-
-.fa-friend {
-    color: #ea0441;
-}
-
-.qpAvatarAnswerText.wrongAnswer {
-    text-shadow: none
-}
-
-.qpAvatarAnswerText.rightAnswer {
-    text-shadow: none
-}
-
-.qpAvatarImage[src*="Right."]~.particleEmiter {
-    top: calc(50% - 20px);
-    left: calc(50% - 20px);
-    width: 0px;
-    height: 0px;
-    box-shadow:
-    10px 10px 60px 30px #fff, /*inner*/
-    10px 10px 100px 60px #fbfd8d, /*midle*/
-    10px 10px 140px 90px #e69b04; /*outer*/
-}
-.qpAvatarImage[src*="Wrong."]~.particleEmiter {
-    top: calc(50% - 20px);
-    left: calc(50% - 20px);
-    width: 0px;
-    height: 0px;
-    box-shadow:
-    10px 10px 60px 30px #fff, /*inner*/
-    10px 10px 120px 60px #f40, /*midle*/
-    10px 10px 140px 90px #ef088f; /*outer*/
-}
-
-.qpAvatarImage[src*="Confused."]~.particleEmiter {
-    top: calc(50% - 20px);
-    left: calc(50% - 20px);
-    width: 0px;
-    height: 0px;
-    box-shadow:
-    10px 10px 60px 30px #fff, /*inner*/
-    10px 10px 100px 60px #163914, /*midle*/
-    10px 10px 140px 90px #83ef89; /*outer*/
-}
-
-.qpAvatarImage[src*="Thinking."]~.particleEmiter {
-    top: calc(50% - 20px);
-    left: calc(50% - 20px);
-    width: 0px;
-    height: 0px;
-    box-shadow:
-    10px 10px 60px 30px #fff, /*inner*/
-    10px 10px 100px 60px rgb(255, 255, 255), /*midle*/
-    10px 10px 140px 90px #0ff; /*outer*/
-}
-
-.qpAvatarImage[src*="Waiting."]~.particleEmiter {
-    top: calc(50% - 20px);
-    left: calc(50% - 20px);
-    width: 0px;
-    height: 0px;
-    box-shadow:
-    10px 10px 60px 30px #fff, /*inner*/
-    10px 10px 100px 60px #ca03f7, /*midle*/
-    10px 10px 140px 90px #00dafc; /*outer*/
+    #lbStartButton, #lbDuoButton, #lbRankedButtonButton {
+        left: calc(50% - 50px);
+    }
     
-}
+    #lnSettingsButton {
+        right: calc(25% - 180px);
+    }
+    
+    .popover{
+        background-color: var(--noir6) !important;
+    }
+    
+    .popover.top>.arrow {
+        border-top-color: #0000 !important;
+        border-top-color: rgba(0, 0, 0, 0) !important;
+    }
 
-.qpAvatarImage[src*="Basic."]~.particleEmiter {
-    top: calc(50% - 20px);
-    left: calc(50% - 20px);
-    width: 0px;
-    height: 0px;
-    box-shadow:
-    10px 10px 60px 30px #fff, /*inner*/
-    10px 10px 100px 60px #f0f, /*midle*/
-    10px 10px 140px 90px #0ff; /*outer*/
-}
+    .popover.top > .arrow:after {
+        border-top-color: var(--noir6) !important;
+    }
 
-
-/* Le joueur a quitté la partie... EN FAIT NON */
-.qpAvatarImage[src*="Basic."]{
-    opacity: 1;
-}
-
-.qpAvatarImage~.particleEmiter {
-    border-radius: 10px;
-    opacity: 1;
-    z-index: -1;
-}
-
-.runAnimation > .particleEmiter {
-    animation: particleSpawn 0 alternate;
-}
-
-.qpAvatarContainer.disabled .particleEmiter {
-    opacity: 0;
-}
-
-.qpAvatarAnswerText {
-    text-align: center;
-	border-right: 17px solid transparent;
-	border-left: 10px solid transparent;
-}
+    .popover-title {
+        border-bottom: 1px solid var(--gris4) !important;
+    }
+    
 
 
-/*Change Particle colour**/
-.particleShadow {
-    box-shadow: 0 0 10px rgba(255, 237, 133, 0.8), 0 0 20px rgba(255, 237, 133, 0.8), 0 0 30px rgba(255, 237, 133, 0.8), 0 0 40px #2b47ff, 0 0 70px #2b47ff, 0 0 80px #2b47ff, 0 0 100px #2b47ff, 0 0 150px #2b47ff;
-    animation: pulse 400ms infinite alternate;
-}
-
-.particle {
-    background-color: rgba(255, 237, 133, 0.8);
-    box-shadow: 0 0 5px rgba(255, 237, 133, 0.8), 0 0 10px rgba(255, 237, 133, 0.8), 0 0 15px rgba(255, 237, 133, 0.8);
-}
-
-/**Change Colour of List Showing Up WITH HALF CIRCLE**/
-.qpAvatarStatusBar.completed {
-    background-color: rgba(0, 0, 0, 0);
-    border: 4px #3f0 solid;
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    left: -6px;
-    top: -6px;
-    opacity: 1;
-}
-.qpAvatarStatusBar.watching {
-    background-color: rgba(0, 0, 0, 0);
-    border: 4px #b700ff solid;
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    left: -6px;
-    top: -6px;
-    opacity: 1;
-}
-.qpAvatarStatusBar.hold {
-    background-color: rgba(0, 0, 0, 0);
-    border: 4px #f7ff32 solid;
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    left: -6px;
-    top: -6px;
-    opacity: 1;
-}
-.qpAvatarStatusBar.dropped {
-    background-color: rgba(0, 0, 0, 0);
-    border: 4px #f00 solid;
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    left: -6px;
-    top: -6px;
-    opacity: 1;
-}
-.qpAvatarStatusBar.planning {
-    background-color: rgba(0, 0, 0, 0);
-    border: 4px white solid;
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    left: -6px;
-    top: -6px;
-    opacity: 1;
-}
-
-/**Change Colour of List Showing Up WITH POINTS**/
-/* .qpAvatarStatusBar.completed {
-    background-color: #3f0;
-}
-.qpAvatarStatusBar.watching {
-    background-color: #b700ff;
-}
-.qpAvatarStatusBar.hold {
-    background-color: #f7ff32;
-}
-.qpAvatarStatusBar.dropped {
-    background-color: #f00;
-}
-.qpAvatarStatusBar.planning {
-    background-color: white;
-} */
-
-#storeWindow {
-    background-color: var(--noir5);
-}
-
-div#swNoSelectionContainer {
-    opacity: 0
-}
-
-div#restartMessageContainer.floatingContainer.popoutMessage.noShadow.open {
-    background-color: rgba(0, 0, 0, 0.9);
-}
-
-div#restartMessageContainer.floatingContainer.popoutMessage.noShadow {
-    background-color: rgba(0, 0, 0, 0.9);
-}
-
-div#popoutMessageContainer.floatingContainer.popoutMessage.noShadow {
-    background-color: rgba(0, 0, 0, 0.9);
-}
-
-#mpPlayMultiplayer:hover, #mpPlaySolo:hover {
-    background-color: #000000;
-    opacity: 0.5
-}
-#mpNewSocialTab {
-	border-bottom: none;
-}
-
-#mpNewSocailTab > .leftRightButtonTop {
-    background-color: rgba(0, 0, 0, 0.0);
-}
-
-#elInputContainer.floatingContainer {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-#elQuestionInputSongName::after, #elQuestionInputArtistName::after {
-    background-image: none;
-}
-
-/*Change team colour*/
-.gcTeamMessageIcon {
-    opacity: 0.4;
-    background-color: #fcb103;
-}
-
-.qpAvatarStatusOuterContainer{
-  border-radius: 0px 10px 10px 0px
-}
-
-.qpAvatarScoreContainer::after {
-    height: 25px;
-    width: 26px;
-    right: -12px;
-    background: none ;
-    clip-path: polygon(0 0, 100% 4%, 81% 100%, 50% 100%, 51% 98%, 53% 90%, 54% 80%, 51% 73%, 43% 60%, 43% 45%);
-}
-
-.lobbyAvatarCommandIcon {
-    border-radius: 2px;
-}
-
-#qpAnswerStateContainerOuter {
-    border-radius: 0 20px 20px 0;
-}
-
-.qpAvatarImage {
-    border-radius: 15px;
-}
-
-#YearCelebrationContainer.floatingContainer {
-    background-color: #1b1b1b
-}
-
-/*Circling things - remove all below if you want it back to normal - Increase "border radius" if you want it more round*/
-#qpVideoOverflowContainer {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    z-index: 1;
-    border-radius: 20px;
-}
-
-#qpVideoHider {
-     border-radius: 20px;
-}
-#qpVoteShadowHider {
-    position: absolute;
-    left: 0;
-    top: 0;
-    overflow: hidden;
-    width: 80px;
-    height: 100%;
-    border-radius: 20px;
-}
-#qpAnswerInputContainer.floatingContainer {
-    border-radius: 20px;
-}
-#qpVoteState {
-    border-radius: 20px;
-}
-
-#qpAnswerInputContainer .awesomplete {
-    width: 95%;
-}
-
-.qpAvatarAnswerContainer {
-    border-radius: 10px;
-}
-
-.qpAvatarImgContainer {
-    border-radius: 10px;
-}
-
-#qpAnimeNameHider {
-    border-radius: 10px;
-}
-
-.qpSideContainer, .qpAnimeNameContainer {
-    border-radius: 10px;
-}
-
-#mpNewsBody.ps.ps--theme_default.ps--active-y{
-    border-radius: 20px;
-}
-#mpNewsContainer.floatingContainer.mpMainContentContainer{
-    border-radius: 20px;
-    box-shadow: none;
-}
-
-#mpAvatarDriveContainer {
-    border-radius: 20px;
-    box-shadow: none;
-}
-
-#mpPlayButton.button.floatingContainer {
-    border-radius: 15px;
-    box-shadow: none;
-}
-
-#mpExpandButton.button.floatingContainer.mainMenuButton {
-    border-radius: 15px;
-    box-shadow: none;
-}
-
-#mpRankedButton.button.floatingContainer.mainMenuButton.off {
-    border-radius: 15px;
-    box-shadow: none;
-}
-
-#mpLeaderboardButton.button.floatingContainer.mainMenuButton {
-    border-radius: 15px;
-    box-shadow: none;
-}
-
-.rbRoom, .rbrRoomImageContainer {
-    border-radius: 15px;
-    box-shadow: none;
-}
-
-#elInputContainer {
-    border-radius: 15px;
-}
-
-.qpTeamStandingItem {
-    background: none
-}
+    /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 
 
-/*Joseph Addon - "Userscript Homepage" "Song List"*/
-#mpInstalled.button.floatingContainer.mainMenuButton {
-    background-color: rgba(0, 0, 0, 0.5);
-    box-shadow: none;
-}
-#listWindowBody.modal-body.resizableList.slWindowBody {
-    background-color: #1b1b1b;
-}
-#listWindowHeader.modal-header.ui-draggable-handle {
-    background-color: #1b1b1b;
-}
-#slSearch {
-    background-color: #1b1b1b;
-}
-button.btn.btn-default.songListOptionsButton {
-    background-color: rgba(0, 0, 0, 0.5);
-    border: none;
-}
+    
+    .lobbyAvatarRow{
+        padding-top: 80px;
+        padding-bottom: 70px;
+    }
 
-tr.songData.clickAble{
-    background-color: rgba(0, 0, 0, 0.8);
-}
 
-#listWindowOptions.customWindowPanel {
-    background-color: rgba(0, 0, 0, 0.8);
-}
 
-#listWindowTableContainer.customWindowPanel {
+
+    .lobbyAvatarRow.right .lbReady .lobbyAvatarImgContainer {
+        background-color: rgba(0, 0, 0, 0) !important;
+        -webkit-box-shadow: none;
+
+        top: calc(50% - 0px);
+        left: calc(84% - 250px);
+        width: 0px;
+        height: 0px;
+        box-shadow:
+        0 0 50px 10px #fff, 
+        0 0 60px 50px #fbfd8d,
+        0 0 100px 45px #e69b04;
+    }
+
+    .lobbyAvatarRow.right .lbReady .lobbyAvatarImg {
+        width: 120px;
+        height: 120px;
+        top: -60px;
+        left: -60px;
+        border-radius: 50%;
+    }
+
+    .lobbyAvatarRow.right .lobbyAvatarImgContainer{
+        background-color: rgba(0, 0, 0, 0) !important;
+        -webkit-box-shadow: none;
+
+        top: calc(50% - 0px);
+        left: calc(84% - 250px);
+        width: 0px;
+        height: 0px;
+        box-shadow:
+        0 0 50px 10px #fff, 
+        0 0 60px 50px #3916b6,
+        0 0 100px 45px #e604d7;
+    }
+
+    .lobbyAvatarRow.right .lobbyAvatarImg  {
+        width: 120px;
+        height: 120px;
+        top: -60px;
+        left: -60px;
+        border-radius: 50%;
+    }
+
+    .lobbyAvatarLevelContainer > .lobbyAvatarSubTextContainer, .lobbyAvatarAnswerModeContainer {
+        background-color: rgba(27, 27, 27, .7);
+    }
+
+    .lobbyAvatarRow.right .lobbyAvatarLevelContainer .lobbyAvatarSubTextContainer {
+        border-bottom-right-radius: 10px;
+        top: 2.5px;
+    }
+
+    .lobbyAvatarRow.right .lobbyAvatarLevelContainer {
+        bottom: 22px;
+        height: 22px;
+        width: 108px !important;
+        transform: translateX(-20%) skewX(-35.5deg);
+    }
+
+    .lobbyAvatarRow.right .lobbyAvatarLevelContainer .lobbyAvatarSubTextContainer h3{
+        text-align: center;
+        transform: translateX(13%) skewX(35.5deg);
+    /*     margin-right: 20px; */
+
+    }
+
+    .lobbyAvatarRow.right .lobbyAvatarOptionContainer {
+        transform: translateX(-300%);
+        padding-left: 9px;
+    }
+    
+    .lobbyAvatarRow.left .lobbyAvatarPlayerOptions.lobbyAvatarOptionContainer {
+/*         transform: translateX(-300%);  */
+    }
+    
+
+    .lobbyAvatarRow.right .lobbyAvatar:hover .lobbyAvatarOptionContainer {
+        transform: translateX(0);
+    }
+    .lobbyAvatarRow.left .lobbyAvatar:hover .lobbyAvatarOptionContainer {
+        transform: translateX(0);
+    }
+    
+    .lobbyAvatarRow.left .lobbyAvatarOptionContainer {
+        transform: translateX(300%);
+    }
+    .lobbyAvatarRow.left .lobbyAvatarPlayerOptions.lobbyAvatarOptionContainer {
+        right: 115px !important;
+    }
+
+    .lobbyAvatarRow.right .lobbyAvatarOptionContainer {
+        height: 100%;
+        top: 2.5px;
+        background-color: rgba(26, 26, 26, .9);
+        border-radius: 0 0 5px 8px;
+    }
+
+    .lobbyAvatarRow.right .lobbyAvatarPlayerOptions {
+        left: 115px;
+        width: 55px;
+    }
+
+    .lobbyAvatarRow.right .lobbyAvatarNameContainer {
+        border-radius: 0 10px 10px 0;
+    }
+
+    .lobbyAvatarRow.right .lobbyAvatarHostOptions {
+        border-top-right-radius: 5px;
+    }
+
+    .lobbyAvatarRow.right .lobbyAvatarHostContainer .lobbyAvatarSubTextContainer{
+        border-radius: 0 10px 10px 0;
+    }
+
+    .lobbyAvatarRow.right .lobbyAvatarPlayerOptions > .lobbyAvatarCommandIcon{
+        left: 5px;
+        top: -2px;
+    }
+
+    .lobbyAvatarOptionContainer {
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    
+    .lobbyAvatarAnswerModeContainer{
+        box-shadow: none;
+        height:100%;
+        font-size: 21px;
+        width: 60px;
+    }
+    
+    .lobbyAvatarRow.right .lobbyAvatarAnswerModeContainer .fa{
+        transform: translateY(-3px) translateX(-2px);
+    }
+    .lobbyAvatarRow.left .lobbyAvatarAnswerModeContainer .fa{
+        transform: translateY(-3px) translateX(2px);
+    }
+
+    .lobbyAvatarRow.right .lobbyAvatarAnswerModeContainer {
+        transform: translateY(-45px) translateX(-140px);
+    }
+    .lobbyAvatarRow.left .lobbyAvatarAnswerModeContainer {
+        transform: translateY(-45px) translateX(140px);
+    }
+    
+    
+    
+    #lobbyInputModeContainer{
+        top: 0px !important;
+        right: 30px !important;
+        height: 29px;
+        border: none !important;
+    }
+    
+    .lobbyInputModeOption.selected{
+        background-color: rgba(254, 193, 51, 1) !important;
+    }
+    
+    
+    #gameChatPage .col-xs-9{
+        padding-right: 130px;
+        padding-left: 15px;
+    }
+    
+    #qpAnimeContainer, #qpAvatarRowAvatarContainer{
+        transform: translatex(50px);
+        
+    }
+    
+    
+
+
+
+    /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+    .lobbyAvatarRow.left .lbReady .lobbyAvatarImgContainer {
+        background-color: rgba(0, 0, 0, 0) !important;
+        -webkit-box-shadow: none;
+
+        top: calc(50% - 0px);
+        left: calc(84% - 0px);
+        width: 0px;
+        height: 0px;
+        box-shadow:
+        0 0 50px 10px #fff, 
+        0 0 60px 50px #fbfd8d,
+        0 0 100px 45px #e69b04;
+    }
+
+    .lobbyAvatarRow.left .lbReady .lobbyAvatarImg {
+        width: 120px;
+        height: 120px;
+        top: -60px;
+        left: -60px;
+        border-radius: 50%;
+    }
+
+    .lobbyAvatarRow.left .lobbyAvatarImgContainer{
+        background-color: rgba(0, 0, 0, 0) !important;
+        -webkit-box-shadow: none;
+
+        top: calc(50% - 0px);
+        left: calc(84% - 0px);
+        width: 0px;
+        height: 0px;
+        box-shadow:
+        0 0 50px 10px #fff, 
+        0 0 60px 50px #3916b6,
+        0 0 100px 45px #e604d7;
+    }
+
+    .lobbyAvatarRow.left .lobbyAvatarImg  {
+        width: 120px;
+        height: 120px;
+        top: -60px;
+        left: -60px;
+        border-radius: 50%;
+    }
+
+    .lobbyAvatarRow.left .lobbyAvatarLevelContainer .lobbyAvatarSubTextContainer {
+        border-bottom-left-radius: 10px;
+        top: 2.5px;
+    }
+
+    .lobbyAvatarRow.left .lobbyAvatarLevelContainer {
+        right: 100px;
+    }
+
+    .lobbyAvatarRow.left .lobbyAvatarLevelContainer {
+    /*     bottom: 22px;
+        height: 22px;
+        width: 100px !important; */
+
+        bottom: 22px;
+        height: 22px;
+        width: 108px !important;
+        transform: translateX(20%) skewX(35.5deg);
+    }
+
+    .lobbyAvatarRow.left .lobbyAvatarLevelContainer .lobbyAvatarSubTextContainer h3{
+        text-align: center;
+        transform: translateX(-13%) skewX(-35.5deg);
+    }
+
+    .lobbyAvatarSubTextContainer .lobbyAvatarRow.left .lobbyAvatarOptionContainer {
+        height: 100%;
+        top: 0;
+        background-color: rgba(26, 26, 26, .9);
+        border-radius: 0 0 0 5px;
+    }
+
+    .lobbyAvatarRow.left .lobbyAvatarPlayerOptions {
+/*         right: 115px; */
+        width: 55px;
+    }
+
+    .lobbyAvatarRow.left .lobbyAvatarNameContainer {
+        border-radius: 10px 0 0 10px;
+    }
+
+    .lobbyAvatarRow.left .lobbyAvatarHostOptions {
+        border-top-left-radius: 5px;
+    }
+
+    .lobbyAvatarRow.left .lobbyAvatarHostContainer .lobbyAvatarSubTextContainer{
+        border-radius: 10px 0 0 10px;
+    }
+
+    .lobbyAvatarRow.left .lobbyAvatarPlayerOptions > .lobbyAvatarCommandIcon{
+        right: 5px;
+        top: -2px;
+    }
+
+    .lobbyAvatarRow.left .lobbyAvatarPlayerOptions{
+        border-bottom-left-radius: 5px;
+    }
+
+    .lobbyAvatarRow.left .lobbyAvatarPlayerOptions.lobbyAvatarOptionContainer {
+        top: 2.5px;
+        right: 115px;
+        padding-right: 9px;
+        border-radius: 0 0 8px 5px;
+    /*  transform: translateX(300%) !important; */
+    }
+
+    .lobbyAvatarRow.left .lobbyAvatarHostOptions {
+        width: 110px;
+    }
+
+    .lobbyAvatarRow.left .lobbyAvatarHostOptions.lobbyAvatarOptionContainer .lobbyAvatarCommandIcon {
+        float: left;
+        left: 7px;
+    }
+
+    .lobbyAvatarRow.left .lobbyAvatarCommandIcon.clickAble.playerCommandIconKick{
+        top: 0px;
+    }
+
+    .lobbyAvatarOptionContainer {
+        background-color: rgba(26, 26, 26, .9);
+    }
+
+
+    /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+    .lobbyAvatarImgContainer > img {
+        position: absolute;
+        top: -60px;
+        left: -60px;
+    }
+
+    .lobbyAvatarCommandIcon.clickAble.playerCommandIconKick{
+        top: -2px;
+    }
+
+    .lobbyAvatarRow.left .lobbyAvatarHostContainer .lobbyAvatarSubTextContainer .lobbyAvatarHostContainer h3, .lobbyAvatarLevelContainer h3 {
+        line-height: 0.89;
+    }
+
+    .qpAvatarImageContainer.floatingContainer{
+            background-color: #aaa0 !important;
+    }
+
+    #lobbyCountContainer {
+        text-shadow: 0px 0px 8px rgba(0, 0, 0, 0);
+    /*     background-color: #424242; */
+        -webkit-box-shadow: 0 2px 10px 2px rgba(0, 0, 0, 0);
+        box-shadow: 0 2px 10px 2px rgba(0, 0, 0, 0);
+    }
+
+    #lobbyTopCount {
+        top: 13px;
+    }
+
+    .topMenuBigButton h1 {
+        margin-top: 4px;
+    }
+
+
+    #footerMenuBarBackground{
+        opacity: 0.75;
+    }
+
+    #socialTab{
+        border-top-right-radius: 20px;
+    }
+
+    .leftRightButtonBottom {
+        -webkit-box-shadow: 1px 3px 10px rgba(0, 0, 0, 0);
+        box-shadow: 1px 3px 10px rgba(0, 0, 0, 0);
+    }
+
+    .rbrNumberOfSongsContainer {
+        width: 50px;
+    }
+
+    #qpSongArtist{
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+
+    .mpDriveEntryName {
+        width: calc(64% - 0%);
+    }
+
+    #mpDriveTopContainer .mpDriveEntryName {
+        width: calc(58% - 0px);
+    }
+
+    .mpDriveEntryName::after {
+        background-image: linear-gradient(to left, rgb(66, 66, 66), rgba(66, 66, 66, 0));
+        opacity: 0.4;
+    }
+
+    #mpDriveRecentEntry-8{
+        border-radius: 0 0 3px 3px;
+    }
+
+    #mpDriveDonationContainer .button {
+        border-radius: 5px;
+    }
+
+    .mpDrivenEntryTarget {
+        font-size: large;
+    }
+
+    .qpScoreBoardGroupContainer {
+        margin: 0px 0px 0px 0px;
+    }
+
+    .qpAvatarHostIcon, .qpAvatarHiddenIcon {
+    /*     border-radius: 4px 6px 4px 6px; */
+        background-color: rgba(232, 109, 115, 1);
+        box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0);
+        border-radius: 0 5px 5px 0;
+    }
+
+    .qpTeamStandingItem {
+        margin: -0px 0px 0px 0px;
+    }
+
+    .qpScoreBoardGroupContainer.active {
+        box-shadow: 0px 0px 4px 2px #f6b801;
+    }
+
+    .qpScoreBoardGroupContainer {
+        margin: 5px 0px 0px 5px;
+    }
+
+    .topMenuBar > .topMenuBack, #rbMajorFilters, .topMenuButton, #rbFilterContainer, #rbSearchContainer {
+        background-color: rgba(27, 27, 27, .6) !important;
+    }
+
+    #rbSearchInputContainer > input{
+        background-color: rgba(27, 27, 27, 0) !important;
+    }
+
+    #rbSearchContainer{
+        background-color: rgba(27, 27, 27, 0) !important; /* à enlever... ou pas*/
+    }
+
+    #rbSettingFilterContainer {
+        opacity: 0;
+        transform: translateY(-100%);
+        transition: transform 0.7s ease-in-out, opacity 1s;
+        background-color: rgba(27, 27, 27, .8);
+    }
+
+    #rbSettingFilterContainer.open{
+        opacity: 1;
+    }
+
+    .rightLeftTopBottom {
+        -webkit-box-shadow: 0px -3px 10px rgba(0, 0, 0, 0);
+        box-shadow: 0px -3px 10px rgba(0, 0, 0, 0);
+    }
+
+    #rbMajorFilters {
+        position: absolute;
+        width: 310px;
+        left: -310px;
+    }
+
+    .topMenuButton {
+        -webkit-box-shadow: 0px 0px 16px rgba(0, 0, 0, 0);
+        box-shadow: 0px 0px 16px rgba(0, 0, 0, 0);
+    }
+
+    .topMenuBigButton {
+        width: 230px;
+        height: 53px;
+    }
+
+    .qpVoteState {
+        border-radius: 50px 20px 20px 50px !important;
+        -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0);
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0);
+    }
+
+    .qpVoteStateContainer{
+        border-radius: 50px 0 0 50px !important;
+    }
+
+    #gcChatMenu > div.selected {
+        background: rgba(109, 109, 109, .4);
+        border-radius: 0 0 10px 10px;
+    }
+
+    #gcChatMenu > div {
+        background: rgba(27, 27, 27, 0);
+    }
+
+    #gcChatMenu {
+        height: 40px;
+        width: calc(100% + 11px);
+        overflow: hidden;
+    }
+
+    #gcContent {
+        height: calc(100% - 40px);
+    }
+
+    .gcInputContainer > .textAreaContainer {
+        border-radius: 4px;
+    }
+
+    .textAreaContainer {
+        border: solid 1px #4e4e4e;
+        transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+    }
+
+    .textAreaContainer:focus-within {
+        -webkit-box-shadow: inset 0 0px 1px rgba(0, 0, 0, 0), 0 0 1px rgba(34, 141, 255, 0);
+        box-shadow: inset 0 0px 1px rgba(0, 0, 0, 0), 0 0 1px rgba(34, 141, 255, 0);
+        border: solid 1px #fbfd8d;
+    }
+
+    textarea {
+        background-color: rgba(27, 27, 27, 0.4);
+    }
+
+    /* #gcEmojiPickerButton > i {
+        font-size: 30px;
+        color: #f2eded;
+        content: "Bullies";
+    } */
+
+    #gcEmojiPickerContainer {
+        width: 350px;
+        height: 400px;
+        left: -310px;
+        top: -30px;
+    /*     background-color: rgba(27, 27, 27, .7); */
+        border-radius: 5px 0 0 5px;
+        box-shadow: none;
+    }
+
+    #gcEmojiPickerRecentContainer .amqEmoji, #gcEmojiPickerAllContainer .amqEmoji {
+        max-height: 40px;
+        max-width: 40px;
+        min-height: 40px;
+        min-width: 40px;
+    }
+
+    .qcProgressBarContainer {
+        background-color: rgba(27, 27, 27, .5);
+    }
+
+    .qcQuestTypeContainer {
+        background-color: rgba(27, 27, 27, .8);
+    }
+
+    .qcQuestOuter {
+        font-size: 20px;
+        overflow: hidden;
+    }
+
+    #qcHeader {
+        height: 35px;
+        background-color: rgba(27, 27, 27, 0.7);
+        font-size: 24px;
+        position: relative;
+    }
+
+    #questContainer {
+        width: 350px;
+    }
+
+    .qcCounter {
+        width: 77px;
+        float: left;
+        text-align: center;
+    }
+
+    .lobbyAvatarCommandIcon {
+        background-color: rgba(215, 13, 13, 0);
+    }
+
+    #playerProfileLayer .floatingContainer {
+        background-color: rgba(66, 66, 66, .8);
+        border-radius: 10px;
+    }
+
+    .ppFooterContainer{
+        border-bottom-left-radius: 10px;
+    }
+
+    .ppImageContainer {
+        float: left;
+        background-color: rgb(27, 27, 27);
+
+        border-top-left-radius: 10px;
+    }
+
+    .ppHeaderText > .close {
+        margin-top: 4px;
+        margin-right: 2px;
+        z-index: 5;
+        position: relative;
+    }
+
+    .ppStatsNameContainer {
+        background-color: rgba(27, 27, 27, .4);
+        border-bottom: #4242425c 1px solid;
+    }
+
+    .ppBadgeContainer {
+        background-color: rgba(27, 27, 27, .4);
+        box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, .4);
+        position: relative;
+    }
+
+    .ppBadgeNoBadgeText {
+        color: rgb(253, 252, 252);
+        text-shadow: 0px -1px 0px rgba(224, 36, 36, 0);
+    }
+
+    .ppImageContainer, .ppFooterText {
+        background-color: rgba(27, 27, 27, .6);
+    }
+
+    .ppFooterOptionIcon {
+        background-color: rgba(25, 25, 25, .6);
+    }
+
+    .ppPlayerLevelLine{
+        background-color: rgba(27, 27, 27, .9);
+    }
+
+    .ppPlayerLevelLowerBoarder {
+        box-shadow: 0 1px 10px 1px rgb(0 0 0);
+    }
+
+    #lobbyCountContainer {
+        text-shadow: 0px 0px 8px rgba(0, 0, 0, 0);
+        background-color: rgb(66, 66, 66);
+        -webkit-box-shadow: 0 2px 10px 2px rgba(0, 0, 0, 0);
+        box-shadow: 0 2px 10px 2px rgba(0, 0, 0, 0);
+    }
+
+    #lobbyCountLoad {
+        width: 100%;
+        background-color: rgba(255, 193, 50, 1);
+        box-shadow: 0 1px 10px 1px rgb(66 146 226 / 0%);
+    }
+
+    #lobbyReadyCountLoad {
+        background-color: rgba(238, 0, 255, .5);
+    }
+
+    .qpVoteSkip.toggled {
+        background-color: rgba(254, 193, 51, 1) !important;
+    }
+
+    #qpVolume  {
+        width: 120px;
+        margin-top: 7px;
+        color: rgb(255, 123, 0);
+    }
+
+    #qpVolumeBarIndicator {
+        width: 6px;
+        background-color: rgb(255, 123, 0);
+    }
+
+    /* .qpAvatarStatus {
+        text-shadow: 0px -1px 0px rgba(0, 0, 0, 0);
+        right: 12px;
+        color: #fff;
+        width: 21px;
+        bottom: 2px; 
+    } */
+
+    .qpAvatarAnswerContainer {
+        position: absolute;
+        max-height: 60px;
+        min-height: 37px;
+        height: 20px;
+        top: -40px;
+        z-index: 5;
+        width: 120%;
+        left: -10%;
+        word-wrap: break-word;
+    }
+
+    .switchContainer > .slider-tick-container > .switchOn {
+        display: none;
+        right: -10px;
+        background-color: rgba(46, 136, 217, 0);
+        background-image: linear-gradient(to top left, #ea4452 0, #e6b718  100%);
+    }
+
+    .switchContainer.active {
+        background-image: linear-gradient(to bottom, #f2da0c 0, #d65b3f 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4497EA',endColorstr='#3f8ad6',GradientType=0);
+    }
+
+    #optionsContainer{
+        border-radius: 20px 20px 0 0;
+    }
+
+    #optionGlyphIcon {
+        margin-left: 15px;
+        top: 7%;
+/*         top: 3px; */
+    }
+    
+    
+
+    #gcMessageContainer > li .gcTeamMessageIcon {
+        background-color: #ffa500;
+        width: 50px;
+        border-radius: 3px;
+        left: -15px;
+    }
+
+    /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+    /* .qpLifeActiveOverlay{
+        width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      box-shadow:
+        0 0 2px #fff,
+        -2px 0 8px #f0f,
+        2px 0 8px #0ff,
+        inset 0 0 5px #fff,
+        inset 5px 0 8px #f0f,
+        inset -5px 0 8px #0ff,
+        inset 5px 0 30px #f0f,
+        inset -5px 0 30px #0ff;
+      animation: pulsate 10s linear infinite;
+    } */
+
+    /* .qpLifeActiveOverlay{
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      box-shadow:
+        0 0 1.3px #fff,
+        -1.3px 0 5.3px #f0f,
+        1.3px 0 5.3px #0ff,
+        inset 0 0 3.3px #fff,
+        inset 3.3px 0 5.3px #f0f,
+        inset -3.3px 0 5.3px #0ff,
+        inset 5.5px 0 20px #f0f,
+        inset -5.5px 0 20px #0ff;
+      animation: pulsate 5s linear infinite;
+    }
+
+    @keyframes pulsate {
+      50% {
+        box-shadow:
+          0 0 1.3px #fff,
+          1.3px 0 5.3px #f0f,
+          -1.3px 0 5.3px #0ff,
+          inset 0 0 3.3px #fff,
+          inset -3.3px 0 5.3px #f0f,
+          inset 3.3px 0 5.3px #0ff,
+          inset -3.3px 0 20px #f0f,
+          inset 3.3px 0 20px #0ff;
+      }
+    } */
+
+    .qpLifeActiveOverlay{
+      width: 20px !important;
+      height: 20px;
+      margin-bottom: 7px !important;
+      border-radius: 50%;
+      box-shadow:
+        0 0 1.3px #fff,
+        -1.3px 0 5.3px #f0f,
+        1.3px 0 5.3px #0ff,
+        inset 0 0 3.3px #fff,
+        inset 3.3px 0 5.3px #f0f,
+        inset -3.3px 0 5.3px #0ff,
+        inset 5.5px 0 20px #f0f,
+        inset -5.5px 0 20px #0ff;
+      animation: pulsate 15s linear infinite, spin 130s linear infinite;
+    }
+
+    @keyframes pulsate {
+      50% {
+        box-shadow:
+          0 0 1.3px #fff,
+          1.3px 0 5.3px #f0f,
+          -1.3px 0 5.3px #0ff,
+          inset 0 0 3.3px #fff,
+          inset -3.3px 0 5.3px #f0f,
+          inset 3.3px 0 5.3px #0ff,
+          inset -3.3px 0 20px #f0f,
+          inset 3.3px 0 20px #0ff;
+      }
+    }
+
+    @keyframes spin {
+        100% { -webkit-transform: rotate(360deg);
+        transform:rotate(360deg);   
+      } 
+    }
+
+    /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+    /* .qpLife{
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      box-shadow:
+        0 0 1.3px #fff,
+        -1.3px 0 5.3px #0fe,
+        1.3px 0 5.3px #ff0,
+        inset 0 0 3.3px #fff,
+        inset 3.3px 0 5.3px #0fe,
+        inset -3.3px 0 5.3px #ff0,
+        inset 5.5px 0 20px #0fe,
+        inset -5.5px 0 20px #ff0;
+      animation: pulsateAlive 5s linear infinite;
+    }
+
+    @keyframes pulsateAlive {
+      50% {
+        box-shadow:
+          0 0 1.3px #fff,
+          1.3px 0 5.3px #0fe,
+          -1.3px 0 5.3px #ff0,
+          inset 0 0 3.3px #fff,
+          inset -3.3px 0 5.3px #0fe,
+          inset 3.3px 0 5.3px #ff0,
+          inset -3.3px 0 20px #0fe,
+          inset 3.3px 0 20px #ff0;
+      }
+    } */
+
+    /* .qpLife{
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      box-shadow:
+        0 0 1.3px #fff,
+        -1.3px 0 5.3px #0fe,
+        1.3px 0 5.3px #ff0,
+        inset 0 0 3.3px #fff,
+        inset 3.3px 0 5.3px #0fe,
+        inset -3.3px 0 5.3px #ff0,
+        inset 5.5px 0 20px #0fe,
+        inset -5.5px 0 20px #ff0;
+      animation: pulsateAlive 6s linear infinite, spinAlive 20s linear infinite;
+    }
+
+    @keyframes pulsateAlive {
+      50% {
+        box-shadow:
+          0 0 1.3px #fff,
+          1.3px 0 5.3px #0fe,
+          -1.3px 0 5.3px #ff0,
+          inset 0 0 3.3px #fff,
+          inset -3.3px 0 5.3px #0fe,
+          inset 3.3px 0 5.3px #ff0,
+          inset -3.3px 0 20px #0fe,
+          inset 3.3px 0 20px #ff0;
+      }
+    }
+
+    @keyframes spinAlive {
+        100% { -webkit-transform: rotate(360deg);
+        transform:rotate(360deg);   
+      } 
+    } */
+
+    .qpLife{
+      width: 20px !important;
+      height: 20px;
+      margin-bottom: 7px !important;
+      border-radius: 50%;
+      box-shadow:
+        0 0 1.3px #fff,
+        -1.3px 0 5.3px #f00,
+        1.3px 0 5.3px #ff0,
+        inset 0 0 3.3px #fff,
+        inset 3.3px 0 5.3px #f00,
+        inset -3.3px 0 5.3px #ff0,
+        inset 5.5px 0 20px #f00,
+        inset -5.5px 0 20px #ff0;
+      animation: pulsateAlive 15s linear infinite, spinAlive 130s linear infinite;
+    }
+
+    @keyframes pulsateAlive {
+      50% {
+        box-shadow:
+          0 0 1.3px #fff,
+          1.3px 0 5.3px #f00,
+          -1.3px 0 5.3px #ff0,
+          inset 0 0 3.3px #fff,
+          inset -3.3px 0 5.3px #f00,
+          inset 3.3px 0 5.3px #ff0,
+          inset -3.3px 0 20px #f00,
+          inset 3.3px 0 20px #ff0;
+      }
+    }
+
+    @keyframes spinAlive {
+        100% { -webkit-transform: rotate(360deg);
+        transform:rotate(360deg);   
+      } 
+    }
+
+    #restartMessageContainer{
+        background-color: rgba(0, 0, 0, 0.6) !important;
+        border-radius: 0 10px 10px 0;
+        top: 45% !important;
+    }
+
+    #restartMessageContainer .close{
+            right: 5px;
+            line-height: 0.9;
+    }
+
+    .close:focus, .close:hover {
+        color: #e8a808;
+        text-decoration: none;
+        filter: none;
+        opacity: 1;
+    }
+
+    /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+
+    .qpVideoTextOverlay {
+        text-shadow: -1px 0 #e3131300, 0 1px #da121200, 1px 0 #0000, 0 -1px #0000;
+    }
+
+    #mhLoadContainer{
+        background-color: rgba(66, 66, 66, .6);
+        border-radius: 15px;
+    }
+
+    .mhLoadEntryNameContainer {
+        background-color: rgba(66, 66, 66, 0);
+    }
+
+    .mhLoadEntryName::after {
+        background-image: linear-gradient(to left, rgba(226, 12, 12, 0), rgba(66, 66, 66, 0));
+    }
+
+    .mhLoadListEntry {
+        height: 25px;
+        background-color: rgba(27, 27, 27, .4);
+        border-bottom: 1px solid #00000080;
+        overflow: hidden;
+        position: relative;
+    }
+
+    #mhLoadFromSaveCodeButton {
+        position: absolute;
+        bottom: 0;
+        margin: auto;
+        background-color: rgba(27, 27, 27, .6);
+        width: 100%;
+        -webkit-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0);
+        box-shadow: 0 0px 6px 1px rgba(0, 0, 0, 0);
+
+        border-radius: 0 0 15px 15px;
+    }
+
+    #mhLoadHeader {
+        background-color: rgba(27, 27, 27, .75);
+        border-bottom: 1px solid #8c6a06;
+        border-radius: 15px 15px 0 0;
+    }
+
+    #mhLoadHeader > .close {
+        position: absolute;
+        right: 4px;
+        top: 4px;
+        font-size: 28px;
+    }
+
+    .mhLoadDelete {
+        font-size: 26px;
+        position: absolute;
+        right: 5px;
+        top: -8px;
+    }
+
+    .tab-modal .modal-body {
+        padding-top: 3px;
+        padding-bottom: 0;
+        border-top: 1px solid #8c6a06;
+    }
+
+    .modal-footer {
+        border-top: 1px solid #8c6a06;
+    }
+
+
+    .slider-handle, .slider-tick.in-selection {
+        background-image: -webkit-linear-gradient(to top left, #ea4452 0, #e6b718  100%);
+        background-image: -o-linear-gradient(to top left, #ea4452 0, #e6b718  100%);
+        background-image: linear-gradient(to top left, #ea4452 0, #e6b718  100%);
+    /*     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4497EA',endColorstr='#3f8ad6',GradientType=0); */
+    }
+
+    #mhVintageSlider .slider-handle.min-slider-handle, #mhSamplePointRangeSlider .slider-handle.min-slider-handle{
+        background-image: -webkit-linear-gradient(to top right, #d84451 0, #e9d014  100%);
+        background-image: -o-linear-gradient(to top right, #d84451 0, #e9d014  100%);
+        background-image: linear-gradient(to top right, #d84451 0, #e9d014  100%);
+    /*     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4497EA',endColorstr='#3f8ad6',GradientType=0); */
+    }
+
+
+    .slider-selection  {
+        background-image: -webkit-linear-gradient(to bottom right, #f2da0c 0, #d65b3f 100%);
+        background-image: -o-linear-gradient(to bottom right, #f2da0c 0, #d65b3f 100%);
+        background-image: linear-gradient(to bottom right, #f2da0c 0, #d65b3f 100%);
+    /*     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4497EA',endColorstr='#3f8ad6',GradientType=0); */
+    }
+
+    .slider-selection.tick-slider-selection{
+        background-image: -webkit-linear-gradient(to top left, #ea4452 0, #e6b718  100%);
+        background-image: -o-linear-gradient(to top left, #ea4452 0, #e6b718  100%);
+        background-image: linear-gradient(to top left, #ea4452 0, #e6b718  100%);
+    }
+
+    .btn-primary {
+        background-color: #d56a4e;
+        background-image: linear-gradient(to bottom left, #ea4452 0, #e6b718  100%);
+        border-color: #d56a4e;
+    }
+
+    .filterContent {
+        border-top: 3px solid rgba(66, 66, 66, .4);
+    }
+
+    .filterContainer {
+        background-color: rgba(27, 27, 27, .7);
+        border-radius: 13px;
+        margin-top: -7px;
+    }
+
+    #mhMainContainerInner .flatTextInput {
+        border-radius: 14px 14px 0 0;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    #mhSongTypeContainer {
+        width: 270px;
+    }
+
+    #mhSongTypeContainer.checkboxContainer > div {
+        display: inline-block;
+        width: 85px;
+        vertical-align: top;
+    }
+
+    .mhSettingCategory {
+        position: absolute;
+        top: -1px;
+        width: 100px;
+        background-color: rgba(255, 153, 0, .75);
+        left: -10px;
+        box-shadow: none;
+        border-bottom-right-radius: 5px ;
+    }
+
+    .mhSettingContainer {
+        border-top: solid 5px rgba(255, 153, 0, .75);
+        border-radius: 5px;
+    }
+
+    #mhPrivateRoomContainer {
+        position: absolute;
+        right: 0;
+        top: 30px;
+        width: 160px;
+        text-align: left;
+        padding-left: 5px;
+    }
+
+    #mhRoomNameInput {
+        width: 240px;
+    }
+
+    .customCheckbox label {
+        color: #d26634;
+    }
+
+    #mhQuickSelectContainer > .tab {
+        background-color: rgba(82, 82, 82, .4);
+    }
+
+    .tab.leftRightButtonTop.clickAble:hover {
+        background-color: rgba(227, 14, 14, .8);
+    }
+
+    .mhCheckTableContainer {
+        width: 500px;
+        border: solid rgba(27, 27, 27, .6) 5px;
+        margin-top: 20px;
+        border-radius: 10px;
+    }
+
+    .mhctRow {
+        position: relative;
+        border-bottom: solid rgba(27, 27, 27, .6) 3px;
+        overflow: hidden;
+        height: 30px;
+    }
+
+    .mhctRowNameContainer {
+        background-color: rgba(27, 27, 27, .6);
+    }
+
+    .mhctRowItem:nth-child(2n) {
+        background-color: rgba(27, 27, 27, .6);
+    }
+
+    .mhctRowItem {
+        width: 24%;
+        display: inline-block;
+        padding-top: 8px;
+    }
+
+    #mhOpeningCategoryContainer .mhctRowItem .customCheckbox, #mhEndingCategoryContainer .mhctRowItem .customCheckbox, #mhInsertCategoryContainer .mhctRowItem .customCheckbox {
+        top: -5px;
+    }
+
+    #xpBarAnimationContainer {
+        border-radius: 10px;
+        opacity: 0;
+        position: absolute;
+        transition: opacity ease-in-out 2.3s !important;
+        box-shadow: 0 0 10px #ffffff9e, 0 0 20px #ffffff9e, 0 0 40px #eeac1c, 0 0 70px #eeac1c, 0 0 80px #eeac1c;
+    }
+
+
+    .ppProfileImg{
+        border-radius: 10px 0 0 0;
+    }
+
+    .socialTabFriendPlayerEntry > .stPlayerProfileButton {
+        margin-top: 22px;
+        margin-left: -5px;
+    }
+
+    .socialTabFriendPlayerEntry {
+        width: 127%;
+        margin-left: -10px;
+    }
+
+    #mainMenuSocailButton:hover {
+        box-shadow: 0px 6px 10px 2px #24aa9f00;
+    }
+
+    .btn-primary:hover {
+        -webkit-box-shadow: inset 0 0 20px 9px #eeac1c00;
+        box-shadow: inset 0 0 20px 9px #d2663400;
+        background-image: linear-gradient(to bottom left, #e6b718 0,  #ea4452  100%);
+        border-color: #d26634;
+    }
+
+    .btn-primary.active, .btn-primary:active, .open>.dropdown-toggle.btn-primary {
+        color: #fff;
+        background-color: #e0992f;
+        border-color: #fff;
+    }
+
+    .btn-primary:focus {
+        background-color: #febb32;
+        border-color: #fff;
+    }
+
+    #mhWatchedDisitributionContainer{
+        padding-top: 8px;
+    }
+
+    .mhCustomSliderContainer {
+        background-color: rgba(27, 27, 27, .65);
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        margin-left: -8px;
+    }
+
+    .mhAdvancedContainerTitle {
+        left: 0px;
+    }
+
+    .form-control:focus {
+        border-color: #febb32;
+        outline: 0;
+        -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgba(254, 187, 50, .6);
+        box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgba(254, 187, 50, .6);
+    }
+
+    #gcQueueActionButtonText {
+        margin-top: -6px;
+    }
+
+    #qpAnswerInputLoadingContainer {
+        right: 15px;
+    }
+
+    .qpVoteSkipGlowContainer {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        -webkit-box-shadow: 3px 0px 10px 5px #228dff00;
+        box-shadow: 3px 0px 10px 5px #f2600f00;
+        opacity: 0.7;
+        z-index: -1;
+    }
+    
+    
+    
+    
+    
+
+    #qpVideoTroubleshootingContainer > .close {
+        margin-right: 5px;
+        margin-top: 5px;
+    }
+
+    #qpVideoTroubleshootingContainer{
+        border-bottom-left-radius: 15px;
+    }
+
+    .awesomplete > ul.ps {
+        max-height: 290px;
+    }
+
+
+    .gcUserName {
+        font-weight: bold;
+        color: #fd857b;
+        animation: colorSmooth 400s infinite alternate;
+    }
+
+    @keyframes colorSmooth {
+        0% {
+            color: #fdea96;
+      }
+        14% {
+            color: #e25cc8;
+      }
+        28% {
+            color: #b6325f;
+      }
+        42% {
+            color: #ff887c;
+      }
+        56% {
+            color: #f2acb4;
+      }
+        70% {
+            color: #84bcd2;
+      }
+        84% {
+            color: #2dc9d2;
+      }
+        100% {
+            color: #6c7ae0;
+      }
+    }
+
+    .chatBoxFooter {
+        width: 100%;
+        height: 100%;
+        float: left;
+        background-color: rgba(27, 27, 27, .6);
+    }
+
+    .chatBox::before {
+        content: "";
+        position: absolute;
+        background-color: rgba(27, 27, 27, 0);
+        width: 100%;
+        height: 100%;
+        left: -25px;
+    }
+
+    .chatBoxContainer {
+        border-right: solid 2px rgba(27, 27, 27, .4);
+        border-left: solid 2px rgba(27, 27, 27, .4);
+        box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0);
+        transform: translateY(125%);
+        background-color: rgba(27, 27, 27, .6);
+        border: none;
+        border-radius: 5px 5px 0 0;
+    /*     right: 320px; */
+        width: 100%;
+    }
+
+    .chatTopBar {
+        background-color: rgba(27, 27, 27, .5);
+        font-size: 12px;
+        height: 16px;
+    }
+
+    .chatTopBar p:after {
+        content: "";
+        pointer-events: none;
+        position: absolute;
+        width: 50px;
+        height: 16px;
+        top: 0;
+        right: 72px;
+        background-image: -webkit-linear-gradient(to left, rgba(27, 27, 27, 0), rgba(27, 27, 27, 0));
+        background-image: -moz-linear-gradient(to left, rgba(27, 27, 27, 0), rgba(27, 27, 27, 0));
+        background-image: -ms-linear-gradient(to left, rgba(27, 27, 27, 0), rgba(27, 27, 27, 0));
+        background-image: -o-linear-gradient(to left, rgba(27, 27, 27, 0), rgba(27, 27, 27, 0));
+        background-image: linear-gradient(to left, rgba(27, 27, 27, 0), rgba(27, 27, 27, 0));
+    }
+
+    .chatTopBar .glyphicon-remove{
+        margin-right: 2px;
+        margin-top: 1.5px;
+    }
+
+    .chatTopBar .glyphicon > i{
+        margin-top: 1px;
+    }
+
+    .chatTopBar .glyphicon-arrow-right, .chatTopBar .glyphicon-arrow-left{
+        margin-top: 0.75px;
+    }
+
+
+    .chatBoxContainer .header {
+        -webkit-box-shadow: 0px 4px 10px -3px rgba(0, 0, 0, 0);
+        box-shadow: 0px 4px 10px -3px rgba(0, 0, 0, 0);
+        border-bottom: solid 1px #ad931c;
+        font-size: 14px;
+        line-height: 14px;
+        font-weight: normal;
+        overflow: hidden;
+    }
+
+    #chatContainer {
+        left: 100px;
+    }
+
+    .chatTopBar p {
+        margin-left: 3px;
+        width: 74px;
+    }
+
+    .chatBoxContainer .textAreaContainer {
+        border-radius: 3px;
+    }
+
+    .chatBoxFooter > h4{
+        left: 50%;
+        transform: translateX(-50%) skew(35.5deg);
+    }
+
+    #qpAnswerStateContainerInner {
+        right: -16px;
+        background-color: rgba(232, 109, 115, 1);
+        width: 50px;
+    }
+    #qpAnswerStateContainerOuter {
+        width: 65px !important;
+    }
+
+
+    #qpAnswerStateContainerOuter {
+        width: 45px;
+    }
+
+    #qpAnswerStateCheck {
+        left: 6px;
+        top: 15px;
+    }
+
+    /* TESTTESTTEST */
+
+    /* #gameChatContainer{
+        height: 105%;
+    } */
+
+    /* #footerMenuBar {
+        width: 75%;
+    }
+     */
+    /* #avatarUserImgContainer {
+        height: 74px;
+        width: 74px;
+    } */
+
+    /* #avatarUserImg {
+        width: 80px;
+    } */
+
+    /* #footerMenuBarBackground {
+        position: absolute;
+    } */
+
+    #currencyContainer {
+        left: 260px;
+    }
+
+    #currencyContainer .currencyIcon {
+        width: 35px;
+        position: absolute;
+        top: 7px;
+        right: 0px;
+    }
+
+    #currencyTicketContainer {
+        right: -10px
+    }
+
+    /* #menuBarOptionContainer {
+        right: 50px;
+    } */
+
+    #optionsContainer {
+        right: 112px;
+    }
+
+    #gcEmojiPickerOuterContainer {
+        left: -40px;
+        top: 35px;
+    }
+
+    /* .fa-smile-o:before{
+        left: -34px;
+        top: 43px;
+    } */
+
+    /* .gcInputContainer > .textAreaContainer {
+        width: calc(100% - 48px);
+        height: calc(100% - 10px);
+        margin: 5px 5px 5px 43px;
+    } */
+
+
+
+    /* rgba(255, 221, 117, 0.8) beau jaune */
+
+    /* _________________________________________________________________________________ */
+
+
+    .qpAvatarStatusInnerContainer {
+        background-color: rgba(232, 109, 115, 1);
+        opacity: 1;
+        right: -8px;
+        top: 19px;
+
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        transform: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border-radius: 50%;
+
+        overflow: hidden;
+    }
+
+    .qpAvatarStatus {
+        position: absolute;
+        font-weight: bold;
+        width: 21px;
+        font-size: 18px;
+        text-align: center;
+        white-space: nowrap;
+        text-shadow: 0px -1px 0px rgb(0 0 0 / 0%);
+        color: #fff;
+        bottom: 2.75px;
+        left: 50%;
+        transform: translateX(-53%);
+    }
+
+
+
+    .qpAvatarStatusOuterContainer{
+        overflow: visible;
+    }
+
+    .qpAvatarStatusBar {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        left: 20px;
+        top: 21px;
+        opacity: 1;
+    }
+
+    /* _________________________________________________________________________________ */
+
+
+    .gcInputContainer{
+        background-color: rgba(0, 0, 0, 0.0);
+        background-size: 100% auto !important;
+        background-attachment: fixed !important;
+        background-position: 0px !important;
+        box-shadow: none
+    }
+
+    #gcEmojiPickerContainer{
+            background: rgba(0, 0, 0, 0.6) !important;
+    }
+
+    #gcEmojiPickerContainer > .ps__scrollbar-y-rail > .ps__scrollbar-y {
+        opacity: 0.7;
+    /*     background-color: var(--jauneXP); */
+        background-color: rgba(244, 201, 68, .8);
+    }
+
+    #gcEmojiPickerButton > i {
+        font-size: 30px;
+        color: #f2eded;
+        background-color: rgba(0, 0, 0, 0.6);
+        border-radius: 50% 0 0 50%;
+        width: 40px;
+        height: 40px;
+    }
+
+    #gcEmojiPickerButton .fa-smile-o:before{
+        position: relative;
+        top: 13%;
+        left: 8px;
+    /*     background-color: red; */
+    }
+
+    #lobbyBottomCount {
+        bottom: 8px;
+    }
+
+
+    #xpOuterContainer {
+        left: -0%;
+    }
+
+
+    .qpAvatarStatusBar.completed, .qpAvatarStatusBar.looted{
+            background-color: rgba(38, 68, 143, 0);
+    }
+    
+    
+    
+
+    /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+
+    #elInputStatusBar {
+        border-top: 1px solid transparent;
+        border-bottom: 1px solid transparent;
+        background-color: transparent;
+    }
+
+    .elStatusName {
+        width: 70px;
+        background-color: transparent;
+        margin-left: 10px;
+    }
+
+    .elStatusName::after {
+        width: 0px;
+        height: 0px;
+    }
+
+    .elResOption {
+        background-color: transparent;
+    }
+
+    .elResStatus.uploaded {
+        background-color: #ffc132;
+    }
+
+    #elQuestionInputState {
+        color: #ffc132;
+    }
+
+    #elCounterContainer.floatingContainer.text-center {
+        background-color: var(--gris02) !important;
+        opacity: 1 !important;
+    }
+
+    #elQuestionFilter {
+        background-color: var(--gris02);
+        transform: translateX(-50%);
+        -webkit-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0);
+        box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0);
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        position: relative;
+        z-index: 2;
+    }
+
+    #elQuestionFilterInput {
+        width: 96%;
+        background-color: var(--gris02);
+        border-radius: 3px;
+        margin: 0 2% 5px;
+    }
+
+    .elQuestionHostFilter {
+        opacity: 0.8;
+    }
+
+    #elQuestionFilter > h3 {
+        margin-bottom: 8px;
+    }
+
+    #elInputVideoPreviewContainer {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-color: var(--gris02);
+    }
+
+    #elInputContainer.floatingContainer {
+        background-color: var(--gris03) !important;
+    }
+
+    #elQuestionNoSongSelectedContainer{
+        background-color: #1b1b1b;
+        opacity: 1 !important;
+    }
+
+    #elQuestionNoSongSelectedText {
+        color: white;
+        text-shadow: 0px -1px 0px rgb(0 0 0 / 0%);
+    }
+
+    .elQuestionAnime.floatingContainer.clickAble{
+        background-color: var(--gris03) !important;
+        opacity: 1 !important;
+        border-radius: 6px 0 0 6px;
+    }
+
+    .elQuestionSong.floatingContainer.clickAble.open, .elQuestionSong.floatingContainer.clickAble {
+        background-color: var(--gris02) !important;
+        opacity: 1 !important;
+        border-radius: 4px 0 0 4px;
+    }
+
+    .elQuestionSongNameContaniner::after, .elQuestionSongArtistContainer::after {
+        width: 0px;
+    }
+
+    .elQuestionAnimeName::after {
+        width: 0px;
+    }
+
+    .ps > .ps__scrollbar-y-rail > .ps__scrollbar-y {
+        position: absolute;
+        background-color: var(--gris02) !important;
+    }
+
+    #elInputVideoSelector {
+        position: absolute;
+        top: 5px;
+        right: 0px;
+        text-align: center;
+        background-color: transparent;
+        border-bottom-left-radius: 7px;
+        border-bottom-right-radius: 0px;
+    }
+
+    /* _____________________________________________________________________________ */
+
+    /* .flatTextInput {
+        width: 95%;
+    } */
+
+    /* Update de paques : */
+    #qpNameFixed {
+        position: absolute;
+        right: -18px;
+        width: 65px;
+        font-size: 21px;
+        background-color: #ffbf00;
+        -webkit-box-shadow: 0 0 0px 0px rgb(0 0 0);
+        box-shadow: 0 0 0px 0px rgb(0 0 0);
+        color: black;
+    }
+
+
+    /* .qcCounter{
+        background-color: var(--gris02);
+    } */
+
+    .qcQuestOuter.clickAble{
+        background-color: var(--gris02);
+    }
+
+    .qcQuestOuter:last-child{
+        border-bottom-right-radius: 10px;
+    }
+
+
+    .button:hover{
+        -webkit-box-shadow: 0 0 0px 0px rgb(0 0 0 / 0%);
+        box-shadow: 0 0 0px 0px rgb(0 0 0 / 0%);
+    }
+
+    /* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+    /* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+    /* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+    /* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+    /* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+    /* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+    /* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+    /* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+    /* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+    /* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+    /* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+    /* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+    /* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+    /* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+    /* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+
+
+
+    #startPage {
+        background-image: var(--bg);
+        background-size: cover;
+    }
+    #gameContainer {
+        background-image: var(--bg);
+        background-size: cover;
+    }
+    #loadingScreen {
+        background-image: var(--bg);
+        background-size: cover;
+    }
+    #gameChatPage > .col-xs-9 {
+        background: rgba(0, 0, 0, 0.7);
+    }
+    #gcGameChatButton > .col-xs-9 {
+        color: #ffffff;
+        box-shadow: none;
+        text-shadow: 0 0 20px #96FF96, 0 0 30px #66FF66, 0 0 40px #66FF66, 0 0 50px #66FF66 !important;
+    }
+
+    #footerMenuBarBackground {
+        background: transparent;
+    }
+    #awMainView {
+        background-image: var(--bg);
+        background-size: cover;
+    }
+    #gameChatContainer {
+        background: var(--chatbg);
+    }
+    .leftShadowBorder, #currencyContainer, #menuBarOptionContainer, #awContentRow .rightShadowBorder {
+        box-shadow:none;
+    }
+    #footerMenuBar .menuBar, #rightMenuBarPartContainer::before, .gcList > li:nth-child(2n) {
+        background-color: #1b1b1b;
+        background-color: #1b1b1b00;
+    }
+    #socialTab:not(.open), #optionsContainer:not(.open) {
+        display:none;
+    }
+    #mainMenuSocailButton, #avatarUserImgContainer {
+        border:none !important;
+    }
+    #rbMajorFilters {
+        background-color: #1b1b1b;
+        padding-left: 10px;
+    }
+    .leftShadowBorder {
+        box-shadow: none;
+        -webkit-box-shadow: none;
+    }
+    .gcList > li:nth-child(2n) {
+        background: none;
+    }
+    .gcInputContainer {
+        background: none;
+    }
+    #xpBarOuter {
+    /* 	background-color: #1b1b1b;  */
+        background-color: #04232b; 
+    }
+
+    #xpBarInner {
+        background: #c1d243;
+        box-shadow: none;
+    /*Change Colour of XP bar*/
+    }
+    .levelText {
+        color: #e3fcff;
+    /*Change Colour of text.*/
+    }
+
+    /* Legibility fix for guesses */
+     .qpAvatarAnswerContainer.rightAnswer .qpAvatarAnswer {
+        box-shadow: none;
+        text-shadow: none;
+    }
+    .qpAvatarAnswerContainer.wrongAnswer .qpAvatarAnswer {
+        box-shadow: none;
+        text-shadow: none;
+    }
+    .avatarIsHostContainer {
+        box-shadow: none;
+        -webkit-box-shadow: none;
+    }
+    .avatarIsHostContainerOuter {
+        position: initial;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+    }
+    .qpAvatarNameContainer .avatarIsHostContainer {
+        background-color: unset;
+        background-image: url("https://files.catbox.moe/jizubh.png");
+        transform: none;
+        left: 25px;
+        width: 20px;
+        margin-top: 4px;
+    }
+    #mainMenuSocailButton {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    .menuBarOptionContainer {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    .menuBarMainButton {
         background-color: rgba(0, 0, 0, 0.8);
+    }
+    #avatarUserImgContainer {
+        opacity: 0.5;
+    /*     filter: alpha(opacity=50); */
+    }
+    #avatarUserImgContainer:hover {
+        opacity: 1.0;
+    /*     filter: alpha(opacity=100); */
+    }
+    .lobbyAvatarTextContainer {
+        background: rgba(0, 0, 0, 0.7);
+    }
+    #mainMenuSocailButton, #avatarUserImgContainer, #awContentRow, #awMainView, .qpSideContainer, .qpAnimeNameContainer, #qpCounter, #qpWaitBuffering {
+        background-color: rgba(0, 0, 0, 0.40);
+        background-size: 100% auto !important;
+        background-attachment: fixed !important;
+        background-position: 0px !important;
+        box-shadow: none
+    }
+    #gameChatPage > .col-xs-9 {
+        background-color: rgba(0, 0, 0, 0);
+    }
+    #gameChatContainer {
+        background: rgba(0, 0, 0, 1);
+    }    
+    #qpAnimeNameHider {
+        background-color: #1b1b1b
+    }
+    #qpVideoHider {
+        background-color: #1b1b1b
+    }
+    #qpInfoHider {
+        background-color: #1b1b1b
+    }
+    #xpBarCoverInner {
+        background-color: #1b1b1b
+    }
+    .qpAvatarNameContainer {
+        background-color: #1b1b1b
+    }
+    .qpAvatarAnswerContainer {
+        background-color: rgba(27, 27, 27, .75)
+    }
+    .rbRoom, .rbrRoomImageContainer {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .qpAvatarLevelText {
+        background-color: #1b1b1b;
+        border-radius: 1px 1px 50px 50px
+
+    }
+    .qpAvatarPointText {
+        background-color: #1b1b1b;
+        border-radius: 50px 50px 1px 1px
+    }
+    .qpAvatarNameContainer .avatarIsHostContainer {
+        position: fixed;
+        left: 24px;
+        top: 155px;
+        z-index: -1;
+    }
+
+    #socialTabFriendsText{
+      text-indent: -9999px;
+      line-height: 0; /* Collapse the original line */
+    }
+
+    #socialTabFriendsText::after {
+        content: "Friends";
+        text-indent: 0;
+        display: block;
+        line-height: initial; /* New content takes up original line height */
+    }
+
+    #socialTabFriendsText{
+        right: 10px;
+    }
+
+    #socialTabFriendsText {
+        position: relative; 
+        top: 0px;
+        left: 0px;
+    }
+
+    #socialTab, #mainMenuSocailButton{
+        width: 270px;
+    }
+
+    #socialTabFriendsText{
+      text-indent: -9999px;
+      line-height: 0; /* Collapse the original line */
+    }
+
+    #mmSocialButtonOnlineContainer {
+        height: 100%;
+        width: 100%;
+    }
+
+    .menuBar .popOut {
+        box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0);
+    }
+
+    #mainMenuSocailButton > i {
+        display: none;
+    }
+    #mainMenuSocailButton {
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+    #mpPlayButton {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    #mpExpandButton {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    #mpDriveDonationContainer .button {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+    #mpDriveStatsContainer {
+        background-color: rgba(0, 0, 0, 0.0);
+    }
+    #mpAvatarDriveContainer, #mpAvatarDriveHeaderShadowHider .floatingContainer {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    #mpNewsContainer, #mpNewsTitleShadowHider div {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    #mpPatreonContainer .button {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    #awSkinPreviewContainer {
+        background-color: transparent;
+    }
+    .lobbyAvatarNameContainer {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    .qpAvatarImgContainer {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    .avatarUserImgContainer {
+        box-shadow: none;
+    }
+    #brMapContent {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    .brShowEntry, .brMapObject {
+        background-color: rgb(217, 179, 0);
+    }
+    .topMenuBar {
+        background-color: transparent;
+    }
+    .elInputContainer {
+        background: rgba(0, 0, 0, 0.5);
+    }
+    #xpBarCoverOuter {
+        border-color: #1b1b1b
+    }
+    #xpBarCoverInner {
+        border: none;
+    }
+    #lobbyCountContainer {
+        background: rgba(0, 0, 0, 0.8);
+    }
+    #mpRankedButton {
+        background: rgba(0, 0, 0, 0.5);
+    }
+    #mpLeaderboardButton {
+        background: rgba(0, 0, 0, 0.5);
+    }
+    #lobbyCountContainer {
+         top: -15px;
+
+    }
+    .ps > .ps__scrollbar-y-rail > .ps__scrollbar-y {
+          position: absolute;
+          /* please don't change 'position' */
+          background-color: #faf5f5;
+          -webkit-border-radius: 6px;
+          -moz-border-radius: 6px;
+          border-radius: 6px;
+          -webkit-transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, -webkit-border-radius .2s ease-in-out;
+          transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, -webkit-border-radius .2s ease-in-out;
+          -o-transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, border-radius .2s ease-in-out;
+          -moz-transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, border-radius .2s ease-in-out, -moz-border-radius .2s ease-in-out;
+    /*       transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, border-radius .2s ease-in-out; */
+    /*       transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, border-radius .2s ease-in-out, -webkit-border-radius .2s ease-in-out, -moz-border-radius .2s ease-in-out; */
+          right: 2px;
+          /* there must be 'right' for ps__scrollbar-y */
+          width: 6px; }
+     .ps:hover > .ps__scrollbar-y-rail:hover > .ps__scrollbar-y {
+          background-color: #f9feff; 
+    }
+
+    #qpHiderText {
+        background: rgba(0, 0, 0, 0.0);
+    }
+
+    #qpVideoOverflowContainer {
+        background: rgba(0, 0, 0, 0.3);
+        box-shadow: none
+    /* Change opacity of background of "sound only". Can change colour too if you fancy*/
+    }
+
+    #qpVideoHider {
+        background: rgba(0, 0, 0, 0.0);
+    }
+    #qpVideoSoundOnly {
+        opacity: 0.0
+    }
+    #qpVideoContainer {
+        box-shadow: none
+    }
+    #qpAnswerInputContainer {
+        border: none;
+        border-radius: 0;
+    }
+    #qpAnswerInputContainer.floatingContainer {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    .qpVoteState {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    #qpAnswerInputContainer.focused {
+        box-shadow: none
+    }
+    .qpVoteSkip {
+        background-color: rgba(46, 63, 99);
+    }
+    .qpVoteSkip.toggled {
+        background-color: rgba(173, 138, 189);
+    /*Change Vote Skip Button Colour When Clicked*/
+    }
+
+    .qpVoteSkip > p {
+        opacity: 0.0
+    }
+
+    #qpVideoProgressBar {
+        background-color: rgba(255, 221, 117, 0.8);
+    /*Change colour bar at the bottom of the video colour*/
+    }
+    .qpSingleRateContainer {
+        background-color: rgba(0, 0, 0, 0.0)
+
+    }
+    .qpAvatarStatus {
+        background: rgba(47, 127, 145, 0.0);
+    }
+
+    #qpWaitBuffering {
+        opacity: 0.0;
+    }
+
+    /**Expand player Opacity**/
+    #elQuestionNoSongSelectedContainer, .elQuestionAnime.floatingContainer.clickAble, #elCounterContainer.floatingContainer.text-center{
+        background-color: #1b1b1b;
+        opacity: 0.9 ;
+    }
+
+    .elQuestionSong.floatingContainer.clickAble.open, .elQuestionSong.floatingContainer.clickAble {
+        background-color: #1b1b1b;
+        opacity: 0.8;
+    }
+
+    #elInputContainer {
+        width: 35%;
+    }
+    #elInputVideoContainer {
+        height: 40%;
+    }
+
+    div#startPageCenter {
+        background-color: rgb(19, 12, 12, 0.7);
+        box-shadow: none;
+    }
+
+    div#startPageLogoContainer {
+        background-color: rgb(0, 0, 0, 0);
+    }
+
+    .qpsPlayerName.self {
+        color: #fdea96;
+        text-shadow: 0 0 10px #f2aeb3; /*à modifier*/
+    }
+
+    .progress-bar {
+        background-color: #ffe500ad;
+    }
+
+    .fa-friend {
+        color: #ea0441;
+    }
+
+
+
+    .qpAvatarBackgroundContainer {
+        display: none;
+    }
+
+
+
+
+    .qpAvatarAnswerText.wrongAnswer {
+        text-shadow: none
+    }
+
+    .qpAvatarAnswerText.rightAnswer {
+        text-shadow: none
+    }
+
+
+    .qpAvatarImageContainer:has(.qpAvatarImage[src*="Basic."]) {
+        background-color: rgba(0, 0, 0, 0);
+        box-shadow: none;
+    }
+
+    .qpAvatarImageContainer.runAnimation > .particleEmiter{
+        opacity: 0;
+    }
+
+    .qpAvatarImage~.particleEmiter {
+        border-radius: 10px;
+        opacity: 1;
+        z-index: -1;
+    }
+
+
+    .qpAvatarImageContainer > .particleEmiter{
+        opacity: 0;
+    }
+    
+    
+    
+/*     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/*     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+    
+     .qpAvatarImage[src*="Right."] {
+         filter: 
+            drop-shadow(0 0 30px rgba(255, 255, 255, 0.4))
+            drop-shadow(0 0 60px #fbfd8d9e)
+            drop-shadow(0 0 20px #e6aa04d4);
+    }
+    .qpAvatarImage[src*="Wrong."] {
+        filter: 
+/*             drop-shadow(0 0 30px rgba(255, 255, 255, 0.2)) */
+            drop-shadow(0 0 20px rgba(255, 68, 0, 0.6))
+            drop-shadow(0 0 20px #ef088fab);
+    }
+
+    .qpAvatarImage[src*="Confused."] {
+        filter: 
+/*             drop-shadow(0 0 20px rgba(255, 255, 255, 0.3))
+            drop-shadow(0 0 30px #16391485) */
+            drop-shadow(0 0 20px #51a456e3);
+    }
+
+    .qpAvatarImage[src*="Thinking."] {
+        filter: 
+            drop-shadow(0 0 25px #00ffff8f);
+    }
+
+    .qpAvatarImage[src*="Waiting."] {
+        filter: 
+/*             drop-shadow(0 0 20px rgba(255, 255, 255, 0.2)) */
+            drop-shadow(0 0 25px #ca03f7b0);
+/*             drop-shadow(0 0 60px #00dafc); */
+    }
+    
+/*      .qpAvatarImage[src*="Thinking."] {
+        filter: 
+            drop-shadow(20px 20px 0px #ff0004)
+            drop-shadow(-20px 20px 0px #00f)
+            drop-shadow(20px -20px 0px #00ff04)
+            drop-shadow(-20px -20px 0px #f0f); 
+         
+         filter: 
+            drop-shadow(15px 15px 30px #e6c804d4)
+            drop-shadow(-15px -15px 30px #e6d304d4)
+            drop-shadow(-15px 15px 30px #e64404d4)
+            drop-shadow(15px -15px 30px #e64404d4); 
+               
+    } */
+
+    
+    
+
+/*     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/*     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+
+
+
+
+    /* Le joueur a quitté la partie... EN FAIT NON */
+    .qpAvatarImage[src*="Basic."]{
+        opacity: 1;
+    }
+
+    .qpAvatarImage~.particleEmiter {
+        border-radius: 10px;
+        opacity: 1;
+        z-index: -1;
+    }
+
+    .runAnimation > .particleEmiter {
+        animation: particleSpawn 0 alternate;
+    }
+
+    .qpAvatarContainer.disabled .particleEmiter {
+        opacity: 0;
+    }
+
+    .qpAvatarAnswerText {
+        text-align: center;
+        border-right: 17px solid transparent;
+        border-left: 10px solid transparent;
+    }
+
+
+    /* .qpAvatarImageContainer > .particleEmiter {
+
+    } */
+
+/*     .qpAvatarImageContainer.runAnimation > .particleEmiter{
+         opacity: 0; 
+    } */
+
+
+
+
+
+
+
+
+
+
+    /*Change Particle colour**/
+    .particleShadow {
+        box-shadow: 0 0 10px rgba(255, 237, 133, 0.8), 0 0 20px rgba(255, 237, 133, 0.8), 0 0 30px rgba(255, 237, 133, 0.8), 0 0 40px #2b47ff, 0 0 70px #2b47ff, 0 0 80px #2b47ff, 0 0 100px #2b47ff, 0 0 150px #2b47ff;
+        animation: pulse 400ms infinite alternate;
+    }
+
+    .particle {
+        background-color: rgba(255, 237, 133, 0.8);
+        box-shadow: 0 0 5px rgba(255, 237, 133, 0.8), 0 0 10px rgba(255, 237, 133, 0.8), 0 0 15px rgba(255, 237, 133, 0.8);
+    }
+
+    /**Change Colour of List Showing Up WITH HALF CIRCLE**/
+    .qpAvatarStatusBar.completed {
+        background-color: rgba(0, 0, 0, 0);
+        border: 4px #3f0 solid;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        left: -6px;
+        top: -6px;
+        opacity: 1;
+    }
+    .qpAvatarStatusBar.watching {
+        background-color: rgba(0, 0, 0, 0);
+        border: 4px #b700ff solid;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        left: -6px;
+        top: -6px;
+        opacity: 1;
+    }
+    .qpAvatarStatusBar.hold {
+        background-color: rgba(0, 0, 0, 0);
+        border: 4px #f7ff32 solid;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        left: -6px;
+        top: -6px;
+        opacity: 1;
+    }
+    .qpAvatarStatusBar.dropped {
+        background-color: rgba(0, 0, 0, 0);
+        border: 4px #f00 solid;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        left: -6px;
+        top: -6px;
+        opacity: 1;
+    }
+    .qpAvatarStatusBar.planning {
+        background-color: rgba(0, 0, 0, 0);
+        border: 4px white solid;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        left: -6px;
+        top: -6px;
+        opacity: 1;
+    }
+
+    /**Change Colour of List Showing Up WITH POINTS**/
+    /* .qpAvatarStatusBar.completed {
+        background-color: #3f0;
+    }
+    .qpAvatarStatusBar.watching {
+        background-color: #b700ff;
+    }
+    .qpAvatarStatusBar.hold {
+        background-color: #f7ff32;
+    }
+    .qpAvatarStatusBar.dropped {
+        background-color: #f00;
+    }
+    .qpAvatarStatusBar.planning {
+        background-color: white;
+    } */
+
+    #storeWindow {
+        background-color: var(--noir5);
+    }
+
+    div#swNoSelectionContainer {
+        opacity: 0
+    }
+
+    div#restartMessageContainer.floatingContainer.popoutMessage.noShadow.open {
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    div#restartMessageContainer.floatingContainer.popoutMessage.noShadow {
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    div#popoutMessageContainer.floatingContainer.popoutMessage.noShadow {
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    #mpPlayMultiplayer:hover, #mpPlaySolo:hover {
+        background-color: #000000;
+        opacity: 0.5
+    }
+    #mpNewSocialTab {
+        border-bottom: none;
+    }
+
+    #mpNewSocailTab > .leftRightButtonTop {
+        background-color: rgba(0, 0, 0, 0.0);
+    }
+
+    #elInputContainer.floatingContainer {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    #elQuestionInputSongName::after, #elQuestionInputArtistName::after {
+        background-image: none;
+    }
+
+    /*Change team colour*/
+    .gcTeamMessageIcon {
+        opacity: 0.4;
+        background-color: #fcb103;
+    }
+
+    .qpAvatarStatusOuterContainer{
+      border-radius: 0 10px 10px 0;
+    }
+
+    .qpAvatarScoreContainer::after {
+        height: 25px;
+        width: 26px;
+        right: -12px;
+        background: none ;
+        clip-path: polygon(0 0, 100% 4%, 81% 100%, 50% 100%, 51% 98%, 53% 90%, 54% 80%, 51% 73%, 43% 60%, 43% 45%);
+    }
+
+    .lobbyAvatarCommandIcon {
+        border-radius: 2px;
+    }
+
+    #qpAnswerStateContainerOuter {
+        border-radius: 0 20px 20px 0;
+    }
+
+    .qpAvatarImage {
+        border-radius: 15px;
+    }
+
+    #YearCelebrationContainer.floatingContainer {
+        background-color: #1b1b1b
+    }
+
+    /*Circling things - remove all below if you want it back to normal - Increase "border radius" if you want it more round*/
+    #qpVideoOverflowContainer {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        z-index: 1;
+        border-radius: 20px;
+    }
+
+    #qpVideoHider {
+         border-radius: 20px;
+    }
+    .qpVoteShadowHider {
+        position: absolute;
+        left: 0;
+        top: 0;
+        overflow: hidden;
+        width: 80px;
+        height: 100%;
+        border-radius: 20px;
+    }
+    #qpAnswerInputContainer.floatingContainer {
+        border-radius: 20px;
+    }
+    .qpVoteState {
+        border-radius: 20px;
+    }
+
+    #qpAnswerInputContainer .awesomplete {
+        width: 95%;
+    }
+
+    .qpAvatarAnswerContainer {
+        border-radius: 10px;
+    }
+
+    .qpAvatarImgContainer {
+        border-radius: 10px;
+    }
+
+    #qpAnimeNameHider {
+        border-radius: 10px;
+    }
+
+    .qpSideContainer, .qpAnimeNameContainer {
+        border-radius: 10px;
+    }
+
+    #mpNewsBody.ps.ps--theme_default.ps--active-y{
+        border-radius: 20px;
+    }
+    #mpNewsContainer.floatingContainer.mpMainContentContainer{
+        border-radius: 20px;
+        box-shadow: none;
+    }
+
+    #mpAvatarDriveContainer {
+        border-radius: 20px;
+        box-shadow: none;
+    }
+
+    #mpPlayButton.button.floatingContainer, #mpAMQAwardsButton, #mpPromoInnerContainer {
+        border-radius: 15px;
+        box-shadow: none;
+    }
+
+    #mpExpandButton.button.floatingContainer.mainMenuButton {
+        border-radius: 15px;
+        box-shadow: none;
+    }
+
+    #mpRankedButton.button.floatingContainer.mainMenuButton.off {
+        border-radius: 15px;
+        box-shadow: none;
+    }
+
+    #mpLeaderboardButton.button.floatingContainer.mainMenuButton {
+        border-radius: 15px;
+        box-shadow: none;
+    }
+
+    .rbRoom, .rbrRoomImageContainer {
+        border-radius: 15px;
+        box-shadow: none;
+    }
+
+    #elInputContainer {
+        border-radius: 15px;
+    }
+
+    .qpTeamStandingItem {
+        background: none
+    }
+
+
+    /*Joseph Addon - "Userscript Homepage" "Song List"*/
+    #mpInstalled.button.floatingContainer.mainMenuButton {
+        background-color: rgba(0, 0, 0, 0.5);
+        box-shadow: none;
+    }
+    #listWindowBody.modal-body.resizableList.slWindowBody {
+        background-color: #1b1b1b;
+    }
+    #listWindowHeader.modal-header.ui-draggable-handle {
+        background-color: #1b1b1b;
+    }
+    #slSearch {
+        background-color: #1b1b1b;
+    }
+    button.btn.btn-default.songListOptionsButton {
+        background-color: rgba(0, 0, 0, 0.5);
+        border: none;
+    }
+
+    tr.songData.clickAble{
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    #listWindowOptions.customWindowPanel {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    #listWindowTableContainer.customWindowPanel {
+            background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .modal-header.customWindowHeader.draggableWindow {
+            background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .customWindow.ui-draggable {
+            background-color: rgba(0, 0, 0, 0.5);
+    }
+    .customWindowPanel {
+            background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Rounding option*/
+    #mpInstalled.button.floatingContainer.mainMenuButton {
+        border-radius: 15px;
+    }
+
+    .flatTextInput {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    /*Klem's Expand Player*/
+    #openRadioButton {
+        background-color: rgba(0, 0, 0, 0.8) !important;
+    }
+    #radioOverlay {
+        background-color: rgba(0, 0, 0, 0.8) !important;
+    }
+    div.modal-content {
+        background-color: rgba(0, 0, 0, 0.6) !important;
+    }
+
+
+    #swRhythmContainer {
+        position: absolute;
+        top: 200px;
+        background-color: var(--gris02);
+        left: -20px;
+        padding-left: 23px;
+        padding-right: 25px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 7px;
+    }
+    
+    
+    .lobbyAvatarRow.left .lobbyAvatarPlayerOptions.lobbyAvatarOptionContainer {
+        top: 2.5px;
+        right: 0px;
+        padding-right: -10px;
+        border-radius: 0 0 8px 5px;
+/*         transform: translateX(300%) !important; */
+    }
+
+
+    /* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+    /* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+    /* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+    /* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+    /* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+    /* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+    /* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+    /* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+    /* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+    /* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+    /* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+    /* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+    /* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+    /* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+    /* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+    /* ==UserScript== style */
+
+
+    .customWindow.ui-draggable {
+        background-color: rgba(0, 0, 0, 0);
+        border-radius: 20px;
+    }
+
+    .customWindow {
+        background-color: var(--gris01);
+        border: 1px solid rgba(27, 27, 27, 0.2);
+        box-shadow: 0 5px 15px rgb(0 0 0 / 50%);
+    }
+
+    .customWindow {
+        margin: 5px;
+        background-color: #424242;
+        border: 0px solid rgba(27, 27, 27, 0);
+        box-shadow: 0 5px 15px rgb(0 0 0 / 0%);
+    }
+
+    .customWindowPanel::-webkit-scrollbar {
+        display: none;
+    }
+
+    .modal-header.customWindowHeader.draggableWindow {
+        background-color: var(--gris02);
+    }
+
+    .customWindowPanel {
+        background-color: var(--gris02);
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+
+
+    #speedrunInfoLeft, #speedrunTimesLeft{
+        border-radius: 5px 0 0 5px;
+    }
+
+    #speedrunInfoRight, #speedrunTimesRight{
+        border-radius: 0 5px 5px 0;
+    }
+
+    #speedrunWindowUpper{
+        height: 200px;
+    }
+
+    #diceWindow .customWindow.ui-draggable{
+        min-width: 265px;
+    }
+
+    #listWindowOptions.customWindowPanel, #listWindowTableContainer.customWindowPanel {
+        background-color: var(--gris02);
+    }
+
+    #listWindowOptions .btn-default {
+        color: white;
+    /*     background-color: #fff;
+        border-color: #ccc; */
+    /*     rgba(0, 0, 0, 0.5) */
+    }
+
+    #slSearch {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    tr.songData.clickAble.correctGuess{
+        background-color: rgba(0, 255, 0, .15);
+    }
+
+    tr.songData.clickAble.incorrectGuess {
+        background-color: rgba(255, 0, 0, .15);
+    }
+
+    tr.songData.hover{
+        box-shadow: 0 3px 15px black;
+    }
+
+    #listWindowTable{
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+    .header > td {
+        border: 1px solid #0000;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .songData > td {
+        vertical-align: middle;
+        border: 0px solid black;
+        text-align: center;
+    }
+
+
+    #storeWindow .modal-body.customWindowBody .scroller{
+        display: none;
+    }
+
+    /* Tout ce qui suit : Ouverture du d'une autre page avec le UserScript "AMQ Song List UI" */
+    body {
+        background-image: url( https://i.redd.it/2cioa12l3zv71.png );
+        background-size: cover;
+    }
+
+    #slContainer tr {
+        background-color: var(--gris01);
+    }
+
+    #slContainer .correctGuess {
+        background-color: rgba(0, 255, 0, .2);
+    }
+
+    #slContainer .incorrectGuess {
+        background-color: rgba(255, 0, 0, .2);
+    }
+
+
+    #slContainer .header > td, #slContainer .songData td {
+        border: 0px solid black;
+    }
+
+
+    #slContainer{
+        margin-top: 20px;
+    }
+
+    #slContainer * {
+        color: white;
+    }
+    
+    #qpNexusAttackOrderContainer {
+        bottom: 20px;
+        background-color: var(--gris01
+        );
+        box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0);
+    }
+    
+    .nexusDungeonCounterContainer {
+        background-color: #4497ea7d;
+        box-shadow: 0px 0px 0px 0px #006ab7e6;
+        text-shadow: 0 0 0px #4497eac9;
+    }
+
+    .naStatusMainBody {
+        background-color: #4497ea7d;
+        box-shadow: 0px 0px 0px 0px #006ab7de;
+        border: solid 0px #006ab754
+    }
+    
+    .naHpBar.hp50Percent {
+        background-color: #ffaa40;
+        box-shadow: inset 0px 0px 0px 0px #ffaa40;
+    }
+    
+    .naArtifactBar {
+        background-color: #006ab77d;
+        box-shadow: 0px 0px 0px 0px #006ab7de;
+        border: solid 0px #006ab754;
+    }
+    
+    .naHpBar {
+        background-color: #71d971;
+        opacity: 0.95;
+        box-shadow: inset 0px 0px 0px 0px #71d971;
+    }
+    
+    #nexusCoopMainContainer {
+        width: 20vw;
+        height: 200px;
+        background-color: rgba(128, 199, 255, 0.85);
+        border: 2px solid rgba(0, 106, 193, 0.65);
+        box-shadow: 0 0 00px 0px rgb(128 199 255);
+    }
+    
+    .nexusCoopTab {
+        box-shadow: 0 0 0px 0px rgb(128 199 255);
+    }
+    
+    .nexusCoopTab.selected {
+        box-shadow: 0 0 0px 0px rgb(128 199 255), inset 0 0 0px 0px rgb(68 174 255 / 90%);
+    }
+    
+    .qpEnemySlot-0 .qpAvatarImageContainer, .qpEnemySlot-0 .qpAvatarTargetIcon, .qpAvatarTargetIconEnemy-0, .qpAvatarTargetIconEnemy-0 .qpAvatarTagetLineGlow {
+        box-shadow: 0 0 0px 0px #2f4dee;
+    }
+    
+    .qpEnemySlot-1 .qpAvatarImageContainer, .qpEnemySlot-1 .qpAvatarTargetIcon, .qpAvatarTargetIconEnemy-1, .qpAvatarTargetIconEnemy-1 .qpAvatarTagetLineGlow {
+        box-shadow: 0 0 0px 0px #2f4dee;
+    }
+    
+    .qpEnemySlot-2 .qpAvatarImageContainer, .qpEnemySlot-2 .qpAvatarTargetIcon, .qpAvatarTargetIconEnemy-2, .qpAvatarTargetIconEnemy-2 .qpAvatarTagetLineGlow {
+        box-shadow: 0 0 0px 0px #2f4dee;
+    }
+    
+    .qpEnemySlot-3 .qpAvatarImageContainer, .qpEnemySlot-3 .qpAvatarTargetIcon, .qpAvatarTargetIconEnemy-3, .qpAvatarTargetIconEnemy-3 .qpAvatarTagetLineGlow {
+        box-shadow: 0 0 0px 0px #2f4dee;
+    }
+    
+    .qpAvatarTargetIconEnemy-0 .qpAvatarTargetCounter, .qpAvatarTargetIconEnemy-1 .qpAvatarTargetCounter, .qpAvatarTargetIconEnemy-2 .qpAvatarTargetCounter, .qpAvatarTargetIconEnemy-3 .qpAvatarTargetCounter {
+        box-shadow: 0 0 0px 0px #2f4dee9c;
+    }
+    
+    .qpAvatarTargetIcon {
+        background-color: #1b1b1b00;
+    }
+    
+    .qpAvatarTargetCounter {
+        background-color: #d00e0e00;
+        font-size: 24px;
+        left: -6px;
+        bottom: -4px;
+    }
+    
+    #gameChatPage.nexusView .qpAvatarNexusGlowContainer {
+        border: solid 0px #006ab754;
+    }
+    
+    .qpAvatarContainerOuter.nexusTurn .qpAvatarNexusGlowContainer {
+        box-shadow: 0 0 0px 0px #ffffffd6, 0 0 0px 0px #eae444, 0 0 0px 0px #4497ead6;
+/*         box-shadow: 0 0 0px 0px #ffffffd6, 0 0 0px 10px #44ceea, 0 0 0px 0px #4497ead6; */
+    }
+    
+    
+/*     .qpAvatarImage[src*=".nexusTurn"] {
+        box-shadow: 0 0 0px 0px #ffffffd6, 0 0 0px 10px #eae444, 0 0 0px 0px #4497ead6;
+        filter: drop-shadow(0 0 75px #030bf7);
+    }
+    
+    .qpAvatarContainerOuter.nexusTurn .qpAvatarNexusGlowContainer .qpAvatarImage{
+        box-shadow: 0 0 0px 0px #ffffffd6, 0 0 0px 10px #ea4444, 0 0 0px 0px #4497ead6
+        
+    } */
+
+
+    #lobbyInputModeContainer {
+        top: 35px;
+        right: 70px;
+        background-color: rgba(27, 27, 27, .6) !important;
+        box-shadow: 0 0px 10px 2px rgba(0, 0, 0, 0);
+        border-top: solid 0.5px #42424247;
+    }
+    
+    .lobbyInputModeOption.selected {
+        background-color: #4497ea;
+    }
+    
+    
+    
+    /* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+    /* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+    /* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+    /* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+    /* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+    /* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+    /* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+    /* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+    /* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+    /* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+    /* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+    /* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+    /* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+    /* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+    /* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+    /* NEXUS MODE */
+    
+
+    .nexusView .qpAvatarImageContainer.Standard > .particleEmiter {
+        opacity: 0;
+    }
+    
+    
+    .nexusView .qpAvatarImageContainer:has(.qpAvatarImage[src*="Right."]) {
+        box-shadow: none;
+/*         inset 0px 0px 60px 5px rgba(255, 255, 255, 0.4), 
+        inset 0px 0px 100px 50px #fbfd8d9e, 
+        inset 0px 0px 140px 30px #e69b04a6,
+
+
+        0px 0px 60px 30px rgba(255, 255, 255, 0.4), 
+        0px 0px 100px 60px #fbfd8d9e,
+        0px 0px 140px 90px #e69b04a6; */
+    }
+    .nexusView .qpAvatarImageContainer:has(.qpAvatarImage[src*="Wrong."]) {
+        box-shadow: none;
+/*         inset 0px 0px 60px 30px rgba(255, 255, 255, 0.2),
+        inset 0px 0px 120px 45px rgba(255, 68, 0, 0.6),
+        inset 0px 0px 140px 60px #ef088fab,
+
+        0px 0px 60px 30px rgba(255, 255, 255, 0.2), 
+        0px 0px 120px 45px rgba(255, 68, 0, 0.6), 
+        0px 0px 140px 60px #ef088fab;  */
+    }
+
+    .nexusView .qpAvatarImageContainer:has(.qpAvatarImage[src*="Confused."]) {
+        box-shadow:none;
+/*         inset 0px 0px 60px 10px rgba(255, 255, 255, 0.3),
+        inset 0px 0px 100px 20px #16391485, 
+        inset 0px 0px 140px 30px #83ef89cf, 
+
+        0px 0px 60px 20px rgba(255, 255, 255, 0.3), 
+        0px 0px 100px 30px #16391485, 
+        0px 0px 140px 50px #83ef89cf;  */
+    }
+
+    .nexusView .qpAvatarImageContainer:has(.qpAvatarImage[src*="Thinking."]) {
+        box-shadow:none;
+/*         inset 0px 0px 60px 10px rgba(255, 255, 255, 0.3),
+        inset 0px 0px 100px 20px rgba(255, 255, 255, 0.6),
+        inset 0px 0px 140px 60px #0ff,
+
+        0px 0px 60px 15px rgba(255, 255, 255, 0.3), 
+        0px 0px 100px 30px rgba(255, 255, 255, 0.6),
+        0px 0px 140px 45px #0ff;  */
+
+
+    }
+
+    .nexusView .qpAvatarImageContainer:has(.qpAvatarImage[src*="Waiting."]) {
+        box-shadow:none;
+/*         inset 0px 0px 60px 20px rgba(255, 255, 255, 0.2),
+        inset 0px 0px 100px 30px #ca03f7,
+        inset 0px 0px 140px 60px #00dafc,
+
+        0px 0px 60px 20px rgba(255, 255, 255, 0.2), 
+        0px 0px 100px 45px #ca03f7, 
+        0px 0px 140px 60px #00dafc;  */
+    }
+
+    .nexusView .qpAvatarImageContainer:has(.qpAvatarImage[src*="Basic."]) {
+        background-color: rgba(0, 0, 0, 0);
+        box-shadow: none;
+    }
+    
+
 }
 
-.modal-header.customWindowHeader.draggableWindow {
-    	background-color: rgba(0, 0, 0, 0.8);
-}
-
-.customWindow.ui-draggable {
-    	background-color: rgba(0, 0, 0, 0.5);
-}
-.customWindowPanel {
-   		background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Rounding option*/
-#mpInstalled.button.floatingContainer.mainMenuButton {
-    border-radius: 15px;
-}
-
-.flatTextInput {
-    background-color: rgba(0, 0, 0, 0.3);
-}
-
-/*Klem's Expand Player*/
-#openRadioButton {
-    background-color: rgba(0, 0, 0, 0.8) !important;
-}
-#radioOverlay {
-    background-color: rgba(0, 0, 0, 0.8) !important;
-}
-div.modal-content {
-    background-color: rgba(0, 0, 0, 0.6) !important;
-}
 
 
-#swRhythmContainer {
-    position: absolute;
-    top: 200px;
-    background-color: var(--gris02);
-    left: -20px;
-    padding-left: 23px;
-    padding-right: 25px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 7px;
-}
 
 
-/* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
-/* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
-/* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
-/* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
-/* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
-/* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
-/* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
-/* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
-/* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
-/* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
-/* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
-/* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
-/* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
-/* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
-/* x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
-/* ==UserScript== style */
 
 
-.customWindow.ui-draggable {
-    background-color: rgba(0, 0, 0, 0);
-    border-radius: 20px;
-}
-
-.customWindow {
-    background-color: var(--gris01);
-    border: 1px solid rgba(27, 27, 27, 0.2);
-    box-shadow: 0 5px 15px rgb(0 0 0 / 50%);
-}
-
-.customWindow {
-    margin: 5px;
-    background-color: #424242;
-    border: 0px solid rgba(27, 27, 27, 0);
-    box-shadow: 0 5px 15px rgb(0 0 0 / 0%);
-}
-
-.customWindowPanel::-webkit-scrollbar {
-    display: none;
-}
- 
-.modal-header.customWindowHeader.draggableWindow {
-    background-color: var(--gris02);
-}
-
-.customWindowPanel {
-    background-color: var(--gris02);
-    padding-right: 5px;
-    padding-left: 5px;
-}
 
 
-#speedrunInfoLeft, #speedrunTimesLeft{
-    border-radius: 5px 0 0 5px;
-}
-
-#speedrunInfoRight, #speedrunTimesRight{
-    border-radius: 0 5px 5px 0;
-}
-
-#speedrunWindowUpper{
-    height: 200px;
-}
-
-#diceWindow .customWindow.ui-draggable{
-    min-width: 265px;
-}
-
-#listWindowOptions.customWindowPanel, #listWindowTableContainer.customWindowPanel {
-    background-color: var(--gris02);
-}
-
-#listWindowOptions .btn-default {
-    color: white;
-/*     background-color: #fff;
-    border-color: #ccc; */
-/*     rgba(0, 0, 0, 0.5) */
-}
-
-#slSearch {
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-tr.songData.clickAble.correctGuess{
-    background-color: rgba(0, 255, 0, .15);
-}
-
-tr.songData.clickAble.incorrectGuess {
-    background-color: rgba(255, 0, 0, .15);
-}
-
-tr.songData.hover{
-    box-shadow: 0 3px 15px black;
-}
-
-#listWindowTable{
-    border-radius: 15px;
-    overflow: hidden;
-}
-
-.header > td {
-    border: 1px solid #0000;
-    text-align: center;
-    vertical-align: middle;
-}
-
-.songData > td {
-    vertical-align: middle;
-    border: 0px solid black;
-    text-align: center;
-}
-
-
-#storeWindow .modal-body.customWindowBody .scroller{
-    display: none;
-}
-
-/* Tout ce qui suit : Ouverture du d'une autre page avec le UserScript "AMQ Song List UI" */
-body {
-    background-image: url( https://i.redd.it/2cioa12l3zv71.png );
-    background-size: cover;
-}
-
-#slContainer tr {
-    background-color: var(--gris01);
-}
-
-#slContainer .correctGuess {
-    background-color: rgba(0, 255, 0, .2);
-}
-
-#slContainer .incorrectGuess {
-    background-color: rgba(255, 0, 0, .2);
-}
-
-
-#slContainer .header > td, #slContainer .songData td {
-    border: 0px solid black;
-}
-
-
-#slContainer{
-    margin-top: 20px;
-}
-
-#slContainer * {
-    color: white;
-}
