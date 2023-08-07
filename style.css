@@ -314,7 +314,7 @@ https://userstyles.world/style/1435/elodie-s-amq-script-v8-4-4 */
         box-shadow: 0 0 10px 2px rgba(0, 0, 0, .3);
         border-radius: 0 0 6px 6px;
         top: 34px;
-        z-index: 3000;
+        z-index: 30000;
     }
     #qpInnerContainer{
         border-bottom-left-radius: 10px;
@@ -589,12 +589,22 @@ https://userstyles.world/style/1435/elodie-s-amq-script-v8-4-4 */
     }
     
     .popover{
+        z-index: 10000;
         background-color: var(--noir6) !important;
     }
     
     .popover.top>.arrow {
         border-top-color: #0000 !important;
         border-top-color: rgba(0, 0, 0, 0) !important;
+    }
+    
+    .arrow {
+        opacity: 0.5;
+    }
+    
+    .arrow.fade.in{
+        backdrop-filter: blur(4px);
+        animation: blurAnime 5s linear;
     }
 
     .popover.top > .arrow:after {
@@ -2763,32 +2773,32 @@ https://userstyles.world/style/1435/elodie-s-amq-script-v8-4-4 */
 /*     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 
     
-     .qpAvatarImage[src*="Right."] {
+     .avatarImage[src*="Right."] {
          filter: 
             drop-shadow(0 0 30px rgba(255, 255, 255, 0.4))
             drop-shadow(0 0 60px #fbfd8d9e)
             drop-shadow(0 0 20px #e6aa04d4);
     }
-    .qpAvatarImage[src*="Wrong."] {
+     .avatarImage[src*="Wrong."] {
         filter: 
 /*             drop-shadow(0 0 30px rgba(255, 255, 255, 0.2)) */
             drop-shadow(0 0 20px rgba(255, 68, 0, 0.6))
             drop-shadow(0 0 20px #ef088fab);
     }
 
-    .qpAvatarImage[src*="Confused."] {
+     .avatarImage .avatarImage[src*="Confused."] {
         filter: 
 /*             drop-shadow(0 0 20px rgba(255, 255, 255, 0.3))
             drop-shadow(0 0 30px #16391485) */
             drop-shadow(0 0 20px #51a456e3);
     }
 
-    .qpAvatarImage[src*="Thinking."] {
+     .avatarImage[src*="Thinking."] {
         filter: 
             drop-shadow(0 0 25px #00ffff8f);
     }
 
-    .qpAvatarImage[src*="Waiting."] {
+     .avatarImage[src*="Waiting."] {
         filter: 
 /*             drop-shadow(0 0 20px rgba(255, 255, 255, 0.2)) */
             drop-shadow(0 0 25px #ca03f7b0);
@@ -2821,11 +2831,11 @@ https://userstyles.world/style/1435/elodie-s-amq-script-v8-4-4 */
 
 
     /* Le joueur a quitté la partie... EN FAIT NON */
-    .qpAvatarImage[src*="Basic."]{
+    .avatarImage[src*="Basic."]{
         opacity: 1;
     }
 
-    .qpAvatarImage~.particleEmiter {
+    .avatarImage~.particleEmiter {
         border-radius: 10px;
         opacity: 1;
         z-index: -1;
