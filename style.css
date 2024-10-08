@@ -3791,8 +3791,7 @@ https://userstyles.world/style/1435/elodie-s-amq-script-v8-4-4 */
     
     #qpNexusAttackOrderContainer {
         bottom: 20px;
-        background-color: var(--gris01
-        );
+        background-color: var(--gris01);
         box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0);
     }
     
@@ -3929,6 +3928,11 @@ https://userstyles.world/style/1435/elodie-s-amq-script-v8-4-4 */
         transform: translateY(-0.5px);
     }
 
+    
+    .qpMultipleChoiceEntry, .qpMultipleChoiceEntry.clickAble  {
+        background-color: rgba(27, 27, 27, .75) !important;
+        box-shadow: 0 0 0px 0px rgb(0, 0, 0);
+    }
     
     
     
